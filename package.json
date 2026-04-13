@@ -1,0 +1,24 @@
+{
+  "name": "deep-research-coin",
+  "version": "1.0.0",
+  "description": "Deep on-chain and fundamental analysis of cryptocurrency tokens with full source documentation.",
+  "main": "screenshots.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThanaLamth/deep-research-coin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ThanaLamth/deep-research-coin/issues"
+  },
+  "homepage": "https://github.com/ThanaLamth/deep-research-coin#readme",
+  "dependencies": {
+    "puppeteer": "^24.40.0"
+  }
+}
