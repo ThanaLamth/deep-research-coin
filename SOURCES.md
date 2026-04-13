@@ -20,14 +20,17 @@
 
 ## 🔗 On-Chain & Contract Data
 
-### Blockchain Explorers
-| Source | URL | Data Collected |
-|--------|-----|----------------|
-| Etherscan Contract | https://etherscan.io/address/0x17205fab260a7a6383a81452cE6315A39370Db97 | Contract verification, transactions, token info |
-| Etherscan Token | https://etherscan.io/token/0x17205fab260a7a6383a81452cE6315A39370Db97 | Token holder data, transfers |
-| Ethplorer | https://ethplorer.io/address/0x17205fab260a7a6383a81452ce6315a39370db97 | Internal operations, transaction history |
+### Blockchain Explorers (API VERIFIED)
+| Source | API Endpoint | Data Collected | Status |
+|--------|-----|----------------|--------|
+| Etherscan API v2 | `api.etherscan.io/v2/api` | Token supply: 977,578,097 RAVE | ✅ VERIFIED |
+| Etherscan API v2 | `module=account&action=tokentx` | Real transfer history, whale flows | ✅ VERIFIED |
+| Etherscan API v2 | `module=account&action=balance` | ETH balances of whale wallets | ✅ VERIFIED |
+| Etherscan Contract | https://etherscan.io/address/0x17205fab260a7a6383a81452cE6315A39370Db97 | Contract verification, transactions, token info | ✅ VERIFIED |
+| Etherscan Token | https://etherscan.io/token/0x17205fab260a7a6383a81452cE6315A39370Db97 | Token holder data, transfers | Referenced |
+| Ethplorer | https://ethplorer.io/address/0x17205fab260a7a6383a81452ce6315a39370db97 | Internal operations, transaction history | Referenced |
 
-### Whale Tracking
+### Whale Tracking (Third Party)
 | Source | URL | Data Collected |
 |--------|-----|----------------|
 | KuCoin Analysis | https://www.kucoin.com/news/articles/analysis-behind-rave-token-80-surge-whale-accumulation-on-chain-data-tracking-practices | Whale accumulation, on-chain metrics, smart money tracking |
