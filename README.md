@@ -1,71 +1,116 @@
-# Deep Research Coin
+# 📊 Deep Research Coin
 
-Deep on-chain and fundamental analysis of cryptocurrency tokens with full source documentation.
-
----
-
-## 📊 Latest Analysis
-
-### RAVE (RaveDAO) - April 13, 2026
-
-- **Analysis Report:** [RAVE-analysis.md](./RAVE-analysis.md)
-- **Research Sources:** [SOURCES.md](./SOURCES.md)
-
-**Key Findings:**
-- RAVE pumped **+2,259% in 7 days** (from $0.20 to $9.23)
-- Driven by **derivatives short squeeze** (21:1 futures:spot ratio)
-- **Whale manipulation** detected - insider deposits before breakout
-- Only **24.8% circulating supply** - extreme low float risk
-- **Prediction:** High dump risk - expect 60-80% correction
+> Professional cryptocurrency research with on-chain verification.
 
 ---
 
-## 📁 Structure
+## 🚀 Quick Start
 
-```
-├── RAVE-analysis.md         # Full RAVE token analysis report (with Etherscan links)
-├── ONCHAIN-VERIFICATION.md  # Complete on-chain data with all Etherscan links
-├── SOURCES.md               # Complete research sources documentation
-└── README.md                # This file
+```bash
+npm install puppeteer
+node screenshots-api.js
 ```
 
----
-
-## 🔍 Research Methodology
-
-Each analysis includes:
-
-1. **On-Chain Analysis (API VERIFIED)**
-   - Whale wallet movements (with Etherscan links)
-   - Exchange inflows/outflows
-   - Holder distribution
-   - Smart money tracking
-   - Real transaction verification via Etherscan API
-
-2. **Fundamental Analysis**
-   - Tokenomics & vesting schedules
-   - Project developments
-   - Partnerships & events
-   - Team & backers
-
-3. **Market Analysis**
-   - Price action & volume
-   - Futures & leverage data
-   - Social sentiment
-   - Exchange listings
-
-4. **Risk Assessment**
-   - Red flags identification
-   - Token unlock schedule
-   - Valuation concerns
-   - Price predictions
+Read the full workflow: **[WORKFLOW.md](./WORKFLOW.md)**  
+Quick reference: **[QUICKSTART.md](./QUICKSTART.md)**
 
 ---
 
-## ⚠️ Disclaimer
+## 📂 Latest Research: RaveDAO (RAVE)
 
-This is **not financial advice**. Cryptocurrency research is highly speculative. Always do your own research (DYOR) before making investment decisions.
+### Reports
+| File | Description |
+|------|-------------|
+| [RAVE-Research-Report.pdf](./RAVE-Research-Report.pdf) | Full technical analysis |
+| [RAVE-Deep-Research-Coindesk.pdf](./RAVE-Deep-Research-Coindesk.pdf) | Coindesk-style report |
+| [RAVE-WordPress.html](./RAVE-WordPress.html) | WordPress-ready (copy-paste) |
+
+### Supporting Files
+| File | Description |
+|------|-------------|
+| [RAVE-analysis.md](./RAVE-analysis.md) | Initial analysis |
+| [ONCHAIN-VERIFICATION.md](./ONCHAIN-VERIFICATION.md) | All Etherscan links |
+| [SOURCES.md](./SOURCES.md) | Research sources (15+) |
+
+### Screenshots
+| Image | Source |
+|-------|--------|
+| ![CoinMarketCap](./images/coinmarketcap-price.png) | [CoinMarketCap](https://coinmarketcap.com/currencies/ravedao/) |
+| ![Etherscan Supply](./images/etherscan-total-supply.png) | [Etherscan API](https://etherscan.io/token/0x17205fab260a7a6383a81452cE6315A39370Db97) |
+| ![Whale Wallet](./images/etherscan-whale-wallet.png) | [Etherscan API](https://etherscan.io/address/0x0d0707963952f2fba59dd06f2b425ace40b492fe) |
 
 ---
 
-**Last Updated:** April 13, 2026
+## 🔍 Methodology
+
+1. **Web Research** - Collect 10+ news sources
+2. **On-Chain Verification** - Etherscan API v2
+3. **Screenshot Capture** - API → HTML → PNG
+4. **Report Generation** - Coindesk-style HTML
+5. **PDF Export** - Puppeteer-PDF
+6. **WordPress Export** - Copy-paste ready HTML
+
+---
+
+## 📁 Project Structure
+
+```
+├── WORKFLOW.md                          # Complete workflow documentation
+├── QUICKSTART.md                        # Quick reference guide
+├── RAVE-analysis.md                     # Initial RAVE analysis
+├── RAVE-Research-Report.pdf             # Technical report (PDF)
+├── RAVE-Deep-Research-Coindesk.pdf      # Journalistic report (PDF)
+├── RAVE-WordPress.html                  # WordPress-ready HTML
+├── ONCHAIN-VERIFICATION.md              # Full Etherscan verification
+├── SOURCES.md                           # Research sources
+├── README.md                            # This file
+└── images/
+    ├── coinmarketcap-price.png          # Price data
+    ├── coingecko-chart.png              # Price chart
+    ├── etherscan-total-supply.png       # Supply verification
+    ├── etherscan-whale-wallet.png       # Whale wallet (13,489 ETH)
+    ├── etherscan-whale-transfers.png    # Whale transfers
+    └── etherscan-aggregator.png         # Aggregator wallet
+```
+
+---
+
+## 🛠️ Tools
+
+| Tool | Purpose | Status |
+|------|---------|--------|
+| Etherscan API v2 | On-chain data | ✅ Working |
+| Puppeteer | Web automation | ✅ Working |
+| screenshots-api.js | Screenshot via API | ✅ **Best method** |
+| puppeteer-pdf | PDF generation | ✅ Working |
+
+---
+
+## ⚠️ Security
+
+- **NEVER commit API keys or tokens**
+- Use `.gitignore` for sensitive files
+- Remove tokens from `package.json` repository URL
+- If exposed, revoke immediately and force push
+
+---
+
+## 📊 Key Findings: RAVE
+
+| Metric | Reported (CMC) | Verified (On-Chain) |
+|--------|---------------|-------------------|
+| Circulating Supply | 248M (24.8%) | **977.6M (97.76%)** |
+| Market Cap | $2.4B | **~$9.5B** |
+| Whale Activity | Rumored | **Confirmed** (13,489 ETH) |
+| Dump Mechanism | Suspected | **Verified** on-chain |
+
+---
+
+## 📝 License
+
+MIT - Use freely for research purposes.
+
+---
+
+**Last Updated:** April 13, 2026  
+**Contact:** [GitHub Issues](https://github.com/ThanaLamth/deep-research-coin/issues)
