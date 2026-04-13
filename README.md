@@ -23,9 +23,10 @@ Deep on-chain and fundamental analysis of cryptocurrency tokens with full source
 ## 📁 Structure
 
 ```
-├── RAVE-analysis.md      # Full RAVE token analysis report
-├── SOURCES.md            # Complete research sources documentation
-└── README.md             # This file
+├── RAVE-analysis.md         # Full RAVE token analysis report (with Etherscan links)
+├── ONCHAIN-VERIFICATION.md  # Complete on-chain data with all Etherscan links
+├── SOURCES.md               # Complete research sources documentation
+└── README.md                # This file
 ```
 
 ---
@@ -34,11 +35,12 @@ Deep on-chain and fundamental analysis of cryptocurrency tokens with full source
 
 Each analysis includes:
 
-1. **On-Chain Analysis**
-   - Whale wallet movements
+1. **On-Chain Analysis (API VERIFIED)**
+   - Whale wallet movements (with Etherscan links)
    - Exchange inflows/outflows
    - Holder distribution
    - Smart money tracking
+   - Real transaction verification via Etherscan API
 
 2. **Fundamental Analysis**
    - Tokenomics & vesting schedules

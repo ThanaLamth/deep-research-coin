@@ -32,35 +32,60 @@
 
 ## 🔗 VERIFIED ON-CHAIN DATA (Etherscan API - Real Time)
 
-> **Contract:** `0x17205fab260a7a6383a81452cE6315A39370Db97` (Ethereum)  
+> **Contract:** [`0x17205fab260a7a6383a81452cE6315A39370Db97`](https://etherscan.io/address/0x17205fab260a7a6383a81452cE6315A39370Db97) (Ethereum)  
 > **Total Supply (Verified):** 977,578,097 RAVE (97.76% of 1B max)  
 > **Token Decimals:** 18  
-> **Data pulled:** April 13, 2026 via Etherscan API v2
+> **Data pulled:** April 13, 2026 via Etherscan API v2  
+> **Full verification file:** [ONCHAIN-VERIFICATION.md](./ONCHAIN-VERIFICATION.md)
 
 ### 🐋 Whale Wallet Analysis (VERIFIED)
 
-| Wallet | ETH Balance | RAVE Activity | Classification |
-|--------|-------------|---------------|----------------|
-| `0x0d07...92fe` | **13,489 ETH** (~$40M) | Sending 1K-9K RAVE to 0x566b | 🔴 **MASSIVE WHALE** |
-| `0x8a52...032f` | Unknown | Minting & distributing to 0x566b | 🟡 **Distributor/Exchange** |
-| `0x566b...36b8` | ~0 ETH (0.000002) | Aggregating → sending to 0x1ab4 | 🟡 **Aggregator/Hot Wallet** |
-| `0x1ab4...` | Unknown | Receiving all RAVE flow | 🟠 **Likely Exchange/Dex** |
+| Wallet | ETH Balance | RAVE Activity | Classification | Etherscan Link |
+|--------|-------------|---------------|----------------|----------------|
+| `0x0d07...92fe` | **13,489 ETH** (~$40M) | Sending 1K-9K RAVE to 0x566b | 🔴 **MASSIVE WHALE** | [View](https://etherscan.io/address/0x0d0707963952f2fba59dd06f2b425ace40b492fe) |
+| `0x8a52...032f` | Unknown | Minting & distributing to 0x566b | 🟡 **Distributor/Exchange** | [View](https://etherscan.io/address/0x8a5221f95c8af2d249bc1a7f075b31336ee5032f) |
+| `0x566b...36b8` | ~0 ETH (0.000002) | Aggregating → sending to 0x1ab4 | 🟡 **Aggregator/Hot Wallet** | [View](https://etherscan.io/address/0x566b30470d7ad97419a48900dc869bd7148736b8) |
+| `0x1ab4...` | Unknown | Receiving all RAVE flow | 🟠 **Likely Exchange/Dex** | [View](https://etherscan.io/address/0x1ab4...) |
+| `0x3d90...be9` | 0 ETH | Receiving mints, distributing small | 🟡 **Small Distributor** | [View](https://etherscan.io/address/0x3d90f66b534dd8482b181e24655a9e8265316be9) |
+| `0xbdb3...47b6` | Unknown | Large receiver (21,953 RAVE) | 🟢 **Whale Receiver** | [View](https://etherscan.io/address/0xbdb3ba9ffe392549e1f8658dd2630c141fdf47b6) |
 
 ### 💸 Real Token Flow (Verified Transactions)
 
 ```
-Minting:  0x0000...0000 (Contract) → 0x8a52...032f [3,500 - 6,000 RAVE each]
-           0x0000...0000 (Contract) → 0x3d90...be9  [59 - 4 RAVE each]
+MINTING:
+  Contract (0x000...000) → 0x8a52...032f [3,500 - 6,000 RAVE]
+    🔗 https://etherscan.io/address/0x8a5221f95c8af2d249bc1a7f075b31336ee5032f
+  Contract (0x000...000) → 0x3d90...be9  [4 - 59 RAVE]
+    🔗 https://etherscan.io/address/0x3d90f66b534dd8482b181e24655a9e8265316be9
 
-Whale:    0x0d07...92fe (13,489 ETH) → 0x566b...36b8 [447 - 9,054 RAVE each]
-           0x0d07...92fe → 0x9375...1544 [1,199 RAVE]
-           0x0d07...92fe → 0x566e...2b38 [1,088 RAVE]
-           0x0d07...92fe → 0xb1b2...8404 [62 RAVE]
+WHALE DUMPING:
+  0x0d07...92fe (13,489 ETH = ~$40M) → 0x566b...36b8 [447 - 9,054 RAVE]
+    🔗 Wallet: https://etherscan.io/address/0x0d0707963952f2fba59dd06f2b425ace40b492fe
+    🔗 Tx: https://etherscan.io/tx/0xd429...
+    🔗 Tx: https://etherscan.io/tx/0x0217...
+    🔗 Tx: https://etherscan.io/tx/0xd36b...
 
-Distributor: 0x8a52...032f → 0x566b...36b8 [4,000 - 5,000 RAVE each]
+  0x0d07...92fe → 0x9375...1544 [1,199 RAVE]
+    🔗 Tx: https://etherscan.io/tx/0x8c91af0f
 
-Aggregator:  0x566b...36b8 → 0x1ab4... [1,853 - 11,447 RAVE each] ⚠️ DUMPING
+  0x0d07...92fe → 0x516e...2b38 [1,088 RAVE]
+    🔗 Tx: https://etherscan.io/tx/0x3ad16e0e
+
+DISTRIBUTOR:
+  0x8a52...032f → 0x566b...36b8 [4,000 - 5,000 RAVE]
+    🔗 https://etherscan.io/tx/0x42ab4ecb
+    🔗 https://etherscan.io/tx/0x61a4d6a8
+
+AGGREGATOR → EXCHANGE (DUMPING):
+  0x566b...36b8 → 0x1ab4... [1,853 - 11,447 RAVE] ⚠️ SELLING PRESSURE
+    🔗 Aggregator: https://etherscan.io/address/0x566b30470d7ad97419a48900dc869bd7148736b8
+    🔗 Tx: https://etherscan.io/tx/0x9267... (9,054 RAVE)
+    🔗 Tx: https://etherscan.io/tx/0x3374... (3,500 RAVE)
+    🔗 Tx: https://etherscan.io/tx/0x34bc... (5,161 RAVE)
+    🔗 Tx: https://etherscan.io/tx/0x37e1... (11,447 RAVE)
 ```
+
+**Full transaction list with all links:** [ONCHAIN-VERIFICATION.md](./ONCHAIN-VERIFICATION.md)
 
 ### 🚨 KEY FINDINGS FROM ON-CHAIN DATA
 

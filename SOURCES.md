@@ -20,15 +20,17 @@
 
 ## 🔗 On-Chain & Contract Data
 
-### Blockchain Explorers (API VERIFIED)
-| Source | API Endpoint | Data Collected | Status |
-|--------|-----|----------------|--------|
-| Etherscan API v2 | `api.etherscan.io/v2/api` | Token supply: 977,578,097 RAVE | ✅ VERIFIED |
-| Etherscan API v2 | `module=account&action=tokentx` | Real transfer history, whale flows | ✅ VERIFIED |
-| Etherscan API v2 | `module=account&action=balance` | ETH balances of whale wallets | ✅ VERIFIED |
-| Etherscan Contract | https://etherscan.io/address/0x17205fab260a7a6383a81452cE6315A39370Db97 | Contract verification, transactions, token info | ✅ VERIFIED |
-| Etherscan Token | https://etherscan.io/token/0x17205fab260a7a6383a81452cE6315A39370Db97 | Token holder data, transfers | Referenced |
-| Ethplorer | https://ethplorer.io/address/0x17205fab260a7a6383a81452ce6315a39370db97 | Internal operations, transaction history | Referenced |
+### On-Chain Data (API VERIFIED)
+| Source | URL | Data Collected |
+|--------|-----|----------------|
+| Etherscan Contract | https://etherscan.io/address/0x17205fab260a7a6383a81452cE6315A39370Db97 | Contract verification, code, transactions |
+| Etherscan Token | https://etherscan.io/token/0x17205fab260a7a6383a81452cE6315A39370Db97 | Total supply, holders, transfers |
+| Etherscan Whale 1 | https://etherscan.io/address/0x0d0707963952f2fba59dd06f2b425ace40b492fe | 13,489 ETH balance, RAVE transfers |
+| Etherscan Whale 2 | https://etherscan.io/address/0x8a5221f95c8af2d249bc1a7f075b31336ee5032f | Distributor/minter wallet |
+| Etherscan Whale 3 | https://etherscan.io/address/0x566b30470d7ad97419a48900dc869bd7148736b8 | Aggregator → exchange flow |
+| Etherscan Whale 4 | https://etherscan.io/address/0x3d90f66b534dd8482b181e24655a9e8265316be9 | Small distributor, mint receiver |
+| Etherscan Whale 5 | https://etherscan.io/address/0xbdb3ba9ffe392549e1f8658dd2630c141fdf47b6 | Large receiver (21,953 RAVE) |
+| **Full Verification** | [ONCHAIN-VERIFICATION.md](./ONCHAIN-VERIFICATION.md) | All links, tx hashes, API endpoints |
 
 ### Whale Tracking (Third Party)
 | Source | URL | Data Collected |
