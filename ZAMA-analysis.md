@@ -55,15 +55,27 @@
 ### 💸 Real Token Flow (Verified Transactions)
 
 ```
-WHALE DUMPING:
+WHALE DUMPING (April 14, 2026 - Last 24h):
   0x0d07...92fe (13,651 ETH = ~$41M) → Multiple wallets [57K - 827K ZAMA]
     🔗 Wallet: https://etherscan.io/address/0x0d0707963952f2fba59dd06f2b425ace40b492fe
     🔗 Net Flow: -2.27M ZAMA (DISTRIBUTING)
     🔗 19 outgoing transfers in 0.8 hours ⚠️ RAPID DUMPING
-    🔗 Largest: 827,625 ZAMA, 503,489 ZAMA, 502,015 ZAMA
+    
+    Recent Transactions (verified):
+    🔗 670,927 ZAMA → 0x2d33...7201 | https://etherscan.io/tx/0x3e0a75f189e310a58df9fe0d6334b56eef67c55031cd60ed2eb22e0c86bab92c
+    🔗 502,015 ZAMA → 0x72bb...62ff | https://etherscan.io/tx/0x39c5302b47e5766fe4b21928ebb7f878439b15e16f79ed79ca78e0dc3337325e
+    🔗 503,490 ZAMA → 0x5c97...56f0 | https://etherscan.io/tx/0x267d7583d64e7dcf9b2b680ebf5c55290f41f82fd05c0157ca001b94db467c7f
+    🔗 252,629 ZAMA → 0xc5fe...8829 | https://etherscan.io/tx/0x2608bc2a8123928556953803c60a8cb687c2dd7317fc43ecbcaaad0a7634339c
+    🔗 237,000 ZAMA → 0x2086...1657 | https://etherscan.io/tx/0xe3f9b417b450c37a9451ec6ca707aed6b6a0b70cbd8301f25aa9354f7c2c0e96
+    🔗 192,991 ZAMA → 0xe92e...a03f | https://etherscan.io/tx/0xb7b76bedb5ae8dbfe490dd4dbed32db8b7ef007500dd76b633446523ac62d1dd
+    🔗 129,848 ZAMA → 0x0ef9...54e6 | https://etherscan.io/tx/0x472ceab018ee8f9a0a654b30598e2f611d741ad464a3896b14099b19914fbd89
+    🔗 99,657 ZAMA  → 0x6d3f...733a | https://etherscan.io/tx/0xab2a787e1df145de6e1ea2dccec8ebc8b5bc34b24b6dcf6f789444e73259752a
+    🔗 71,900 ZAMA  → 0x5c97...56f0 | https://etherscan.io/tx/0x7c959544470daa804687f282d934fc4694c3bc1a2caf2fe6755239f86703ab75
+    🔗 57,296 ZAMA  → 0xae7f...d5ad | https://etherscan.io/tx/0xdcd0a29e91d9aa3dfaccfe9d89142513cee8e2f5b0d4cce4335b8bd83ea96d81
 
-DISTRIBUTOR:
+DISTRIBUTOR NETWORK:
   0x8a52...032f → Multiple wallets [180K - 700K ZAMA]
+    🔗 Wallet: https://etherscan.io/address/0x8a5221f95c8af2d249bc1a7f075b31336ee5032f
     🔗 Net Flow: 0 (neutral - pass-through wallet)
     🔗 Pattern: Receiving and immediately distributing
 
@@ -108,6 +120,70 @@ AGGREGATOR → EXCHANGE (DUMPING):
 | **Supply discrepancy +73.5M** | 🟡 MEDIUM | More tokens than initial 11B |
 
 **Source:** Etherscan API v2 - Token transfers analyzed April 14, 2026
+
+---
+
+## 📰 NEWS & CATALYSTS
+
+### Exchange Listings Timeline
+
+| Date | Event | Impact |
+|------|-------|--------|
+| **Jan 21-24, 2026** | Dutch Auction on Fjord Foundry | Raised $118-121M, 218% oversubscribed |
+| **Feb 2, 2026** | **Binance listing** (spot + margin) | Major liquidity milestone |
+| **Feb 2, 2026** | Bybit listing + 12M ZAMA staking rewards | Additional liquidity |
+| **Feb 2, 2026** | Phemex listing (ZAMA/USDT) | Spot trading began 1:00 PM UTC |
+| **Feb 2, 2026** | Coinbase listing | US institutional access |
+| **Feb 2, 2026** | "All major exchanges" trading began | Full market access |
+| **Feb 3, 2026** | Phemex ZAMA/USDT pair live | 10:00 UTC launch |
+
+**Sources:**
+- [Zama Token Launch Official](https://www.zama.org/post/zama-token-launch)
+- [Binance Listing Announcement](https://www.binance.com/en/square/post/35911760503521)
+- [Bybit Launches ZAMA](https://tradersunion.com/news/airdrops/show/1376478-bybit-launches-zama/)
+- [Phemex Academy](https://phemex.com/academy/what-is-zama)
+
+### Recent Developments (Feb - April 2026)
+
+| Date | Milestone | Status |
+|------|-----------|--------|
+| **Dec 30-31, 2025** | Mainnet launched on Ethereum | ✅ Live |
+| **Jan 5, 2026** | OG NFT collection (5,500) released | ✅ Completed |
+| **Jan 21-24, 2026** | Dutch auction: $118-121M raised | ✅ Completed |
+| **Feb 2, 2026** | TGE + Confidential OTC trade with **GSR** | ✅ Live |
+| **Feb 2, 2026** | Developer Program Season 1 winners announced | ✅ Completed |
+| **Feb 2, 2026** | Developer Program Season 2 announced (Confidential Onchain Finance) | 🟡 Active |
+| **Feb 2, 2026** | FHE.org 2026 presentation | ✅ Completed |
+| **Feb 2026** | T-REX Ledger integration (RWA focus) | ✅ Live |
+| **Feb 2026** | Staking portal + Bridging portal live | ✅ Live |
+| **April 2026** | Developer Console | 🔜 Coming Soon |
+
+### Partnerships
+
+| Partner | Type | Details |
+|---------|------|---------|
+| **GSR** | Market Maker | First confidential OTC trade onchain |
+| **T-REX Ledger** | Integration | Confidentiality layer for Real-World Assets |
+| **FHE.org** | Ecosystem | FHE standards development |
+
+### Social Media & Community
+
+- **X/Twitter:** @zama_fhe (official)
+- **Telegram:** Community group active
+- **Community Channels:** Discord/Forum
+- **Events:** FHE.org 2026 presentation completed
+
+**Note:** No quantitative social media metrics (follower counts, engagement rates) publicly available. No Korean exchange listings (Upbit/Bithumb) confirmed for ZAMA as of April 14, 2026.
+
+### Upcoming Catalysts
+
+| Event | Expected Date | Potential Impact |
+|-------|---------------|------------------|
+| Developer Console launch | Q2 2026 | HIGH - Developer adoption |
+| 1,000 TPS target | 2026 | HIGH - Scalability milestone |
+| Additional exchange listings | TBD | MEDIUM - Liquidity growth |
+| Korean exchange listing (Upbit/Bithumb) | Rumored | HIGH - Korean market access |
+| FHE ASICs development | 2027+ | HIGH - 10,000+ TPS target |
 
 ---
 
