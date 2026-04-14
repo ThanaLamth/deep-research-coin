@@ -83,7 +83,8 @@ Quick reference: **[QUICKSTART.md](./QUICKSTART.md)**
 | Puppeteer | Web automation | ✅ Working |
 | screenshots-api.js | Screenshot via API | ✅ **Best method** |
 | puppeteer-pdf | PDF generation | ✅ Working |
-| **whale-tracker.js** | **Whale tracking (Lookonchain-style)** | ✅ **NEW** |
+| **whale-tracker.js** | **Whale tracking (Lookonchain-style)** | ✅ Working |
+| **telegram-bot.js** | **Telegram assistant** | ✅ **NEW** |
 
 ---
 
@@ -103,6 +104,24 @@ node whale-tracker.js --scan 0x17205fab260a7a6383a81452cE6315A39370Db97
 ```
 
 Full guide: **[WHALE-TRACKER-GUIDE.md](./WHALE-TRACKER-GUIDE.md)**
+
+---
+
+## 🤖 Telegram Bot
+
+Your personal AI assistant accessible via Telegram - chat, research, whale tracking, and more.
+
+```bash
+# Setup
+npm install node-telegram-bot-api dotenv
+copy .env.example .env
+# Edit .env and add your TELEGRAM_BOT_TOKEN
+
+# Start bot
+node telegram-bot.js
+```
+
+Full guide: **[TELEGRAM-BOT-GUIDE.md](./TELEGRAM-BOT-GUIDE.md)**
 
 ---
 
