@@ -31,6 +31,61 @@
 
 ---
 
+## 📈 PRICE HISTORY COMPARISON (IDO → Listing → ATH → Hiện tại)
+
+| Stage | Price | Date | Change from Previous | Notes |
+|-------|-------|------|---------------------|-------|
+| **🎯 IEO (Binance Launchpool)** | **$3.00** | Mar 14-18, 2024 | — | Binance Launchpool, airdrop 15% (~$46.8M at $4.7 pre-market) |
+| **🏪 Listing (First Trade)** | **$3.50-$4.00** | Mar 18, 2024 | +17% to +33% | Opened above IEO price on Binance |
+| **🚀 ATH** | **$8.57** | Mar 27, 2024 | +114% to +145% from listing | Peak restaking hype, EigenLayer narrative |
+| **💧 ATL** | **$0.3621** | Oct 10, 2025 | -96% from ATH | Massive dump, narrative death |
+| **📊 Current** | **$0.4384** | Apr 14, 2026 | **-85% from IEO, -95% from ATH** | Slight recovery, still devastating |
+
+### 📊 Analysis
+
+| Metric | Value | Assessment |
+|--------|-------|------------|
+| **IEO → Current** | -85.4% | 🔴 Catastrophic loss for IEO buyers |
+| **IEO → ATH** | +186% | 🟡 2.8x peak from IEO |
+| **ATH → Current** | -94.9% | 🔴 Near-total value destruction |
+| **ATL → Current** | +21.1% | 🟢 Slight recovery from bottom |
+| **Current vs IEO** | 0.146x | 🔴 85% below IEO price |
+
+### 🔑 Key Insights
+
+1. **IEO buyers lost 85%** — devastating for Binance Launchpool participants
+2. **ATH was only 9 days after listing** — classic pump, then 2+ year dump
+3. **Dumped -96% from ATH to ATL** — narrative completely died
+4. **Current price ($0.44) is 85% below IEO ($3.00)** — no recovery signs yet
+5. **$50M buyback proposal below $3** — DAO trying to stabilize but failed
+
+### ⚠️ What This Means
+
+- **This is NOT a deep value play** — the 95% drop reflects REAL fundamental decline
+- **Restaking narrative peaked in March 2024** and has not recovered
+- **Even at $0.44, it's still 85% overpriced vs IEO** ($3.00)
+- **ATH of $8.57 is likely NEVER seen again** unless narrative completely reverses
+- **Realistic target:** $0.50-$0.65 (still 78-83% below ATH)
+
+### 📊 Valuation Check
+
+| Metric | Value |
+|--------|-------|
+| Current MCap | $345M |
+| Current Price | $0.4384 |
+| IEO Price | $3.00 |
+| **Fair Value (if back to IEO)** | **$3.00 = 6.8x from current** |
+| **Fair Value (if 50% of ATH)** | **$4.28 = 9.8x from current** |
+| **Required MCap for IEO price** | **$3B** (currently $345M) |
+| **Required MCap for ATH** | **$8.57B** |
+
+**Question:** Can ether.fi grow to justify $3B+ market cap?
+- Current TVL: Unknown (need DeFiLlama check)
+- Revenue: Unknown (need protocol revenue data)
+- Growth trajectory: Declining since March 2024 peak
+
+---
+
 ## 💰 TOKENOMICS
 
 > **Total Supply:** 1,000,000,000 ETHFI (1 Billion, capped)

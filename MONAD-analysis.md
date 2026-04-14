@@ -33,6 +33,43 @@
 
 ---
 
+## 📈 PRICE HISTORY COMPARISON (IDO → Listing → ATH → Hiện tại)
+
+| Stage | Price | Date | Change from Previous | Notes |
+|-------|-------|------|---------------------|-------|
+| **🎯 IDO (Public Sale)** | **$0.025** | Nov 17, 2025 | — | Fjord Foundry + Coinbase, raised $269M (144% oversubscribed) |
+| **🏪 Listing (First Trade)** | **$0.028-$0.032** | Nov 24, 2025 | +12% to +28% | Initial trading above IDO price |
+| **🚀 ATH** | **$0.04876** | Nov 26, 2025 | +52% to +74% from listing | Peak hype, NYSE partnership |
+| **💧 ATL** | **$0.01615** | Feb 06, 2026 | -67% from ATH | Market crash, post-hype dump |
+| **📊 Current** | **$0.03662** | Apr 14, 2026 | +46% from IDO, -25% from ATH | Recovering, NYSE catalyst |
+
+### 📊 Analysis
+
+| Metric | Value | Assessment |
+|--------|-------|------------|
+| **IDO → Current** | +46.5% | 🟢 Profitable for IDO buyers |
+| **IDO → ATH** | +95% | 🟡 Near 2x from IDO |
+| **ATH → Current** | -24.9% | 🔴 Still below peak |
+| **ATL → Current** | +126.7% | 🟢 Strong recovery from bottom |
+| **Current vs IDO** | 1.46x | 🟢 Still above IDO price = healthy |
+
+### 🔑 Key Insights
+
+1. **IDO buyers still profitable** at +46.5% — healthy sign
+2. **ATH was only 2 days after listing** — classic pump-and-dump pattern
+3. **Dumped to -67% from ATH** — but recovered 127% from ATL
+4. **Current price ($0.037) is 46% above IDO** — indicates sustained demand
+5. **If we break ATH ($0.049)**, next target is $0.06-$0.08 (2x-3x from IDO)
+
+### ⚠️ Warning for Future Unlocks
+
+**Nov 24, 2026:** 16.8B MON unlock (142% of current circulating)
+- If demand stays same, price could drop to: **$0.03662 × (11.82B / 28.62B) = $0.0151** (-59%)
+- BUT if NYSE partnership + ecosystem growth increases demand, impact may be less
+- **This is THE critical risk for long-term holders**
+
+---
+
 ## 💰 TOKENOMICS BREAKDOWN
 
 > **Total Supply:** 100,000,000,000 MON (100 Billion)
