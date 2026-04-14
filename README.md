@@ -83,6 +83,26 @@ Quick reference: **[QUICKSTART.md](./QUICKSTART.md)**
 | Puppeteer | Web automation | ✅ Working |
 | screenshots-api.js | Screenshot via API | ✅ **Best method** |
 | puppeteer-pdf | PDF generation | ✅ Working |
+| **whale-tracker.js** | **Whale tracking (Lookonchain-style)** | ✅ **NEW** |
+
+---
+
+## 🐋 Whale Tracker
+
+Track whale wallets like Lookonchain/Arkham Intelligence - **proactively, not reactively**.
+
+```bash
+# Track predefined whales
+node whale-tracker.js
+
+# Track specific wallet
+node whale-tracker.js --wallet 0x0d0707963952f2fba59dd06f2b425ace40b492fe
+
+# Scan token holders
+node whale-tracker.js --scan 0x17205fab260a7a6383a81452cE6315A39370Db97
+```
+
+Full guide: **[WHALE-TRACKER-GUIDE.md](./WHALE-TRACKER-GUIDE.md)**
 
 ---
 
