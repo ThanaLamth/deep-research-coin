@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/ThanaLamth/deep-research-coin#readme",
   "dependencies": {
+    "dotenv": "^17.4.2",
+    "node-telegram-bot-api": "^0.67.0",
+    "pdfkit": "^0.18.0",
     "puppeteer": "^24.40.0"
   }
 }
