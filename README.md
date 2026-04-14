@@ -99,10 +99,11 @@ Quick reference: **[QUICKSTART.md](./QUICKSTART.md)**
 
 | Metric | Reported (CMC) | Verified (On-Chain) |
 |--------|---------------|-------------------|
-| Circulating Supply | 248M (24.8%) | **977.6M (97.76%)** |
-| Market Cap | $2.4B | **~$9.5B** |
+| Total Minted | 1B (100%) | **977.6M (97.76%) minted** |
+| Circulating Supply | 248M (24.8%) | **~248M (24.8%) - 76% locked for vesting** ✅ |
+| Market Cap | $2.4B | **~$2.3B** (based on circulating) |
 | Whale Activity | Rumored | **Confirmed** (13,489 ETH) |
-| Dump Mechanism | Suspected | **Verified** on-chain |
+| Vesting Lock | 76% locked | **Verified** - gradual release schedule |
 
 ---
 

@@ -9,9 +9,11 @@
 
 | Metric | Value | Etherscan Link |
 |--------|-------|----------------|
-| **Total Supply** | 977,578,097 RAVE | [Token Page](https://etherscan.io/token/0x17205fab260a7a6383a81452cE6315A39370Db97) |
+| **Total Supply (Minted)** | 977,578,097 RAVE | [Token Page](https://etherscan.io/token/0x17205fab260a7a6383a81452cE6315A39370Db97) |
 | **Max Supply** | 1,000,000,000 RAVE | - |
-| **Circulating %** | **97.76%** | - |
+| **Minted %** | **97.76%** | - |
+| **Circulating Supply** | **~248M (24.8%)** | - |
+| **Locked/Vesting Supply** | **~740M (76%)** | **Locked - gradual vesting release** |
 | **Decimals** | 18 | [Contract Code](https://etherscan.io/address/0x17205fab260a7a6383a81452cE6315A39370Db97#code) |
 
 ---

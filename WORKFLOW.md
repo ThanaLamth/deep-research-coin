@@ -470,10 +470,11 @@ deep-research-coin/
 
 ### 🔑 Key Insights
 - **CoinMarketCap circulating supply can be WRONG** - Always verify on-chain
-- **97.76% minted ≠ 24.8% circulating** - This discrepancy changed the entire analysis
+- **97.76% minted, but 76% locked for vesting** - Circulating supply ~24.8% is CORRECT
 - **Whale distribution patterns are visible on-chain** - Follow the money
 - **API data > Web screenshots** - More reliable, verifiable, and reproducible
 - **Never expose API keys** - GitHub will block your push
+- **Vesting schedules matter** - Locked tokens affect future supply pressure
 
 ---
 
