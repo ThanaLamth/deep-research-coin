@@ -1,22 +1,22 @@
-# Bao Cao Nhanh: He thong `deep-research-coin` hien dang lam duoc gi
+# Báo Cáo Nhanh: Hệ thống `deep-research-coin` hiện đang làm được gì
 
-## 1. Muc tieu he thong
+## 1. Mục tiêu hệ thống
 
-He thong hien tai dung de nghien cuu coin/token theo huong ban tu dong, ket hop:
+Hệ thống hiện tại dùng để nghiên cứu coin/token theo hướng bán tự động, kết hợp:
 
-- du lieu thi truong tu CoinMarketCap
-- xac minh on-chain qua Etherscan
-- phan tich risk / catalyst / pattern
-- xuat bao cao dang Markdown, PDF
-- van hanh qua Telegram bot
+- dữ liệu thị trường từ CoinMarketCap
+- xác minh on-chain qua Etherscan
+- phân tích risk / catalyst / pattern
+- xuất báo cáo dạng Markdown, PDF
+- vận hành qua Telegram bot
 
-## 2. Nhung gi he thong dang lam duoc
+## 2. Những gì hệ thống đang làm được
 
 ### 2.1. Deep research cho 1 coin
 
-- Nhan dau vao la `slug` CoinMarketCap, vi du `bitcoin`, `ravedao`
-- Co the nhan them `contract address` de bat phan tich on-chain sau hon
-- Tu dong tao:
+- Nhận đầu vào là `slug` CoinMarketCap, ví dụ `bitcoin`, `ravedao`
+- Có thể nhận thêm `contract address` để bật phân tích on-chain sâu hơn
+- Tự động tạo:
   - market overview
   - on-chain summary
   - catalyst / news scan
@@ -26,52 +26,52 @@ He thong hien tai dung de nghien cuu coin/token theo huong ban tu dong, ket hop:
   - pattern matching / similar coin analysis
   - viability score
 
-### 2.2. Xuat bao cao
+### 2.2. Xuất báo cáo
 
-- Xuat file `.md`
-- Xuat file `.pdf`
-- Luu trong thu muc `research-output/`
+- Xuất file `.md`
+- Xuất file `.pdf`
+- Lưu trong thư mục `research-output/`
 
-### 2.3. Phan tich on-chain
+### 2.3. Phân tích on-chain
 
-- Lay `total supply`
-- Lay `token info`
-- Lay `recent ERC20 transfers`
-- Phat hien:
+- Lấy `total supply`
+- Lấy `token info`
+- Lấy `recent ERC20 transfers`
+- Phát hiện:
   - whale accumulation
   - whale distribution
   - large transfer
   - net inflow / outflow
-- Phan nay hien dung **Etherscan API v2**
+- Phần này hiện dùng **Etherscan API v2**
 
-### 2.4. Quet du lieu thi truong
+### 2.4. Quét dữ liệu thị trường
 
-- Lay gia coin tu CoinMarketCap
-- Lay trending coins
-- Lay top gainers / losers
-- Lay headline news
-- Tim coin theo query
-- Phan nay hien dung **browser scraping bang Puppeteer**, khong can CMC API key
+- Lấy giá coin từ CoinMarketCap
+- Lấy trending coins
+- Lấy top gainers / losers
+- Lấy headline news
+- Tìm coin theo query
+- Phần này hiện dùng **browser scraping bằng Puppeteer**, không cần CMC API key
 
 ### 2.5. Coin scanner
 
-- Cham diem du an theo:
-  - vi tri gia hien tai so voi ATH
+- Chấm điểm dự án theo:
+  - vị trí giá hiện tại so với ATH
   - volume / market cap
   - circulating ratio / float risk
   - whale behavior
-- Tra ra grade kieu:
-  - A: tiem nang cao
-  - B: kha
-  - C: trung binh / rui ro cao
+- Trả ra grade kiểu:
+  - A: tiềm năng cao
+  - B: khá
+  - C: trung bình / rủi ro cao
 
 ### 2.6. Whale tracker
 
-- Theo doi vi lon
-- Kiem tra ETH balance
-- Kiem tra token balance
-- Kiem tra transfer history
-- Phat hien:
+- Theo dõi ví lớn
+- Kiểm tra ETH balance
+- Kiểm tra token balance
+- Kiểm tra transfer history
+- Phát hiện:
   - smart money behavior
   - accumulation
   - rapid distribution
@@ -79,7 +79,7 @@ He thong hien tai dung de nghien cuu coin/token theo huong ban tu dong, ket hop:
 
 ### 2.7. Telegram bot
 
-Bot hien ho tro cac lenh:
+Bot hiện hỗ trợ các lệnh:
 
 - `/price <slug>`
 - `/trending`
@@ -93,20 +93,20 @@ Bot hien ho tro cac lenh:
 - `/status`
 - `/about`
 
-Y nghia:
+Ý nghĩa:
 
-- `/research`: chay engine local co san
-- `/handresearch`: giao research thu cong cho Codex, co web search live, co the cap nhat file trong workspace
-- `/stop`: dung job Codex dang chay
+- `/research`: chạy engine local có sẵn
+- `/handresearch`: giao research thủ công cho Codex, có web search live, có thể cập nhật file trong workspace
+- `/stop`: dừng job Codex đang chạy
 
-## 3. API / dich vu dang dung
+## 3. API / dịch vụ đang dùng
 
 - **CoinMarketCap**: scraping qua Puppeteer
 - **Etherscan API v2**: on-chain data
-- **Telegram Bot API**: dieu khien qua chat
-- **Codex CLI**: phuc vu `/hand` va `/handresearch`
+- **Telegram Bot API**: điều khiển qua chat
+- **Codex CLI**: phục vụ `/hand` và `/handresearch`
 
-## 4. Bien moi truong / cau hinh hien co
+## 4. Biến môi trường / cấu hình hiện có
 
 - `TELEGRAM_BOT_TOKEN`
 - `ALLOWED_TELEGRAM_USER_IDS`
@@ -117,24 +117,24 @@ Y nghia:
 - `CODEX_HANDRESEARCH_TIMEOUT_MS`
 - `ETHERSCAN_API_KEY`
 
-## 5. Ket qua van hanh thuc te
+## 5. Kết quả vận hành thực tế
 
-Hien he thong da:
+Hiện hệ thống đã:
 
-- chay duoc local research engine
-- tao duoc bao cao Markdown/PDF
-- chay duoc Telegram bot
-- chay duoc `/handresearch`
-- doc/ghi truc tiep trong workspace project
-- cho phep chay research khong timeout neu cau hinh `CODEX_HANDRESEARCH_TIMEOUT_MS=0`
+- chạy được local research engine
+- tạo được báo cáo Markdown/PDF
+- chạy được Telegram bot
+- chạy được `/handresearch`
+- đọc/ghi trực tiếp trong workspace project
+- cho phép chạy research không timeout nếu cấu hình `CODEX_HANDRESEARCH_TIMEOUT_MS=0`
 
-## 6. Gioi han hien tai
+## 6. Giới hạn hiện tại
 
-- On-chain sau chi tot khi co `contract address` ro rang
-- Mot so phan market/news van la scraping, nen phu thuoc UI cua CoinMarketCap
-- `whale-tracker.js` con hardcode Etherscan key, chua dong bo hoan toan voi `.env`
-- Chua phai multi-chain native; hien logic chinh van xoay quanh Etherscan / Ethereum-style flow
+- On-chain sâu chỉ tốt khi có `contract address` rõ ràng
+- Một số phần market/news vẫn là scraping, nên phụ thuộc UI của CoinMarketCap
+- `whale-tracker.js` còn hardcode Etherscan key, chưa đồng bộ hoàn toàn với `.env`
+- Chưa phải multi-chain native; hiện logic chính vẫn xoay quanh Etherscan / Ethereum-style flow
 
-## 7. Tom tat mot cau
+## 7. Tóm tắt một câu
 
-Day la mot he thong research coin ban tu dong da chay duoc end-to-end: lay du lieu thi truong, xac minh on-chain, cham diem du an, tao bao cao, va dieu khien qua Telegram bot.
+Đây là một hệ thống research coin bán tự động đã chạy được end-to-end: lấy dữ liệu thị trường, xác minh on-chain, chấm điểm dự án, tạo báo cáo, và điều khiển qua Telegram bot.
