@@ -5,7 +5,7 @@
 Hệ thống hiện tại dùng để nghiên cứu coin/token theo hướng bán tự động, kết hợp:
 
 - dữ liệu thị trường từ CoinMarketCap
-- xác minh on-chain qua Etherscan
+- xác minh on-chain chủ yếu qua Etherscan
 - phân tích risk / catalyst / pattern
 - xuất báo cáo dạng Markdown, PDF
 - vận hành qua Telegram bot
@@ -42,7 +42,7 @@ Hệ thống hiện tại dùng để nghiên cứu coin/token theo hướng bá
   - whale distribution
   - large transfer
   - net inflow / outflow
-- Phần này hiện dùng **Etherscan API v2**
+- Flow runtime chính hiện dùng **Etherscan API v2**
 
 ### 2.4. Quét dữ liệu thị trường
 
@@ -102,7 +102,9 @@ Bot hiện hỗ trợ các lệnh:
 ## 3. API / dịch vụ đang dùng
 
 - **CoinMarketCap**: scraping qua Puppeteer
-- **Etherscan API v2**: on-chain data
+- **Etherscan API v2**: on-chain data đang chạy thật trong `research.js`, `coin-scanner.js`, `whale-tracker.js`
+- **Solscan**: đã có helper/API config trong `pattern-matcher.js`, nhưng chưa tích hợp hoàn chỉnh vào research runtime
+- **Bscscan**: đã có helper/API config trong `pattern-matcher.js`, nhưng chưa tích hợp hoàn chỉnh vào research runtime
 - **Telegram Bot API**: điều khiển qua chat
 - **Codex CLI**: phục vụ `/hand` và `/handresearch`
 
@@ -116,6 +118,7 @@ Bot hiện hỗ trợ các lệnh:
 - `CODEX_TIMEOUT_MS`
 - `CODEX_HANDRESEARCH_TIMEOUT_MS`
 - `ETHERSCAN_API_KEY`
+- `SOLSCAN_API_KEY` và `BSCSCAN_API_KEY` hiện chưa được chuẩn hóa vào `.env` runtime chính
 
 ## 5. Kết quả vận hành thực tế
 
@@ -133,8 +136,9 @@ Hiện hệ thống đã:
 - On-chain sâu chỉ tốt khi có `contract address` rõ ràng
 - Một số phần market/news vẫn là scraping, nên phụ thuộc UI của CoinMarketCap
 - `whale-tracker.js` còn hardcode Etherscan key, chưa đồng bộ hoàn toàn với `.env`
-- Chưa phải multi-chain native; hiện logic chính vẫn xoay quanh Etherscan / Ethereum-style flow
+- `pattern-matcher.js` đã có chuẩn bị cho Solscan/Bscscan, nhưng phần scan Solana/BSC vẫn còn placeholder, chưa thành flow end-to-end
+- Chưa phải multi-chain native; runtime chính hiện vẫn xoay quanh Etherscan / Ethereum-style flow
 
 ## 7. Tóm tắt một câu
 
-Đây là một hệ thống research coin bán tự động đã chạy được end-to-end: lấy dữ liệu thị trường, xác minh on-chain, chấm điểm dự án, tạo báo cáo, và điều khiển qua Telegram bot.
+Đây là một hệ thống research coin bán tự động đã chạy được end-to-end cho flow chính trên EVM/Etherscan: lấy dữ liệu thị trường, xác minh on-chain, chấm điểm dự án, tạo báo cáo, và điều khiển qua Telegram bot; đồng thời đã có phần chuẩn bị ban đầu cho Solscan/Bscscan nhưng chưa hoàn thiện.

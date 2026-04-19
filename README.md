@@ -70,7 +70,9 @@ node research.js ravedao --contract 0x17205fab260a7a6383a81452cE6315A39370Db97
 ### Data Sources / APIs
 
 - **CoinMarketCap** via browser scraping with Puppeteer for price, trending, gainers/losers, search, and headlines.
-- **Etherscan API v2** for token supply, token info, ERC20 transfers, wallet balances, and normal transactions.
+- **Etherscan API v2** for token supply, token info, ERC20 transfers, wallet balances, and normal transactions in the main runtime.
+- **Solscan** helpers exist in `pattern-matcher.js`, but Solana scanning is not yet fully integrated into the main research runtime.
+- **Bscscan** helpers exist in `pattern-matcher.js`, but BSC scanning is not yet fully integrated into the main research runtime.
 - **Telegram Bot API** via `node-telegram-bot-api` for chat-based access.
 - **Codex CLI** for manual research tasks through Telegram using live web search.
 
@@ -89,6 +91,7 @@ Required environment/config:
 
 - `coin-scanner.js` scores projects using price structure, volume/mcap, float/unlock risk, and whale behavior.
 - `whale-tracker.js` tracks wallets, token transfers, large movements, accumulation/distribution, and smart-money style flow.
+- `pattern-matcher.js` already contains early multi-chain preparation for Ethereum, Solana, and BSC, but only the Ethereum/Etherscan path is effectively wired into the broader runtime today.
 
 Examples:
 
