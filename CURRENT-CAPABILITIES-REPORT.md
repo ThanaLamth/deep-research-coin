@@ -5,7 +5,8 @@
 Hệ thống hiện tại dùng để nghiên cứu coin/token theo hướng bán tự động, kết hợp:
 
 - dữ liệu thị trường từ CoinMarketCap
-- xác minh on-chain chủ yếu qua Etherscan
+- xác minh on-chain runtime chính qua Etherscan
+- có phần chuẩn bị mở rộng sang Solscan và Bscscan trong `pattern-matcher.js`, nhưng chưa hoàn thiện thành flow research end-to-end
 - phân tích risk / catalyst / pattern
 - xuất báo cáo dạng Markdown, PDF
 - vận hành qua Telegram bot
