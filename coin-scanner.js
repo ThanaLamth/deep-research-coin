@@ -9,13 +9,15 @@
  * Output: Báo cáo coin có dấu hiệu tốt để double-check
  */
 
+require('dotenv').config();
+
 const fs = require('fs');
 const path = require('path');
 const { scrapePrice, scrapeSearch, scrapeTrending } = require('./cmc-scrape');
 
 // ==================== Configuration ====================
 
-const ETHERSCAN_API_KEY = '94ZBJE843MVHAQTZCVQKWGZ2DSVU6MA3WK';
+const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY || '';
 const BASE_URL = 'https://api.etherscan.io/v2/api';
 
 const SCANNER_OUTPUT_DIR = path.join(__dirname, 'scanner-output');
@@ -66,6 +68,10 @@ const CRITERIA = {
 // ==================== API Helpers ====================
 
 async function fetchEtherscan(module, action, params = {}) {
+  if (!ETHERSCAN_API_KEY) {
+    return null;
+  }
+
   const url = `${BASE_URL}?chainid=1&module=${module}&action=${action}&apikey=${ETHERSCAN_API_KEY}`;
   const queryParams = new URLSearchParams(params).toString();
   const fullUrl = queryParams ? `${url}&${queryParams}` : url;

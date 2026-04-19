@@ -4,6 +4,8 @@
  * Outputs comprehensive MD report matching the RAVE analysis quality
  */
 
+require('dotenv').config();
+
 const fs = require('fs');
 const path = require('path');
 const { scrapePrice, scrapeSearch, scrapeNews } = require('./cmc-scrape');
@@ -19,7 +21,7 @@ const { evaluateCoin } = require('./coin-scanner');
 
 // ==================== Configuration ====================
 
-const ETHERSCAN_API_KEY = '94ZBJE843MVHAQTZCVQKWGZ2DSVU6MA3WK';
+const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY || '';
 const BASE_URL = 'https://api.etherscan.io/v2/api';
 
 const OUTPUT_DIR = path.join(__dirname, 'research-output');
@@ -28,6 +30,11 @@ fs.mkdirSync(OUTPUT_DIR, { recursive: true });
 // ==================== Etherscan API Helper ====================
 
 async function fetchEtherscan(module, action, params = {}) {
+  if (!ETHERSCAN_API_KEY) {
+    console.error('⚠️ ETHERSCAN_API_KEY is not configured');
+    return null;
+  }
+
   const url = `${BASE_URL}?chainid=1&module=${module}&action=${action}&apikey=${ETHERSCAN_API_KEY}`;
   const queryParams = new URLSearchParams(params).toString();
   const fullUrl = queryParams ? `${url}&${queryParams}` : url;
@@ -1452,7 +1459,8 @@ Examples:
     console.log(result.telegramSummary);
 
     console.log('\n' + '='.repeat(60));
-    console.log(`✅ Full report: ${result.filePath}`);
+    console.log(`✅ Markdown report: ${result.mdPath}`);
+    console.log(`✅ PDF report: ${result.pdfPath}`);
     console.log('='.repeat(60));
   });
 }

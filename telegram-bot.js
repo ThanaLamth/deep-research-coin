@@ -6,7 +6,9 @@
 require('dotenv').config();
 const TelegramBot = require('node-telegram-bot-api');
 const fs = require('fs');
+const os = require('os');
 const path = require('path');
+const { spawn } = require('child_process');
 const {
   scrapePrice,
   scrapeTrending,
@@ -20,6 +22,14 @@ const {
 const { research } = require('./research');
 
 const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
+const ALLOWED_HAND_USER_IDS = parseIdSet(process.env.ALLOWED_TELEGRAM_USER_IDS);
+const ALLOWED_HAND_CHAT_IDS = parseIdSet(process.env.ALLOWED_TELEGRAM_CHAT_IDS);
+const CODEX_WORKDIR = process.env.CODEX_WORKDIR || '/home/qwen';
+const CODEX_HANDRESEARCH_WORKDIR = process.env.CODEX_HANDRESEARCH_WORKDIR || '/home/qwen/deep-research-coin';
+const CODEX_TIMEOUT_MS = parseTimeoutMs(process.env.CODEX_TIMEOUT_MS, 180000);
+const CODEX_HANDRESEARCH_TIMEOUT_MS = parseTimeoutMs(process.env.CODEX_HANDRESEARCH_TIMEOUT_MS, 900000);
+const HAND_OUTPUT_LIMIT = 3500;
+let activeHandJob = null;
 
 if (!BOT_TOKEN) {
   console.error('❌ Error: TELEGRAM_BOT_TOKEN not found');
@@ -27,6 +37,212 @@ if (!BOT_TOKEN) {
 }
 
 const bot = new TelegramBot(BOT_TOKEN, { polling: true });
+
+function parseIdSet(value) {
+  return new Set(
+    String(value || '')
+      .split(',')
+      .map(item => item.trim())
+      .filter(Boolean)
+  );
+}
+
+function parseInteger(value, fallback) {
+  const parsed = Number.parseInt(value, 10);
+  return Number.isInteger(parsed) && parsed > 0 ? parsed : fallback;
+}
+
+function parseTimeoutMs(value, fallback) {
+  const normalized = String(value || '').trim();
+  if (!normalized) return fallback;
+
+  const parsed = Number.parseInt(normalized, 10);
+  if (!Number.isInteger(parsed)) return fallback;
+  if (parsed <= 0) return null;
+  return parsed;
+}
+
+function isHandConfigured() {
+  return ALLOWED_HAND_USER_IDS.size > 0 || ALLOWED_HAND_CHAT_IDS.size > 0;
+}
+
+function isHandAuthorized(msg) {
+  const userId = String(msg.from?.id || '');
+  const chatId = String(msg.chat?.id || '');
+  return ALLOWED_HAND_USER_IDS.has(userId) || ALLOWED_HAND_CHAT_IDS.has(chatId);
+}
+
+function appendTail(current, chunk, maxChars = 12000) {
+  const next = current + chunk.toString('utf8');
+  return next.length > maxChars ? next.slice(-maxChars) : next;
+}
+
+function truncateOutput(text, maxChars = HAND_OUTPUT_LIMIT) {
+  const normalized = String(text || '').trim();
+  if (!normalized) return '';
+  if (normalized.length <= maxChars) return normalized;
+  return `${normalized.slice(0, maxChars - 32).trimEnd()}\n\n[output truncated]`;
+}
+
+function formatTimeoutLabel(timeoutMs) {
+  return timeoutMs ? `${Math.round(timeoutMs / 1000)}s` : 'disabled';
+}
+
+function formatCodexResult(result, options = {}) {
+  const {
+    timedOutMessage = 'Codex timed out before producing a final summary.',
+    emptyMessage = 'No final response returned.',
+  } = options;
+
+  if (result.lastMessage) {
+    return truncateOutput(result.lastMessage);
+  }
+
+  if (result.timedOut) {
+    return timedOutMessage;
+  }
+
+  if (result.stderrTail) {
+    return truncateOutput(result.stderrTail);
+  }
+
+  if (result.stdoutTail) {
+    return truncateOutput(result.stdoutTail);
+  }
+
+  return emptyMessage;
+}
+
+async function runCodexTask(prompt, options = {}) {
+  const {
+    search = false,
+    timeoutMs = CODEX_TIMEOUT_MS,
+    jobState = null,
+    workdir = CODEX_WORKDIR,
+  } = options;
+  const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'codex-hand-'));
+  const outputFile = path.join(tempDir, 'last-message.txt');
+  const args = [];
+
+  if (search) {
+    args.push('--search');
+  }
+
+  args.push(
+    'exec',
+    '--skip-git-repo-check',
+    '--dangerously-bypass-approvals-and-sandbox',
+    '--color', 'never',
+    '-C', workdir,
+    '-o', outputFile,
+    prompt,
+  );
+
+  return await new Promise((resolve, reject) => {
+    let stdoutTail = '';
+    let stderrTail = '';
+    let settled = false;
+    let timeoutId = null;
+    const child = spawn('codex', args, {
+      cwd: workdir,
+      env: process.env,
+      stdio: ['ignore', 'pipe', 'pipe'],
+    });
+
+    if (jobState) {
+      jobState.child = child;
+    }
+
+    const finalize = (result) => {
+      if (settled) return;
+      settled = true;
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
+
+      try {
+        result.lastMessage = fs.existsSync(outputFile) ? fs.readFileSync(outputFile, 'utf8') : '';
+      } catch {
+        result.lastMessage = '';
+      }
+
+      try {
+        fs.rmSync(tempDir, { recursive: true, force: true });
+      } catch {}
+
+      resolve({
+        ...result,
+        stdoutTail,
+        stderrTail,
+      });
+    };
+
+    child.stdout.on('data', (chunk) => {
+      stdoutTail = appendTail(stdoutTail, chunk);
+    });
+
+    child.stderr.on('data', (chunk) => {
+      stderrTail = appendTail(stderrTail, chunk);
+    });
+
+    child.on('error', (error) => {
+      if (settled) return;
+      settled = true;
+      clearTimeout(timeoutId);
+      try {
+        fs.rmSync(tempDir, { recursive: true, force: true });
+      } catch {}
+      reject(error);
+    });
+
+    child.on('close', (code, signal) => {
+      finalize({ code, signal, timedOut: false });
+    });
+
+    if (timeoutMs) {
+      timeoutId = setTimeout(() => {
+        if (settled) return;
+        child.kill('SIGTERM');
+        setTimeout(() => child.kill('SIGKILL'), 3000).unref();
+        finalize({ code: null, signal: 'SIGTERM', timedOut: true });
+      }, timeoutMs);
+    }
+  });
+}
+
+async function runCodexHand(prompt) {
+  const jobState = activeHandJob;
+  return await runCodexTask(prompt, {
+    search: false,
+    timeoutMs: CODEX_TIMEOUT_MS,
+    jobState,
+    workdir: CODEX_WORKDIR,
+  });
+}
+
+async function runCodexHandResearch(query) {
+  const prompt = [
+    `Research ${query} manually in ${CODEX_HANDRESEARCH_WORKDIR}.`,
+    'Use live web search and current sources.',
+    'Include on-chain analysis when the contract address is known or can be discovered with reasonable confidence, similar in spirit to the RAVE case.',
+    `Use the transferred local files in ${CODEX_HANDRESEARCH_WORKDIR} as working context, not any cached or old copy.`,
+    'If useful, create or update output files directly in that workspace.',
+    'Return a Telegram-safe final answer with:',
+    '1. project identification',
+    '2. market/fundamental summary',
+    '3. on-chain findings',
+    '4. risks / invalidation',
+    '5. files created or updated and exact paths',
+    'Keep the final answer concise but actionable.',
+  ].join('\n');
+
+  return await runCodexTask(prompt, {
+    search: true,
+    timeoutMs: CODEX_HANDRESEARCH_TIMEOUT_MS,
+    jobState: activeHandJob,
+    workdir: CODEX_HANDRESEARCH_WORKDIR,
+  });
+}
 
 // ==================== /start ====================
 
@@ -43,6 +259,9 @@ I get live data from *CoinMarketCap* — no API key needed.
 /news — Latest crypto news
 /search <coin> — Find coins
 /research <coin> — 🔥 Deep analysis (CMC + on-chain + fundamental)
+/hand <request> — Run Codex from Telegram (allowlist only)
+/handresearch <coin> — Manual Codex research with on-chain
+/stop — Stop the current /hand or /handresearch job
 
 💡 Try: \`/price bitcoin\` or \`/research bitcoin\`
 
@@ -77,6 +296,16 @@ bot.onText(/\/help/, async (msg) => {
   e.g. /research bitcoin
   /research ravedao 0x1720...
   (Includes CMC + on-chain + fundamental)
+
+*Agent:*
+/hand <request> — Send a task to Codex
+  e.g. /hand check /home/qwen/cmc-chart-capture and summarize run command
+  (Restricted by allowlist)
+/handresearch <coin> — Manual research via Codex
+  e.g. /handresearch bitcoin
+  (Uses web search and includes on-chain when possible)
+/stop — Stop the current Codex task
+  (Restricted by allowlist)
 
 *Other:*
 /status — Bot status
@@ -344,6 +573,186 @@ bot.onText(/\/research (.+)/, async (msg, match) => {
       `❌ Error during research: ${error.message}\n\n` +
       `Please try again or use a different coin.`);
   }
+});
+
+// ==================== /hand ====================
+
+bot.onText(/^\/hand(?:@\w+)?(?:\s+([\s\S]+))?$/i, async (msg, match) => {
+  const chatId = msg.chat.id;
+  const prompt = match?.[1]?.trim() || '';
+
+  if (!prompt) {
+    await bot.sendMessage(chatId, 'Usage: /hand <request>');
+    return;
+  }
+
+  if (!isHandConfigured()) {
+    await bot.sendMessage(chatId, '❌ /hand is disabled. Configure ALLOWED_TELEGRAM_USER_IDS or ALLOWED_TELEGRAM_CHAT_IDS first.');
+    return;
+  }
+
+  if (!isHandAuthorized(msg)) {
+    await bot.sendMessage(chatId, '⛔ You are not allowed to use /hand in this chat.');
+    return;
+  }
+
+  if (activeHandJob) {
+    await bot.sendMessage(chatId, `⏳ /hand is busy with another request from ${activeHandJob.owner}. Try again in a moment.`);
+    return;
+  }
+
+  const owner = msg.from?.username ? `@${msg.from.username}` : String(msg.from?.id || 'unknown');
+  activeHandJob = {
+    owner,
+    ownerId: String(msg.from?.id || ''),
+    chatId: String(chatId),
+    type: 'hand',
+    startedAt: Date.now(),
+    child: null,
+    cancelRequested: false,
+    cancelRequestedBy: null,
+  };
+
+  await bot.sendMessage(
+    chatId,
+    `🤖 /hand accepted.\n\nWorkspace: ${CODEX_WORKDIR}\nTimeout: ${formatTimeoutLabel(CODEX_TIMEOUT_MS)}\nOwner: ${owner}`
+  );
+
+  try {
+    const startedAt = Date.now();
+    const result = await runCodexHand(prompt);
+    const durationSec = Math.max(1, Math.round((Date.now() - startedAt) / 1000));
+    const finalText = formatCodexResult(result, {
+      timedOutMessage: 'Codex reached the time limit before producing a final answer. Retry with a narrower request or increase CODEX_TIMEOUT_MS.',
+    });
+    const statusLine = activeHandJob?.cancelRequested
+      ? `🛑 /hand stopped by ${activeHandJob.cancelRequestedBy || 'an authorized user'} after ${durationSec}s.`
+      : result.timedOut
+        ? `⚠️ /hand timed out after ${durationSec}s.`
+        : result.code === 0
+          ? `✅ /hand finished in ${durationSec}s.`
+          : `❌ /hand exited with code ${result.code ?? 'unknown'} after ${durationSec}s.`;
+
+    await bot.sendMessage(chatId, `${statusLine}\n\n${finalText}`);
+  } catch (error) {
+    await bot.sendMessage(chatId, `❌ /hand failed: ${error.message}`);
+  } finally {
+    activeHandJob = null;
+  }
+});
+
+// ==================== /handresearch ====================
+
+bot.onText(/^\/handresearch(?:@\w+)?(?:\s+([\s\S]+))?$/i, async (msg, match) => {
+  const chatId = msg.chat.id;
+  const query = match?.[1]?.trim() || '';
+
+  if (!query) {
+    await bot.sendMessage(chatId, 'Usage: /handresearch <coin>');
+    return;
+  }
+
+  if (!isHandConfigured()) {
+    await bot.sendMessage(chatId, '❌ /handresearch is disabled. Configure ALLOWED_TELEGRAM_USER_IDS or ALLOWED_TELEGRAM_CHAT_IDS first.');
+    return;
+  }
+
+  if (!isHandAuthorized(msg)) {
+    await bot.sendMessage(chatId, '⛔ You are not allowed to use /handresearch in this chat.');
+    return;
+  }
+
+  if (activeHandJob) {
+    await bot.sendMessage(chatId, `⏳ /handresearch is busy with another request from ${activeHandJob.owner}. Try again in a moment.`);
+    return;
+  }
+
+  const owner = msg.from?.username ? `@${msg.from.username}` : String(msg.from?.id || 'unknown');
+  activeHandJob = {
+    owner,
+    ownerId: String(msg.from?.id || ''),
+    chatId: String(chatId),
+    type: 'handresearch',
+    startedAt: Date.now(),
+    child: null,
+    cancelRequested: false,
+    cancelRequestedBy: null,
+  };
+
+  await bot.sendMessage(
+    chatId,
+    `🔎 /handresearch accepted.\n\nCoin: ${query}\nWorkspace: ${CODEX_HANDRESEARCH_WORKDIR}\nTimeout: ${formatTimeoutLabel(CODEX_HANDRESEARCH_TIMEOUT_MS)}\nOwner: ${owner}`
+  );
+
+  try {
+    const startedAt = Date.now();
+    const result = await runCodexHandResearch(query);
+    const durationSec = Math.max(1, Math.round((Date.now() - startedAt) / 1000));
+    const finalText = formatCodexResult(result, {
+      timedOutMessage: 'Codex reached the time limit before producing a final research summary. Retry the same coin, narrow the scope, or increase CODEX_HANDRESEARCH_TIMEOUT_MS.',
+    });
+    const statusLine = activeHandJob?.cancelRequested
+      ? `🛑 /handresearch stopped by ${activeHandJob.cancelRequestedBy || 'an authorized user'} after ${durationSec}s.`
+      : result.timedOut
+        ? `⚠️ /handresearch timed out after ${durationSec}s.`
+        : result.code === 0
+          ? `✅ /handresearch finished in ${durationSec}s.`
+          : `❌ /handresearch exited with code ${result.code ?? 'unknown'} after ${durationSec}s.`;
+
+    await bot.sendMessage(chatId, `${statusLine}\n\n${finalText}`);
+  } catch (error) {
+    await bot.sendMessage(chatId, `❌ /handresearch failed: ${error.message}`);
+  } finally {
+    activeHandJob = null;
+  }
+});
+
+// ==================== /stop ====================
+
+bot.onText(/^\/stop(?:@\w+)?$/i, async (msg) => {
+  const chatId = msg.chat.id;
+
+  if (!isHandConfigured()) {
+    await bot.sendMessage(chatId, '❌ /stop is disabled. Configure ALLOWED_TELEGRAM_USER_IDS or ALLOWED_TELEGRAM_CHAT_IDS first.');
+    return;
+  }
+
+  if (!isHandAuthorized(msg)) {
+    await bot.sendMessage(chatId, '⛔ You are not allowed to use /stop in this chat.');
+    return;
+  }
+
+  if (!activeHandJob) {
+    await bot.sendMessage(chatId, 'ℹ️ No active /hand or /handresearch job is running.');
+    return;
+  }
+
+  const requesterId = String(msg.from?.id || '');
+  const requesterChatId = String(chatId);
+  const sameOwner = requesterId && requesterId === activeHandJob.ownerId;
+  const sameChat = requesterChatId && requesterChatId === activeHandJob.chatId;
+
+  if (!sameOwner && !sameChat) {
+    await bot.sendMessage(chatId, `⛔ Only ${activeHandJob.owner} or the same chat can stop this ${activeHandJob.type} job.`);
+    return;
+  }
+
+  if (!activeHandJob.child || activeHandJob.child.killed) {
+    await bot.sendMessage(chatId, `ℹ️ ${activeHandJob.type} is finishing already. Try again if it does not exit.`);
+    return;
+  }
+
+  activeHandJob.cancelRequested = true;
+  activeHandJob.cancelRequestedBy = msg.from?.username ? `@${msg.from.username}` : String(msg.from?.id || 'unknown');
+  activeHandJob.child.kill('SIGTERM');
+
+  setTimeout(() => {
+    if (activeHandJob?.child && !activeHandJob.child.killed) {
+      activeHandJob.child.kill('SIGKILL');
+    }
+  }, 3000).unref();
+
+  await bot.sendMessage(chatId, `🛑 Stopping current /${activeHandJob.type} job started by ${activeHandJob.owner}...`);
 });
 
 // ==================== /status ====================
