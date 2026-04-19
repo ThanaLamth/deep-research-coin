@@ -52,6 +52,71 @@ Quick reference: **[QUICKSTART.md](./QUICKSTART.md)**
 
 ---
 
+## ⚙️ Current Capabilities
+
+### Core Research Engine
+
+- `research.js` runs full coin research from a CMC slug and optional contract address.
+- Output includes market snapshot, on-chain analysis, news/catalysts, root-cause analysis, risk assessment, recommendations, pattern matching, and viability scoring.
+- Saves Markdown and PDF reports into `research-output/`.
+
+Example:
+
+```bash
+node research.js bitcoin
+node research.js ravedao --contract 0x17205fab260a7a6383a81452cE6315A39370Db97
+```
+
+### Data Sources / APIs
+
+- **CoinMarketCap** via browser scraping with Puppeteer for price, trending, gainers/losers, search, and headlines.
+- **Etherscan API v2** for token supply, token info, ERC20 transfers, wallet balances, and normal transactions.
+- **Telegram Bot API** via `node-telegram-bot-api` for chat-based access.
+- **Codex CLI** for manual research tasks through Telegram using live web search.
+
+Required environment/config:
+
+- `TELEGRAM_BOT_TOKEN`
+- `ALLOWED_TELEGRAM_USER_IDS`
+- `ALLOWED_TELEGRAM_CHAT_IDS`
+- `CODEX_WORKDIR`
+- `CODEX_HANDRESEARCH_WORKDIR`
+- `CODEX_TIMEOUT_MS`
+- `CODEX_HANDRESEARCH_TIMEOUT_MS`
+- `ETHERSCAN_API_KEY`
+
+### Scanner / On-Chain Utilities
+
+- `coin-scanner.js` scores projects using price structure, volume/mcap, float/unlock risk, and whale behavior.
+- `whale-tracker.js` tracks wallets, token transfers, large movements, accumulation/distribution, and smart-money style flow.
+
+Examples:
+
+```bash
+node whale-tracker.js
+node whale-tracker.js --watch 0x...
+node whale-tracker.js --token 0x...
+```
+
+### Telegram Commands
+
+- `/price <slug>`
+- `/trending`
+- `/gainers`
+- `/news`
+- `/search <query>`
+- `/research <slug> [contract]`
+- `/hand <request>`
+- `/handresearch <coin>`
+- `/stop`
+- `/status`
+- `/about`
+
+`/research` uses the local research engine.  
+`/handresearch` uses Codex with live web search and can write files directly inside the project workspace.
+
+---
+
 ## 📁 Project Structure
 
 ```
