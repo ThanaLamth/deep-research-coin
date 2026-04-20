@@ -84,6 +84,23 @@ function truncateOutput(text, maxChars = HAND_OUTPUT_LIMIT) {
   return `${normalized.slice(0, maxChars - 32).trimEnd()}\n\n[output truncated]`;
 }
 
+function escapeHtml(text) {
+  return String(text || '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+function formatMoverChange(change, direction) {
+  const normalized = String(change || '').trim();
+  if (!normalized || normalized === '?') return '?';
+
+  const unsigned = normalized.replace(/^[+-]\s*/, '').trim();
+  const sign = direction === 'down' ? '-' : '+';
+  return `${sign}${unsigned}`;
+}
+
 function formatTimeoutLabel(timeoutMs) {
   return timeoutMs ? `${Math.round(timeoutMs / 1000)}s` : 'disabled';
 }
@@ -404,31 +421,40 @@ bot.onText(/\/gainers/, async (msg) => {
       return;
     }
 
-    let text = '📊 *Gainers & Losers*\n\n';
+    let text = '<b>📊 Gainers &amp; Losers</b>\n\n';
 
     if (data.gainers.length > 0) {
-      text += '*🟢 Top Gainers*\n';
-      text += '```\n';
-      data.gainers.forEach(g => {
-        const name = g.name.length > 25 ? g.name.substring(0, 22) + '...' : g.name;
-        text += `+ ${name.padEnd(25)} ${g.change24h}\n`;
+      text += '<b>🟢 Top Gainers</b>\n';
+      data.gainers.forEach((g, index) => {
+        const label = escapeHtml(g.name);
+        const change = escapeHtml(formatMoverChange(g.change24h, 'up'));
+        const line = g.url
+          ? `${index + 1}. <a href="${escapeHtml(g.url)}">${label}</a> <b>${change}</b>\n`
+          : `${index + 1}. ${label} <b>${change}</b>\n`;
+        text += line;
       });
-      text += '```\n\n';
+      text += '\n';
     }
 
     if (data.losers.length > 0) {
-      text += '*🔴 Top Losers*\n';
-      text += '```\n';
-      data.losers.forEach(l => {
-        const name = l.name.length > 25 ? l.name.substring(0, 22) + '...' : l.name;
-        text += `- ${name.padEnd(25)} ${l.change24h}\n`;
+      text += '<b>🔴 Top Losers</b>\n';
+      data.losers.forEach((l, index) => {
+        const label = escapeHtml(l.name);
+        const change = escapeHtml(formatMoverChange(l.change24h, 'down'));
+        const line = l.url
+          ? `${index + 1}. <a href="${escapeHtml(l.url)}">${label}</a> <b>${change}</b>\n`
+          : `${index + 1}. ${label} <b>${change}</b>\n`;
+        text += line;
       });
-      text += '```\n';
+      text += '\n';
     }
 
-    text += '\n_source: CoinMarketCap_';
+    text += '<i>source: CoinMarketCap</i>';
 
-    await bot.sendMessage(chatId, text, { parse_mode: 'Markdown' });
+    await bot.sendMessage(chatId, text, {
+      parse_mode: 'HTML',
+      disable_web_page_preview: true,
+    });
 
   } catch (error) {
     console.error('Gainers error:', error);

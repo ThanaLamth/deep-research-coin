@@ -179,8 +179,48 @@ async function scrapeGainersLosers() {
     await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 15000 });
     await sleep(2000);
 
-    const bodyText = await page.evaluate(() => document.body.innerText);
+    const tables = await page.evaluate((base) => {
+      function normalizeNameCell(text) {
+        const parts = String(text || '')
+          .split('\n')
+          .map(part => part.trim())
+          .filter(Boolean);
 
+        if (parts.length === 0) return '?';
+        if (parts.length === 1) return parts[0];
+        return parts[0] === parts[1] ? parts[0] : parts[0];
+      }
+
+      function parseTable(table) {
+        return [...table.querySelectorAll('tbody tr')].map((row) => {
+          const cells = [...row.querySelectorAll('td')].map(td => td.innerText.trim());
+          const href = row.querySelector('a[href*="/currencies/"]')?.getAttribute('href') || '';
+          return {
+            rank: cells[0] || '?',
+            name: normalizeNameCell(cells[1]),
+            price: cells[2] || '?',
+            change24h: cells[3] || '?',
+            volume: cells[4] || '?',
+            url: href ? new URL(href, base).toString() : '',
+          };
+        });
+      }
+
+      const tables = [...document.querySelectorAll('table')].slice(0, 2);
+      return {
+        gainers: tables[0] ? parseTable(tables[0]) : [],
+        losers: tables[1] ? parseTable(tables[1]) : [],
+      };
+    }, BASE);
+
+    if (tables.gainers.length > 0 || tables.losers.length > 0) {
+      return {
+        gainers: tables.gainers.slice(0, 10),
+        losers: tables.losers.slice(0, 10),
+      };
+    }
+
+    const bodyText = await page.evaluate(() => document.body.innerText);
     const gainers = [];
     const losers = [];
     const topGainersIdx = bodyText.search(/Top Gainers/i);
@@ -199,7 +239,7 @@ async function scrapeGainersLosers() {
       while ((m = re.exec(text)) !== null) {
         coins.push({
           rank: m[1], name: m[2].trim(), symbol: m[3],
-          price: `$${m[4]}`, change24h: m[5], volume: `$${m[6]}`
+          price: `$${m[4]}`, change24h: m[5], volume: `$${m[6]}`, url: ''
         });
       }
       return coins;
