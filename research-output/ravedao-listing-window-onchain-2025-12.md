@@ -80,7 +80,43 @@ That pattern is more consistent with a controlled inventory process than with sm
 
 ---
 
-## 5. December 12, 2025 - Setup / Routing Phase
+## 5. Exchange / Access Timeline
+
+This section is included because the wallet activity only makes sense in context if you also map when **trading access** expanded.
+
+### Confirmed / Referenced Venue Timeline
+
+| Date | Venue | Type | Source Status | Why It Matters |
+|------|-------|------|---------------|----------------|
+| **October 16, 2025** | Ethereum | Contract deployed | ✅ On-chain verified | Token existed well before the December listing window |
+| **December 12, 2025** | Aster | Launch / listing window around `RAVE/USD1` | ⚠️ Referenced by Aster announcement link and third-party relays | Earliest discussed venue access in this analysis window |
+| **December 14, 2025** | Binance | `RAVEUSDT` perpetual futures | ✅ Official Binance announcement | Major leverage venue opens before the April 2026 squeeze |
+| **February 11, 2026** | Coinbase | Spot access / listing reference | ⚠️ Secondary-source reference, not independently verified here from Coinbase announcement page | Important because it likely widened real spot access materially |
+| **By April 2026** | Multi-venue attention | Broader access / visibility | ⚠️ Inference from later market coverage and exchange mentions | Helps explain why the large move happened later, not immediately in December |
+
+### Why This Matters
+
+The December on-chain activity should not be read in isolation.
+
+The broader sequence appears to be:
+
+- **December 2025:** market rails get built
+- **February 2026:** access likely broadens further via Coinbase spot reference
+- **April 2026:** enough attention, leverage, and narrative pile onto an already-fragile float structure
+
+That is why the price can stay relatively contained during the original listing window but still explode much later.
+
+### Caution On Source Quality
+
+- The **Binance perpetual listing** is directly confirmed by Binance.
+- The **Aster launch window** is anchored to the Aster announcement link discussed in the thread, but text extraction from that page is difficult and some surrounding details were easier to confirm through relay coverage.
+- The **February 11, 2026 Coinbase spot reference** comes from later analytical / exchange commentary rather than a Coinbase announcement page directly verified inside this file.
+
+That means the timeline is still useful, but the confidence level is not identical across all venue entries.
+
+---
+
+## 6. December 12, 2025 - Setup / Routing Phase
 
 ### Aggregate Stats
 
@@ -157,7 +193,7 @@ It reads like:
 
 ---
 
-## 6. December 13, 2025 - Digestion / Pause
+## 7. December 13, 2025 - Digestion / Pause
 
 ### Aggregate Stats
 
@@ -189,7 +225,7 @@ Instead, the three-day sequence looks staged:
 
 ---
 
-## 7. December 14, 2025 - Redistribution / Recycling Phase
+## 8. December 14, 2025 - Redistribution / Recycling Phase
 
 ### Aggregate Stats
 
@@ -268,7 +304,7 @@ is especially notable because it looks like wallet choreography, not market dema
 
 ---
 
-## 8. Key Wallets
+## 9. Key Wallets
 
 These are the wallets that matter most in the listing window read:
 
@@ -322,7 +358,7 @@ Interpretation:
 
 ---
 
-## 9. What This Suggests About Market Structure
+## 10. What This Suggests About Market Structure
 
 ### What This Analysis Supports
 
@@ -350,7 +386,7 @@ The correct conclusion is narrower:
 
 ---
 
-## 10. Best Practical Read
+## 11. Best Practical Read
 
 If you compress the three-day sequence into one sentence:
 
@@ -367,12 +403,14 @@ That is exactly the kind of structure that can later produce:
 
 ---
 
-## 11. References
+## 12. References
 
 - RAVE contract page: https://etherscan.io/token/0x17205fab260a7a6383a81452cE6315A39370Db97
 - Contract deploy tx: https://etherscan.io/tx/0x8d6ef4f6db0723582c877c5a87534916c1349d9ead6a30d0d5f7c760a06b2b65
 - Aster announcement reference: https://www.asterdex.com/en/announcement/8?category=NEW_LISTING
 - Binance futures announcement: https://www.binance.com/en/support/announcement/detail/51aa167664c542eb857533e11eb213bc
+- KuCoin analysis referencing February 11, 2026 Coinbase listing catalyst: https://www.kucoin.com/news/articles/analysis-behind-rave-token-80-surge-whale-accumulation-on-chain-data-tracking-practices
+- Coinbase asset page (current availability reference): https://www.coinbase.com/price/ravedao
 
 ---
 
