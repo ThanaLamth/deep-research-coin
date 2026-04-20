@@ -245,17 +245,29 @@ In other words, the same positioning that powers the rally also increases fragil
 
 ---
 
-## 🔮 PRICE FRAMEWORK
+## 🔮 PRICE PREDICTION
 
 ### Short-Term (1-7 days): 🟢 MOMENTUM STILL CONSTRUCTIVE
+
+**Estimated range:** `$1.25 - $1.60`
 
 - Price is still near recent highs
 - Narrative support remains intact
 - Burn flow and Circle / ecosystem framing are still live talking points
 
-**Implication:** momentum can continue, but chasing strength here has poor entry quality.
+**Bull case:** breakout toward `$1.55 - $1.60` if momentum buyers keep pressing  
+**Base case:** chop between `$1.28 - $1.45`  
+**Bear case:** quick flush back to `$1.15 - $1.20` if active wallets start feeding supply into strength
+
+**Key levels:**
+- Immediate support: `$1.25`
+- Stronger support: `$1.10 - $1.15`
+- Immediate resistance: `$1.45`
+- Breakout resistance: `$1.55 - $1.60`
 
 ### Medium-Term (1-6 weeks): 🟡 TWO-WAY VOLATILITY
+
+**Estimated range:** `$0.95 - $1.85`
 
 The base case is not immediate collapse. It is **violent two-way trade**:
 
@@ -264,7 +276,18 @@ The base case is not immediate collapse. It is **violent two-way trade**:
 
 That usually leads to sharp squeezes, fast pullbacks, and poor holding conditions for late entrants.
 
+**Bull case:** extension into `$1.70 - $1.85` if exchange / ecosystem narrative keeps compounding  
+**Base case:** rotation and consolidation in `$1.10 - $1.45`  
+**Bear case:** deeper correction into `$0.95 - $1.05` if concentrated float starts distributing more aggressively
+
+**Key levels:**
+- Main support zone: `$1.00 - $1.10`
+- Re-accumulation zone: `$1.15 - $1.30`
+- Upside target zone: `$1.60 - $1.85`
+
 ### Long-Term (3-12 months): 🟡 DEPENDS ON REAL USAGE, NOT TOKEN STORY
+
+**Estimated range:** `$0.70 - $3.00`
 
 For EDGE to justify a larger sustained valuation, the market will need more than supply engineering and ecosystem branding.
 
@@ -277,6 +300,10 @@ It will need evidence of:
 - clearer treasury / token release transparency
 
 Without that, the token risks becoming another "good story, weak float quality" asset.
+
+**Bull case:** `$2.20 - $3.00` if adoption, burns, and float quality all improve together  
+**Base case:** `$1.10 - $1.90` if the project keeps executing but float concerns remain only partially resolved  
+**Bear case:** `$0.70 - $0.90` if growth stalls while supply overhang becomes more visible
 
 ---
 
