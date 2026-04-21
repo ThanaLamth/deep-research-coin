@@ -8,9 +8,9 @@
 
 ## Case File
 
-If you read `RAVE` as nothing more than a fast chart, the whole story collapses into a familiar meme-market pattern: a vertical run, a violent reversal, and a crowd now staring at the wreckage wondering whether one more squeeze is still possible. But the deeper you go into the case, the less it feels like a random mania and the more it starts to feel like an investigation. There is an old contract that predates the public explosion by months. There is a listing-window flow that looks staged rather than organic. There are exchange-facing labels sitting right where the early inventory routes terminate. There is a leverage layer that arrived early. And there is a market that, even after the collapse, still trades as if the internal pressure has not fully escaped.
+If you read `RAVE` as nothing more than a fast chart, the whole case collapses into a familiar high-beta pattern: a vertical run, a violent reversal, and a crowd now staring at the aftermath wondering whether one more squeeze is still possible. But the deeper you go into the setup, the less it looks like random mania and the more it looks like a market with pre-existing structural stress. There is an old contract that predates the public explosion by months. There is a listing-window flow that looks staged rather than organic. There are exchange-facing labels sitting right where the early inventory routes terminate. There is a leverage layer that arrived early. And there is a market that, even after the collapse, still trades as if the internal pressure has not fully escaped.
 
-That is the frame for this report. The goal is not to overwrite the data with drama, but to read the data the way a good investigator would: first reconstruct the scene, then identify the hidden mechanics, and only then return to the question traders care about now. `Will RAVE hit another pump?` is not really a question about hope. It is a question about whether the same structure that produced the first violent move is still alive enough to produce another one.
+That is the frame for this report. The goal is not to overwrite the data with drama, but to read the data through a market-structure lens: first reconstruct the setup, then identify the hidden mechanics, and only then return to the question traders care about now. `Will RAVE hit another pump?` is not really a question about hope. It is a question about whether the same structure that produced the first violent move is still alive enough to produce another one.
 
 ---
 
@@ -69,7 +69,7 @@ That is not what a healthy market looks like.
 
 That is what a structurally unstable market looks like after a squeeze, a collapse, and a reflex rebound.
 
-Another way to say the same thing is that this snapshot already looks like the second half of a thriller, not the beginning of a clean trend. The market has already shown what it can do when pressure builds fast enough. The only uncertainty is whether that pressure has already been released, or whether the structure is unstable enough to lurch one more time before it settles.
+Another way to say the same thing is that this snapshot already looks like a late-stage reflexive market, not the beginning of a clean trend. The market has already shown what it can do when pressure builds fast enough. The only uncertainty is whether that pressure has already been released, or whether the structure is unstable enough to lurch one more time before it settles.
 
 ---
 
@@ -98,9 +98,9 @@ This is the simplest way to read the case:
 | Access broadening | February 2026 | More spot accessibility increased the potential audience. |
 | Detonation | April 2026 | Thin float, leverage, and narrative finally stacked together. |
 
-So the April pump looks less like a random miracle and more like the late payoff of a structure that was already being built.
+So the April pump looks less like a random anomaly and more like the late payoff of a structure that was already being built.
 
-That distinction is more important than it seems. A random miracle invites people to think in terms of luck and timing. A built structure forces you to think in terms of preparation, pressure, and release. The more this case looks like the second category, the less convincing it becomes to treat April as a spontaneous event. It starts to look more like a market that had been quietly arranged for fragility long before the crowd finally noticed how explosive it had become.
+That distinction is more important than it seems. A random anomaly invites people to think in terms of luck and timing. A built structure forces you to think in terms of preparation, pressure, and release. The more this case looks like the second category, the less convincing it becomes to treat April as a spontaneous event. It starts to look more like a market that had been quietly arranged for fragility long before the crowd finally noticed how explosive it had become.
 
 ---
 
@@ -188,7 +188,7 @@ So the entity map does not prove a conspiracy.
 
 It does prove that the early RAVE market was more exchange-connected than a casual reader would assume.
 
-That shift in tone matters. A vague whale map still leaves room for innocent interpretations. A whale map that touches named exchange-facing endpoints becomes harder to dismiss. The story changes from "some large wallets were active" to "inventory was already brushing against the parts of the market where price would later matter most." That is not a conviction-level claim about wrongdoing. It is a very strong claim about fragility.
+That shift in tone matters. A vague whale map still leaves room for innocent interpretations. A whale map that touches named exchange-facing endpoints becomes harder to dismiss. The read changes from "some large wallets were active" to "inventory was already brushing against the parts of the market where price would later matter most." That is not a conviction-level claim about wrongdoing. It is a very strong claim about fragility.
 
 ---
 
@@ -295,7 +295,7 @@ This creates a useful working model:
 
 > RAVE is supply-concentrated on Ethereum, but liquidity-fragmented enough across smaller venues to help overshoots happen.
 
-From a storytelling perspective, this may be one of the strangest details in the whole case. The supply base sits overwhelmingly on one chain, yet parts of the market’s emotional life can still be influenced by smaller, thinner pools elsewhere. That mismatch is exactly the kind of thing that makes a post-blowoff chart feel unsettled. Price does not always need the deepest venue to speak first. Sometimes it only needs one thin venue to slip badly enough for everyone else to react.
+From a market-structure perspective, this may be one of the strangest details in the whole case. The supply base sits overwhelmingly on one chain, yet parts of the market’s short-term behavior can still be influenced by smaller, thinner pools elsewhere. That mismatch is exactly the kind of thing that makes a post-blowoff chart feel unsettled. Price does not always need the deepest venue to speak first. Sometimes it only needs one thin venue to slip badly enough for everyone else to react.
 
 ---
 
@@ -374,7 +374,7 @@ This is also the emotional trap in the setup. Traders love the idea of catching 
 
 These ranges are inference-based scenario bands built from the current structure. They are not certainties.
 
-They are better read as possible endings to the next scene than as neat forecast targets. In a stable market, a range is just an estimate. In a market like `RAVE`, a range is closer to a stress path for a structure that can still lurch in either direction depending on which side loses control first.
+They are better read as structural outcome bands than as neat forecast targets. In a stable market, a range is just an estimate. In a market like `RAVE`, a range is closer to a stress path for a structure that can still lurch in either direction depending on which side loses control first.
 
 ### Short-term outlook: next 1-3 days
 
@@ -418,7 +418,7 @@ If the whole case had to be compressed into one sentence:
 
 > The first big RAVE pump was probably not random, and the next one, if it comes, probably will not be random either.
 
-That is the final reason the case remains worth studying. Plenty of tokens pump hard. What makes `RAVE` different is that the path into the move, the identities touched by the flow, the leverage timeline, and the post-collapse behavior all still point back to structure. And when structure remains unresolved, the story is usually not over just because the loudest candle has already printed.
+That is the final reason the case remains worth studying. Plenty of tokens pump hard. What makes `RAVE` different is that the path into the move, the identities touched by the flow, the leverage timeline, and the post-collapse behavior all still point back to structure. And when structure remains unresolved, the market usually has more work to do even after the loudest candle has already printed.
 
 ---
 
@@ -436,3 +436,45 @@ That is the final reason the case remains worth studying. Plenty of tokens pump 
 | MEXC perp data | [Contract detail](https://contract.mexc.com/api/v1/contract/detail), [Ticker](https://contract.mexc.com/api/v1/contract/ticker?symbol=RAVE_USDT) |
 | Cross-chain liquidity | [Ethereum DexScreener view](https://api.dexscreener.com/latest/dex/tokens/0x17205fab260a7a6383a81452ce6315a39370db97), [Base DexScreener view](https://api.dexscreener.com/latest/dex/tokens/0x1aa8fd5bcce2231c6100d55bf8b377cff33acfc3), [BSC DexScreener view](https://api.dexscreener.com/latest/dex/tokens/0x97693439ea2f0ecdeb9135881e49f354656a911c) |
 | Related notes in this repo | [Listing window on-chain note](./ravedao-listing-window-onchain-2025-12.md), [Lookonchain + Arkham application](./ravedao-lookonchain-arkham-application-2026-04-21.md), [Chart + on-chain outlook](./ravedao-chart-onchain-price-outlook-2026-04-21.md) |
+
+---
+
+## References (APA 7th)
+
+Aster. (n.d.). *New listing announcement*. Retrieved April 21, 2026, from https://www.asterdex.com/en/announcement/8?category=NEW_LISTING
+
+Binance. (2025, December 14). *USDⓈ-M perpetual contract launch announcement for RAVEUSDT*. https://www.binance.com/en/support/announcement/detail/51aa167664c542eb857533e11eb213bc
+
+Bitget. (n.d.). *Bitget futures contract metadata for RAVEUSDT*. Retrieved April 21, 2026, from https://api.bitget.com/api/v2/mix/market/contracts?productType=USDT-FUTURES
+
+Bitget. (n.d.). *Bitget futures ticker for RAVEUSDT*. Retrieved April 21, 2026, from https://api.bitget.com/api/v2/mix/market/ticker?symbol=RAVEUSDT&productType=USDT-FUTURES
+
+Bybit. (n.d.). *Bybit instruments info for RAVEUSDT perpetual*. Retrieved April 21, 2026, from https://api.bybit.com/v5/market/instruments-info?category=linear&symbol=RAVEUSDT
+
+Bybit. (n.d.). *Bybit ticker data for RAVEUSDT perpetual*. Retrieved April 21, 2026, from https://api.bybit.com/v5/market/tickers?category=linear&symbol=RAVEUSDT
+
+CoinGecko. (n.d.). *RaveDAO market data*. Retrieved April 21, 2026, from https://api.coingecko.com/api/v3/coins/ravedao?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false&sparkline=false
+
+DexScreener. (n.d.). *RaveDAO token market data on Ethereum*. Retrieved April 21, 2026, from https://api.dexscreener.com/latest/dex/tokens/0x17205fab260a7a6383a81452ce6315a39370db97
+
+DexScreener. (n.d.). *RaveDAO token market data on Base*. Retrieved April 21, 2026, from https://api.dexscreener.com/latest/dex/tokens/0x1aa8fd5bcce2231c6100d55bf8b377cff33acfc3
+
+DexScreener. (n.d.). *RaveDAO token market data on BSC*. Retrieved April 21, 2026, from https://api.dexscreener.com/latest/dex/tokens/0x97693439ea2f0ecdeb9135881e49f354656a911c
+
+Etherscan. (n.d.). *Address page for 0x1ab4973a48dc892cd9971ece8e01dcc7688f8f23*. Retrieved April 21, 2026, from https://etherscan.io/address/0x1ab4973a48dc892cd9971ece8e01dcc7688f8f23
+
+Etherscan. (n.d.). *Address page for 0x0d0707963952f2fba59dd06f2b425ace40b492fe*. Retrieved April 21, 2026, from https://etherscan.io/address/0x0d0707963952f2fba59dd06f2b425ace40b492fe
+
+Etherscan. (n.d.). *Address page for 0xc882b111a75c0c657fc507c04fbfcd2cc984f071*. Retrieved April 21, 2026, from https://etherscan.io/address/0xc882b111a75c0c657fc507c04fbfcd2cc984f071
+
+Etherscan. (n.d.). *Transaction page for contract deployment*. Retrieved April 21, 2026, from https://etherscan.io/tx/0x8d6ef4f6db0723582c877c5a87534916c1349d9ead6a30d0d5f7c760a06b2b65
+
+MEXC. (n.d.). *Contract detail for RAVE_USDT perpetual*. Retrieved April 21, 2026, from https://contract.mexc.com/api/v1/contract/detail
+
+MEXC. (n.d.). *Contract ticker for RAVE_USDT perpetual*. Retrieved April 21, 2026, from https://contract.mexc.com/api/v1/contract/ticker?symbol=RAVE_USDT
+
+PublicNode. (n.d.). *Base RPC endpoint*. Retrieved April 21, 2026, from https://base-rpc.publicnode.com
+
+PublicNode. (n.d.). *BSC RPC endpoint*. Retrieved April 21, 2026, from https://bsc-rpc.publicnode.com
+
+PublicNode. (n.d.). *Ethereum RPC endpoint*. Retrieved April 21, 2026, from https://ethereum-rpc.publicnode.com
