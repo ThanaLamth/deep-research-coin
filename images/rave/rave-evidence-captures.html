@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAVE Evidence Captures</title>
+  <style>
+    :root {
+      --bg: #f4efe4;
+      --paper: #fffdf7;
+      --ink: #13232f;
+      --muted: #5b6770;
+      --line: #d9cfbd;
+      --accent: #b64d2e;
+      --accent-2: #1f6b63;
+      --accent-3: #244a86;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+    }
+
+    .capture {
+      width: 1360px;
+      min-height: 900px;
+      margin: 32px auto;
+      background:
+        radial-gradient(circle at top right, rgba(182, 77, 46, 0.08), transparent 28%),
+        radial-gradient(circle at bottom left, rgba(31, 107, 99, 0.08), transparent 30%),
+        var(--paper);
+      border: 1px solid var(--line);
+      box-shadow: 0 18px 45px rgba(19, 35, 47, 0.12);
+      padding: 42px 46px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 8px 12px;
+      background: rgba(182, 77, 46, 0.1);
+      border: 1px solid rgba(182, 77, 46, 0.2);
+      color: var(--accent);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 700;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: 44px;
+      line-height: 1.05;
+      font-weight: 700;
+      max-width: 1000px;
+    }
+
+    .sub {
+      margin: 0 0 24px;
+      font-size: 19px;
+      color: var(--muted);
+      line-height: 1.45;
+      max-width: 1120px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 22px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .panel {
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 20px 22px;
+    }
+
+    .panel h2 {
+      margin: 0 0 14px;
+      font-size: 24px;
+      line-height: 1.15;
+    }
+
+    .panel p,
+    .panel li,
+    .panel td,
+    .panel th {
+      font-size: 15px;
+      line-height: 1.45;
+    }
+
+    .kpis {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+
+    .kpi {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 14px 16px;
+      background: rgba(255, 255, 255, 0.82);
+    }
+
+    .kpi .label {
+      display: block;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .kpi .value {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.1;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th {
+      text-align: left;
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    td {
+      vertical-align: top;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(217, 207, 189, 0.7);
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .route {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    .node {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 6px 10px;
+      background: #fff;
+    }
+
+    .node.exchange {
+      background: rgba(36, 74, 134, 0.09);
+      border-color: rgba(36, 74, 134, 0.22);
+      color: var(--accent-3);
+      font-weight: 700;
+    }
+
+    .node.gate {
+      background: rgba(31, 107, 99, 0.09);
+      border-color: rgba(31, 107, 99, 0.22);
+      color: var(--accent-2);
+      font-weight: 700;
+    }
+
+    .arrow {
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .footer {
+      margin-top: 20px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 4px 9px;
+      margin-right: 8px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.86);
+    }
+
+    .accent {
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .good {
+      color: var(--accent-2);
+      font-weight: 700;
+    }
+
+    .warn {
+      color: var(--accent);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <section class="capture" id="timeline-capture">
+    <div class="eyebrow">RAVE Case Capture 01</div>
+    <h1>Timeline: setup first, detonation later</h1>
+    <p class="sub">
+      The RAVE move in April 2026 looks less like a random miracle and more like the late payoff of a market structure that was built months earlier.
+    </p>
+    <div class="kpis">
+      <div class="kpi">
+        <span class="label">Current Price</span>
+        <span class="value">$1.79</span>
+      </div>
+      <div class="kpi">
+        <span class="label">7D Change</span>
+        <span class="value warn">-84.94%</span>
+      </div>
+      <div class="kpi">
+        <span class="label">24H Volume</span>
+        <span class="value">$454.56M</span>
+      </div>
+      <div class="kpi">
+        <span class="label">ATH</span>
+        <span class="value">$27.88</span>
+      </div>
+    </div>
+    <div class="grid-2">
+      <div class="panel">
+        <h2>Event Timeline</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Event</th>
+              <th>Read</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Oct 16, 2025</td>
+              <td>Ethereum contract deployed</td>
+              <td>RAVE existed long before the April mania.</td>
+            </tr>
+            <tr>
+              <td>Dec 12, 2025</td>
+              <td>Aster listing window and major wallet routing day</td>
+              <td>Inventory looked staged, not broadly distributed.</td>
+            </tr>
+            <tr>
+              <td>Dec 14, 2025</td>
+              <td>Binance launched <strong>RAVEUSDT</strong> perpetual, up to 20x</td>
+              <td>Leverage rails opened early.</td>
+            </tr>
+            <tr>
+              <td>Feb 11, 2026</td>
+              <td>Coinbase spot access referenced in later market commentary</td>
+              <td>Spot access likely broadened beyond the first venue wave.</td>
+            </tr>
+            <tr>
+              <td>Apr 18, 2026</td>
+              <td>ATH near <strong>$27.88</strong></td>
+              <td>Detonation phase.</td>
+            </tr>
+            <tr>
+              <td>Apr 21, 2026</td>
+              <td>Price near <strong>$1.79</strong>, but still with huge turnover</td>
+              <td>Broken structure, still mechanically explosive.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="panel">
+        <h2>Why the timeline matters</h2>
+        <ul>
+          <li><span class="accent">December</span> looks like setup, not clean retail discovery.</li>
+          <li><span class="accent">Leverage</span> did not arrive late. It was present from mid-December.</li>
+          <li><span class="accent">April</span> looks like the moment when access, narrative, and float fragility finally aligned.</li>
+        </ul>
+        <div class="footer">
+          Sources: Binance Support announcement for <strong>RAVEUSDT</strong> perp, CoinGecko market data, and Ethereum deployment records.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="capture" id="entity-capture">
+    <div class="eyebrow">RAVE Case Capture 02</div>
+    <h1>Entity map: this stopped looking like random whale flow</h1>
+    <p class="sub">
+      Once the key addresses were upgraded to exchange-facing labels, the December 2025 graph became much harder to read as organic market distribution.
+    </p>
+    <div class="grid-2">
+      <div class="panel">
+        <h2>Key routes</h2>
+        <div class="route">
+          <span class="node">0x8ed6...</span>
+          <span class="arrow">→</span>
+          <span class="node">0xd063...</span>
+          <span class="arrow">→</span>
+          <span class="node">0x34d5...</span>
+          <span class="arrow">→</span>
+          <span class="node exchange">0x1ab4... Bitget 6</span>
+        </div>
+        <div class="route">
+          <span class="node">0xd063...</span>
+          <span class="arrow">→</span>
+          <span class="node">0x8dc3...</span>
+          <span class="arrow">→</span>
+          <span class="node gate">0x0d07... Gate Deposit</span>
+        </div>
+        <div class="route">
+          <span class="node gate">0x0d07... Gate Deposit</span>
+          <span class="arrow">⇄</span>
+          <span class="node gate">0xc882... Gate Deposit</span>
+        </div>
+        <div class="footer">
+          Reading: inventory was routed into exchange-facing endpoints very early, with one especially suspicious Gate-facing loop.
+        </div>
+      </div>
+      <div class="panel">
+        <h2>Labeled endpoints</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Address</th>
+              <th>Label</th>
+              <th>Interpretation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>0x1ab4...</td>
+              <td>Bitget 6</td>
+              <td>One large branch terminated at Bitget-facing inventory.</td>
+            </tr>
+            <tr>
+              <td>0x0d07...</td>
+              <td>Gate Deposit</td>
+              <td>Not just a generic whale wallet anymore.</td>
+            </tr>
+            <tr>
+              <td>0xc882...</td>
+              <td>Gate Deposit</td>
+              <td>Looping activity points to exchange-facing choreography.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="footer">
+          Facts first: exchange-facing routing is visible. What remains unproven is who controlled the intermediate splitter wallets.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="capture" id="market-capture">
+    <div class="eyebrow">RAVE Case Capture 03</div>
+    <h1>Derivatives and cross-chain structure still make RAVE explosive</h1>
+    <p class="sub">
+      The April 21, 2026 snapshot shows that RAVE still trades with live leverage, massive turnover, and fragmented liquidity.
+    </p>
+    <div class="grid-3">
+      <div class="panel">
+        <h2>Perp venues</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Venue</th>
+              <th>Mark / Fair</th>
+              <th>Funding</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Bybit</td>
+              <td>$1.73386</td>
+              <td class="warn">+0.467245% / hr</td>
+            </tr>
+            <tr>
+              <td>Bitget</td>
+              <td>$1.77184</td>
+              <td class="warn">+0.0499% / hr</td>
+            </tr>
+            <tr>
+              <td>MEXC</td>
+              <td>$1.7618</td>
+              <td class="warn">+0.1338% / hr</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="footer">
+          Positive funding means leverage is still active, but it also means crowding can flip from short squeeze risk to long squeeze risk.
+        </div>
+      </div>
+      <div class="panel">
+        <h2>Supply split</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Chain</th>
+              <th>Supply</th>
+              <th>Share</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ethereum</td>
+              <td>951.998M</td>
+              <td class="good">95.20%</td>
+            </tr>
+            <tr>
+              <td>Base</td>
+              <td>15.389M</td>
+              <td>1.54%</td>
+            </tr>
+            <tr>
+              <td>BSC</td>
+              <td>32.612M</td>
+              <td>3.26%</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="footer">
+          Supply is overwhelmingly Ethereum-based, but price influence can still come from smaller satellite liquidity pools.
+        </div>
+      </div>
+      <div class="panel">
+        <h2>Liquidity stress points</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Pool</th>
+              <th>Liquidity</th>
+              <th>24H Volume</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Uniswap Ethereum</td>
+              <td>$1.47M</td>
+              <td>$2.70M</td>
+            </tr>
+            <tr>
+              <td>Aerodrome Base</td>
+              <td>$414.6K</td>
+              <td>$6.16M</td>
+            </tr>
+            <tr>
+              <td>PancakeSwap BSC</td>
+              <td>$37.3K</td>
+              <td>$2.50M</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="footer">
+          Small pools can still distort local price discovery. That is one reason another pump can happen, and one reason it can unwind fast.
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
