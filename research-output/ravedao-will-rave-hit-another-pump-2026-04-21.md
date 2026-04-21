@@ -6,6 +6,14 @@
 
 ---
 
+## Case File
+
+If you read `RAVE` as nothing more than a fast chart, the whole story collapses into a familiar meme-market pattern: a vertical run, a violent reversal, and a crowd now staring at the wreckage wondering whether one more squeeze is still possible. But the deeper you go into the case, the less it feels like a random mania and the more it starts to feel like an investigation. There is an old contract that predates the public explosion by months. There is a listing-window flow that looks staged rather than organic. There are exchange-facing labels sitting right where the early inventory routes terminate. There is a leverage layer that arrived early. And there is a market that, even after the collapse, still trades as if the internal pressure has not fully escaped.
+
+That is the frame for this report. The goal is not to overwrite the data with drama, but to read the data the way a good investigator would: first reconstruct the scene, then identify the hidden mechanics, and only then return to the question traders care about now. `Will RAVE hit another pump?` is not really a question about hope. It is a question about whether the same structure that produced the first violent move is still alive enough to produce another one.
+
+---
+
 ## Short Answer
 
 **Yes, RAVE can still pump again.**
@@ -61,6 +69,8 @@ That is not what a healthy market looks like.
 
 That is what a structurally unstable market looks like after a squeeze, a collapse, and a reflex rebound.
 
+Another way to say the same thing is that this snapshot already looks like the second half of a thriller, not the beginning of a clean trend. The market has already shown what it can do when pressure builds fast enough. The only uncertainty is whether that pressure has already been released, or whether the structure is unstable enough to lurch one more time before it settles.
+
 ---
 
 ## Chapter 1: The Rails Were Built Before The Explosion
@@ -89,6 +99,8 @@ This is the simplest way to read the case:
 | Detonation | April 2026 | Thin float, leverage, and narrative finally stacked together. |
 
 So the April pump looks less like a random miracle and more like the late payoff of a structure that was already being built.
+
+That distinction is more important than it seems. A random miracle invites people to think in terms of luck and timing. A built structure forces you to think in terms of preparation, pressure, and release. The more this case looks like the second category, the less convincing it becomes to treat April as a spontaneous event. It starts to look more like a market that had been quietly arranged for fragility long before the crowd finally noticed how explosive it had become.
 
 ---
 
@@ -136,6 +148,8 @@ But it strongly supports a weaker claim that is still serious:
 
 > RAVE entered its trading life with a structure that was unusually easy to influence.
 
+This is the point where the case stops being abstract. Before this section, you know the ending was dramatic. Here, you begin to see the staging area. You can watch inventory move in size, pause, split, and then reappear. You can see the market behaving less like a broad discovery process and more like a route map for supply. That does not prove intent, but it does tell you that by the time leverage and narrative arrived, the market was already standing on weak structural foundations.
+
 ---
 
 ## Chapter 3: The Entity Map Changed The Read
@@ -174,6 +188,8 @@ So the entity map does not prove a conspiracy.
 
 It does prove that the early RAVE market was more exchange-connected than a casual reader would assume.
 
+That shift in tone matters. A vague whale map still leaves room for innocent interpretations. A whale map that touches named exchange-facing endpoints becomes harder to dismiss. The story changes from "some large wallets were active" to "inventory was already brushing against the parts of the market where price would later matter most." That is not a conviction-level claim about wrongdoing. It is a very strong claim about fragility.
+
 ---
 
 ## Chapter 4: Binance Futures Opened The Leverage Door Early
@@ -199,6 +215,8 @@ This matters for two reasons:
 In other words, the perp listing was not necessarily the explosion itself.
 
 It may have been one of the rails that made the later explosion possible.
+
+This is why the Binance perp listing matters even if it did not trigger an immediate moonshot. Perpetual futures do not just create bullish pressure; they create the architecture through which later pressure can become reflexive. Once that door is open, price can stop behaving like a simple reflection of spot demand and start behaving like a contest between inventory, leverage, hedging, and liquidation mechanics. That is exactly the kind of architecture that can sit quietly for a while and then suddenly matter all at once.
 
 ---
 
@@ -231,6 +249,8 @@ _Capture: derivatives and cross-chain summary rendered from the live venue and o
 This is one of the strongest reasons another pump is still possible.
 
 It is also one of the strongest reasons that pump can fail fast.
+
+This is where the past starts talking directly to the present. The December flow matters because it shows how the market was set up. The live perp snapshot matters because it shows the machine was never fully shut off. There is still enough leverage, enough speculative turnover, and enough imbalance for the market to overreact again. But the sign of the risk has changed. The same structure that once could punish late shorts can just as easily punish overeager longs now.
 
 ---
 
@@ -275,6 +295,8 @@ This creates a useful working model:
 
 > RAVE is supply-concentrated on Ethereum, but liquidity-fragmented enough across smaller venues to help overshoots happen.
 
+From a storytelling perspective, this may be one of the strangest details in the whole case. The supply base sits overwhelmingly on one chain, yet parts of the market’s emotional life can still be influenced by smaller, thinner pools elsewhere. That mismatch is exactly the kind of thing that makes a post-blowoff chart feel unsettled. Price does not always need the deepest venue to speak first. Sometimes it only needs one thin venue to slip badly enough for everyone else to react.
+
 ---
 
 ## Chapter 7: Venue Dispersion Shows The Market Is Still Unstable
@@ -303,6 +325,8 @@ That is another reason a second pump is plausible.
 
 It is also another reason a second pump may not be durable.
 
+In a cleaner market, dispersion is mostly a warning label. In a dirtier market, dispersion can become fuel. It creates the sense that one venue is moving first, that price is slipping away, that a squeeze might already be underway somewhere else. That does not make the move sustainable, but it can make it violent.
+
 ---
 
 ## Chapter 8: Why Another Pump Is Still Plausible
@@ -323,6 +347,8 @@ Condensed into one line:
 
 > RAVE can still pump because the machine that amplifies pumps is still there.
 
+That is really the center of the bullish case. Not that the market has healed, and not that the narrative questions have disappeared, but that the market is still structurally distorted enough to behave irrationally again. It is an uncomfortable bullish thesis, because it depends less on quality than on instability, but unstable markets are often the ones that produce the sharpest second moves.
+
 ---
 
 ## Chapter 9: Why Another Pump Could Still Fail
@@ -340,11 +366,15 @@ This is the main trap in the RAVE case:
 
 > The exact same structure that makes another pump possible also makes it hard to trust.
 
+This is also the emotional trap in the setup. Traders love the idea of catching "one more leg" after a famous move because the chart itself becomes a magnet. But markets like this punish anyone who confuses repeatability with reliability. A setup can be repeatable because the squeeze conditions remain alive, yet deeply unreliable because each rebound may only serve as exit liquidity for someone else.
+
 ---
 
 ## Chapter 10: Scenario Map As Of April 21, 2026
 
 These ranges are inference-based scenario bands built from the current structure. They are not certainties.
+
+They are better read as possible endings to the next scene than as neat forecast targets. In a stable market, a range is just an estimate. In a market like `RAVE`, a range is closer to a stress path for a structure that can still lurch in either direction depending on which side loses control first.
 
 ### Short-term outlook: next 1-3 days
 
@@ -387,6 +417,8 @@ But the stronger conclusion is this:
 If the whole case had to be compressed into one sentence:
 
 > The first big RAVE pump was probably not random, and the next one, if it comes, probably will not be random either.
+
+That is the final reason the case remains worth studying. Plenty of tokens pump hard. What makes `RAVE` different is that the path into the move, the identities touched by the flow, the leverage timeline, and the post-collapse behavior all still point back to structure. And when structure remains unresolved, the story is usually not over just because the loudest candle has already printed.
 
 ---
 
