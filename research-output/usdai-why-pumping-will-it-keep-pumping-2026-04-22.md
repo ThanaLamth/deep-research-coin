@@ -84,6 +84,226 @@ Public operating metrics are not trivial:
 
 That is why CHIP trades more like a speculative infrastructure launch than a random AI meme.
 
+## What The Project Actually Is And Why It Is Different
+
+The easiest way to misunderstand USD.AI is to treat it like just another synthetic-dollar protocol.
+
+That is too shallow.
+
+USD.AI is really trying to combine three layers that are usually discussed separately:
+
+| Layer | What most projects do | What USD.AI is trying to do |
+|---|---|---|
+| Stablecoin layer | Issue a dollar-backed or synthetic dollar | Use USDai and sUSDai as the monetary layer |
+| Yield layer | Offer DeFi lending or treasury-style yield | Route yield through AI-infrastructure credit |
+| Collateral layer | Rely on crypto collateral or standard RWAs | Underwrite loans against GPU and AI hardware exposure |
+
+That is the core distinction.
+
+This is not only a tokenized-dollar story.
+
+It is a **compute-financing story wrapped inside a synthetic-dollar system**.
+
+### What is genuinely different here
+
+From the public docs, USD.AI stands out in four ways:
+
+| Differentiator | Why it is unusual |
+|---|---|
+| GPU-backed credit focus | Most DeFi lending systems are not built around financing AI hardware fleets |
+| CALIBER legal wrapper | The docs explicitly try to map tokenized hardware claims into a real-world legal enforcement structure |
+| QEV redemption design | The protocol is openly built around liquidity bottlenecks instead of pretending GPU credit is instantly liquid |
+| AI yield framing | The project is selling access to the "interest rate of AI," not just another generic stablecoin APR |
+
+That does not guarantee success.
+
+It does mean the protocol is trying to solve a harder and more differentiated problem than a normal yield-bearing stablecoin.
+
+### The strongest version of the bull case
+
+If USD.AI works as designed, the market does not need to value it as just:
+
+- a governance token
+- a stablecoin wrapper
+- or another RWA credit project
+
+It can instead value it as a token attached to a new financing rail for AI compute.
+
+That is a much bigger story.
+
+### The strongest version of the skeptical case
+
+The flip side is that the project is stacking complexity:
+
+- synthetic dollars
+- yield-bearing wrappers
+- GPU collateral underwriting
+- legal enforcement assumptions
+- queue-based redemptions
+
+That means execution risk is higher than in a simpler treasury-backed yield token.
+
+So the differentiation is real, but so is the difficulty.
+
+## What The Website And Docs Actually Show
+
+One useful filter for projects like USD.AI is simple:
+
+if the website only sells a story, the token usually trades like a story.
+
+USD.AI's public site and docs show a fuller operating surface than that.
+
+### What a user can actually see from the public product stack
+
+From the website and docs, the protocol is already presenting multiple live surfaces:
+
+| Surface | What it tells you |
+|---|---|
+| Website headline metrics | The team wants the market to anchor on deposits, users, and APR, not just token price |
+| Depositor app flow | There is a visible path for buying, staking, earning points, and monitoring portfolio state |
+| Loans and borrower framing | The system is clearly presenting itself as a real credit market, not just a stablecoin wrapper |
+| Proof of reserves / dashboards | The protocol is leaning into transparency and verifiability as part of the pitch |
+| Audits and contract-address docs | It is trying to present itself as infrastructure, not as a launch-only token |
+
+### What that means in practice
+
+The public product experience suggests USD.AI wants to be understood in three roles at once:
+
+| Role | Public-facing expression |
+|---|---|
+| Savings product | Deposit USDai, stake into sUSDai, earn yield |
+| Credit market | Finance GPU operators and AI infrastructure borrowers |
+| Coordination layer | Use CHIP for governance, utility, and protocol-level upside |
+
+That is a more serious surface area than what you usually see in a short-lived listing pump.
+
+It does not prove the economics are durable.
+
+But it does explain why traders can justify giving the launch more attention than a narrative-only token.
+
+![USD.AI project and website capture](../images/usdai/usdai-project-capture.png)
+
+*Research capture built from the live USD.AI website and docs surface, showing how the project presents deposits, users, yield, product flow, and protocol differentiation.*
+
+## Is This Already A Trend, Or Just Trend-Adjacent?
+
+The best answer is:
+
+**USD.AI is not the main retail trend by itself yet, but it sits directly inside two trends that are very real in 2026.**
+
+### Trend 1: Real-world asset and private-credit tokenization
+
+This is a live trend, not a hypothetical one.
+
+The broad RWA market has continued to scale in 2026, and private credit is one of the strongest segments inside it.
+
+That matters because USD.AI is easier to understand if you treat it as:
+
+- an RWA/private-credit project first
+- a stablecoin/yield product second
+- and an AI narrative token third
+
+### Trend 2: AI infrastructure financing is becoming a real capital market
+
+This is the more important trend for the long-term thesis.
+
+Clifford Chance's 2026 data-centre financing note says the market is increasingly financing data centres as compute-first infrastructure rather than simple real estate, and explicitly highlights the rise of GPU lease finance and multibillion-dollar GPU-collateralised credit programmes.
+
+That supports a broader inference: AI hardware financing is increasingly being treated as its own capital market, not as a side note to software growth.
+
+That is exactly the lane USD.AI is trying to occupy on-chain.
+
+### So is USD.AI "in trend" right now?
+
+Yes, but in a specific way.
+
+| Question | Answer |
+|---|---|
+| Is it in the broad AI trend? | **Yes**, because the collateral story is AI compute and GPU infrastructure |
+| Is it in the RWA / real-yield trend? | **Yes**, very clearly |
+| Is it a mainstream retail trend like a meme coin or AI agent token? | **No**, not yet |
+| Could it become a bigger trend if the market rotates toward AI infrastructure and real yield? | **Yes**, that is the real upside case |
+
+### My practical read
+
+Right now, USD.AI is best described as:
+
+- **not a mass retail mega-trend**
+- **but a high-quality trend-adjacent narrative**
+- **with a real chance to become a stronger trend if AI infrastructure finance keeps institutionalizing**
+
+That last part matters.
+
+If the market stays focused on fast meme rotation, USD.AI may remain a niche but credible story.
+
+If the market starts rewarding:
+
+- AI infrastructure rails
+- tokenized private credit
+- real yield
+- and asset-backed financing
+
+then USD.AI's narrative can get stronger from here, not weaker.
+
+## Tokenomics And Supply Structure
+
+The tokenomics matter here because CHIP is not moving inside a fully open float.
+
+It is moving inside a **managed float**.
+
+### What is confirmed publicly
+
+From CoinMarketCap, CoinList, and USD.AI docs:
+
+| Tokenomics item | Publicly visible figure |
+|---|---:|
+| Max supply | **10B CHIP** |
+| Circulating supply | **2B CHIP** |
+| Circulating share | **20%** |
+| CoinList sale amount | **700M CHIP** |
+| CoinList sale price | **$0.03** |
+| CoinList reference FDV | **$300M** |
+| Ecosystem bootstrapping allocation | **27.5%** |
+| Reserve allocation | **19.5%** |
+| Core contributors unlocked before month 12 | **0%** |
+| Investors unlocked before month 12 | **0%** |
+
+### Why this structure matters more than the headline supply
+
+There are three tokenomics tensions sitting on top of each other:
+
+| Tension | Why it matters |
+|---|---|
+| Only 20% is circulating | The price can move violently on a much smaller real float than the 10B headline suggests |
+| Sale participants are already deep in profit | At roughly $0.10, the market is already far above the $0.03 public sale anchor |
+| A very large supply still appears contract-controlled | Most of the supply is still not behaving like free-float spot inventory |
+
+That is why CHIP can look simultaneously:
+
+- legitimate on a protocol basis
+- bullish on a narrative basis
+- and dangerous on a market-structure basis
+
+### What this means for price behavior
+
+In a normal token, a bigger float can stabilize price.
+
+In CHIP, the current tokenomics do the opposite:
+
+- they create room for launch squeezes
+- they keep traders focused on the visible float instead of full supply
+- and they make every new listing or venue expansion more important
+
+This is also why future unlock perception matters even before actual unlocks arrive.
+
+If the market believes most near-term supply is still boxed away, it will price CHIP like a scarce launch asset.
+
+If the market starts believing more sale or treasury-linked inventory is reaching exchanges, the same structure can reverse fast.
+
+![USD.AI tokenomics capture](../images/usdai/usdai-tokenomics-capture.png)
+
+*Research capture summarizing the public supply stack, CoinList sale terms, vesting signals, and the way managed supply structure shapes CHIP's current float dynamics.*
+
 ## The Launch Timeline Matters More Than Any Single Headline
 
 The cleanest explanation for the pump is not one news item.
@@ -530,6 +750,7 @@ For now, the most disciplined stance is:
 18. AP News, oil drop and Wall Street rally after reopening: https://apnews.com/article/stock-markets-trump-oil-iran-war-50e10bf2aa9b0b658c51e17db3eb3b13
 19. AP News, renewed shipping attacks despite ceasefire backdrop: https://apnews.com/article/us-iran-war-hormuz-israel-pakistan-ceasefire-april-22-2026-267230f7f32b436822484479313840f7
 20. GeckoTerminal CHIP pool page: https://www.geckoterminal.com/arbitrum/pools/0x49340dbb8fb5ece2f9b594e77ab774e65725e9d8
+21. Clifford Chance, Data Centres & AI Compute Infrastructure Insights 2026: https://www.cliffordchance.com/content/dam/cliffordchance/briefings/2026/03/data-centres-and-ai-compute-infrastructure-insights-2026.pdf
 
 ## Notes On Method
 
