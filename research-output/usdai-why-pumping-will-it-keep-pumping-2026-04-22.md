@@ -59,19 +59,53 @@ That is classic unstable launch behavior.
 
 ## What USD.AI Actually Is
 
-USD.AI is not the stablecoin itself.
+USD.AI is easy to misread if you only look at the CoinMarketCap page.
 
-According to the public website and docs:
+The asset that is pumping on CMC is **CHIP**, but CHIP is not the base dollar product. It is the governance and utility token attached to a broader protocol stack made of **USDai**, **sUSDai**, and a borrower-credit layer that is designed around AI infrastructure financing.
 
-| Layer | Role |
-|---|---|
-| USDai | Fully-backed synthetic dollar |
-| sUSDai | Yield-bearing staked USDai |
-| CHIP | Governance and utility token |
+The clean way to think about the system is this:
 
-The protocol pitch is that it finances AI infrastructure, especially GPU-backed lending, while turning that credit system into an onchain yield product.
+USD.AI is trying to build a synthetic dollar and yield protocol whose economic engine is not just crypto collateral, not just Treasury bills, and not just exchange funding. It is trying to route value from **AI compute financing**, especially GPU-linked credit demand, back into an onchain dollar and savings product.
 
-Public operating metrics are not trivial:
+That makes the project more specific than a generic "AI coin" and more ambitious than a plain stablecoin wrapper.
+
+### The three moving pieces
+
+At the user-facing level, the architecture is relatively simple even if the internals are not.
+
+| Piece | What it does | Why it matters |
+|---|---|---|
+| **USDai** | The synthetic dollar layer | This is the base asset users hold and move around |
+| **sUSDai** | The yield-bearing version of USDai | This is where depositors express the "earn" side of the product |
+| **CHIP** | Governance and utility token | This is the token the market is speculating on when it buys the upside of the protocol rather than the dollar product itself |
+
+That distinction is important because many readers will instinctively compare CHIP to a stablecoin.
+
+That is the wrong comparison.
+
+Buying CHIP is closer to buying the equity-style narrative around the system than holding the system's dollar itself.
+
+### How the machine is supposed to work
+
+The public docs suggest a chain of logic that looks roughly like this:
+
+depositors enter the USD.AI system through the dollar side, those dollars connect to a credit engine, that credit engine is aimed at financing AI infrastructure borrowers, and the yield from that system then supports the savings layer. CHIP sits above that structure as the token that governs and captures protocol-level upside if the whole mechanism grows.
+
+In other words, the protocol is trying to connect:
+
+1. onchain dollar demand  
+2. onchain yield demand  
+3. offchain-or-hybrid AI infrastructure credit demand
+
+into one stack.
+
+This is why the protocol is more interesting than a normal launch, but it is also why it is harder to evaluate. A simple stablecoin can mostly be judged on backing and redemption. USD.AI has to be judged on **backing, redemption, credit quality, legal enforceability, and borrower demand** at the same time.
+
+### Why the market can take this seriously
+
+A lot of launch tokens tell a big story and show almost no operating surface underneath. USD.AI is different enough that the market can at least point to something real.
+
+Public operating metrics are already visible:
 
 | Source | Metric |
 |---|---|
@@ -82,7 +116,74 @@ Public operating metrics are not trivial:
 | DefiLlama | **$10.37M annualized revenue** |
 | DefiLlama | **$60.61M active loans** |
 
-That is why CHIP trades more like a speculative infrastructure launch than a random AI meme.
+Those numbers do not prove the token is cheap.
+
+They do prove that the story is not empty. That alone is enough to separate CHIP from the average AI-narrative launch.
+
+### Where USD.AI fits in the current market map
+
+One reason this section needs more context is that crypto narratives in 2026 are not all competing in the same lane.
+
+Recent market attention has tended to cluster around a few recognizable categories:
+
+- **Perp and trading infrastructure**, where projects like [Hyperliquid](https://hyperliquid.gitbook.io/hyperliquid-docs) captured attention by turning fast onchain trading into its own product category
+- **Synthetic dollar systems**, where projects like [Ethena](https://docs.ethena.fi/) became important by giving users a crypto-native dollar plus a savings layer
+- **Yield abstraction and yield trading**, where [Pendle](https://docs.pendle.finance/pendle-v2/Introduction) made future yield itself tradable
+- **Onchain private credit / RWA lending**, where projects like [Maple](https://docs.maple.finance/) built serious lending products around institutional credit
+
+USD.AI matters because it does not fit cleanly into only one of those boxes.
+
+It borrows one piece from each:
+
+- like Ethena, it has a synthetic dollar plus a savings wrapper
+- like Pendle-era yield products, it sells a yield narrative rather than just a token narrative
+- like Maple and other credit/RWA protocols, it is fundamentally trying to monetize a real financing activity
+- but unlike the perp category, it is not winning through pure trading velocity or fee reflexivity
+
+That last point matters.
+
+Perp protocols are easy for the market to understand because the loop is immediate: more traders, more fees, more attention, more token narrative. USD.AI is not that simple. Its loop is slower and more institutional: more credible borrowing demand, more financed infrastructure, more sustainable yield, more trust in the dollar layer, more value attributed to the governance token.
+
+That makes the upside potentially more defensible, but it also makes the narrative harder to sell fast.
+
+### So why could it become more important from here?
+
+USD.AI will probably not become a top-tier market story by trying to look like a perp exchange or a meme coin. It can only become important if the market decides that **AI infrastructure finance** deserves its own premium narrative.
+
+That is not a crazy idea.
+
+The reason is that AI infrastructure is increasingly being financed like a capital market, not just like a tech product category. Clifford Chance's 2026 note on data centres and AI compute infrastructure explicitly points to the rise of GPU lease finance and large-scale GPU-collateralised credit structures. USD.AI is trying to build an onchain version of exposure to that world.
+
+If the market keeps rotating toward:
+
+- onchain real yield
+- tokenized private credit
+- AI infrastructure rails
+- and systems with real economic throughput behind the token
+
+then USD.AI becomes easier to understand and easier to re-rate higher.
+
+### And why might it fail to become a true trend?
+
+The bearish case is not hard to see.
+
+USD.AI may simply be too complex for broad retail attention.
+
+Perp exchanges are easy to explain. Users trade. Fees are generated. The token narrative is immediate. Synthetic-dollar systems are also relatively easy to explain once the user understands the hedge. Yield trading protocols at least have a simple user promise: lock fixed yield or speculate on future yield.
+
+USD.AI asks the market to understand a more complicated chain:
+
+a synthetic dollar, a yield-bearing wrapper, GPU-backed borrowing, legal tokenization of hard assets, queue-based redemptions, and a governance token sitting above all of it.
+
+That can absolutely work with sophisticated capital.
+
+But it may struggle to become a broad retail trend unless one of two things happens:
+
+either the protocol starts showing unmistakably strong growth in deposits, loans, and revenue, or the market starts treating AI compute financing as one of the major investable narratives of the cycle.
+
+That is the key tradeoff.
+
+USD.AI is not simple enough to go viral on structure alone. It has to earn attention either through real traction or through a bigger macro narrative around AI infrastructure finance.
 
 ## What The Project Actually Is And Why It Is Different
 
@@ -164,6 +265,10 @@ From the website and docs, the protocol is already presenting multiple live surf
 | Loans and borrower framing | The system is clearly presenting itself as a real credit market, not just a stablecoin wrapper |
 | Proof of reserves / dashboards | The protocol is leaning into transparency and verifiability as part of the pitch |
 | Audits and contract-address docs | It is trying to present itself as infrastructure, not as a launch-only token |
+
+![USD.AI website homepage screenshot](../images/usdai/usdai-website-homepage.png)
+
+*Raw homepage screenshot from USD.AI checked on April 22, 2026, showing the live product framing around deposits, users, APR, and the protocol's AI-credit positioning.*
 
 ### What that means in practice
 
@@ -267,6 +372,10 @@ From CoinMarketCap, CoinList, and USD.AI docs:
 | Reserve allocation | **19.5%** |
 | Core contributors unlocked before month 12 | **0%** |
 | Investors unlocked before month 12 | **0%** |
+
+![USD.AI tokenomics docs screenshot](../images/usdai/usdai-docs-tokenomics-page.png)
+
+*Raw tokenomics/docs screenshot from USD.AI checked on April 22, 2026, showing the public allocation and vesting framework referenced in the supply-structure analysis.*
 
 ### Why this structure matters more than the headline supply
 
@@ -751,6 +860,10 @@ For now, the most disciplined stance is:
 19. AP News, renewed shipping attacks despite ceasefire backdrop: https://apnews.com/article/us-iran-war-hormuz-israel-pakistan-ceasefire-april-22-2026-267230f7f32b436822484479313840f7
 20. GeckoTerminal CHIP pool page: https://www.geckoterminal.com/arbitrum/pools/0x49340dbb8fb5ece2f9b594e77ab774e65725e9d8
 21. Clifford Chance, Data Centres & AI Compute Infrastructure Insights 2026: https://www.cliffordchance.com/content/dam/cliffordchance/briefings/2026/03/data-centres-and-ai-compute-infrastructure-insights-2026.pdf
+22. Hyperliquid docs: https://hyperliquid.gitbook.io/hyperliquid-docs
+23. Ethena docs: https://docs.ethena.fi/
+24. Pendle docs, Introduction: https://docs.pendle.finance/pendle-v2/Introduction
+25. Maple docs: https://docs.maple.finance/
 
 ## Notes On Method
 
