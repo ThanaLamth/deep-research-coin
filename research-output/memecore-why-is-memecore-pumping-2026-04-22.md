@@ -1,6 +1,6 @@
 # Why Is MemeCore (M) Pumping?
 
-**Asset:** MemeCore (`M`)  
+**Asset:** MemeCore (M)  
 **Date:** April 22, 2026  
 **Primary identity:** Native asset of the MemeCore Layer 1 network
 
@@ -10,13 +10,15 @@ When a token jumps this hard, most people ask the same question first: what news
 
 In MemeCore's case, that is only part of the answer.
 
-As of **April 22, 2026**, CoinGecko showed `M` around **$4.33**, up about **25.5% in 24 hours**, and still trading close to the all-time high from **April 18, 2026**. That tells us two things immediately. First, this is not a dead-cat bounce from broken lows. Second, buyers are still willing to chase strength near the top of the recent range.
+As of **April 22, 2026**, CoinGecko showed M around **$4.33**, up about **25.5% in 24 hours**, and still trading close to the all-time high from **April 18, 2026**. That tells us two things immediately. First, this is not a dead-cat bounce from broken lows. Second, buyers are still willing to chase strength near the top of the recent range.
 
 But if you try to explain the move with one clean headline, the story breaks down. There is no single fresh announcement on **April 22, 2026** that fully explains why MemeCore kept getting bid. The market is moving for a bigger reason: the project still has a tradable narrative, exchange access is wide enough for speculators to participate, and the on-chain data suggests the real tradeable float may be tighter than the raw supply numbers make it look.
 
 That last point is the important one.
 
-For beginners, "float" simply means the tokens that are realistically available to trade right now. A coin can have a huge total supply on paper and still move violently if the supply that actually reaches the market is much smaller. That is the lens you need for MemeCore.
+<!-- wp:table -->
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td><em>For beginners, "float" simply means the tokens that are realistically available to trade right now. A coin can have a huge total supply on paper and still move violently if the supply that actually reaches the market is much smaller. That is the lens you need for MemeCore.</em></td></tr></tbody></table></figure>
+<!-- /wp:table -->
 
 So the better question is not just "why is MemeCore pumping?" The better question is this:
 
@@ -35,9 +37,9 @@ Put more precisely, the current move appears to be driven by four forces acting 
 | Thin effective float vs valuation | CoinGecko shows only **1.29B** circulating against a **10B** max supply, so tradeable supply is much smaller than the headline valuation implies. |
 | Managed on-chain supply structure | MemecoreScan shows not only concentration, but large timelock and proxy-controlled buckets that can make price discovery fragile and squeezable. |
 
-In simple terms, price is not rising because one magical headline suddenly changed everything.
-
-Price is rising because a bullish story is meeting a supply structure that may be much tighter than casual traders assume.
+<!-- wp:table -->
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td><em>In simple terms, price is not rising because one magical headline suddenly changed everything. Price is rising because a bullish story is meeting a supply structure that may be much tighter than casual traders assume.</em></td></tr></tbody></table></figure>
+<!-- /wp:table -->
 
 That is why the move looks less like a normal fundamental repricing and more like a **narrative-backed, structure-assisted breakout**.
 
@@ -63,7 +65,7 @@ Using the live [CoinGecko market page](https://www.coingecko.com/en/coins/memeco
 
 Two details matter more than the rest.
 
-First, `M` is trading close to the highs, not far below them. That tells you buyers are still willing to pay up instead of waiting for a deeper reset.
+First, M is trading close to the highs, not far below them. That tells you buyers are still willing to pay up instead of waiting for a deeper reset.
 
 Second, the gap between market cap and FDV is large. CoinGecko shows a **market cap / FDV ratio of 0.24**. For a beginner, that means only a relatively small portion of the theoretical full token base is being reflected in the current market cap. When that happens, price can move much faster than people expect because traders are really fighting over the visible float, not the full long-term supply.
 
@@ -77,7 +79,7 @@ The cleanest explanation is this:
 
 MemeCore still has a live bullish narrative, but the structure underneath that narrative may be doing more work than many traders realize.
 
-CoinMarketCap's `CMC AI` MemeCore update published on **April 21, 2026** points to two narratives moving at the same time:
+CoinMarketCap's CMC AI MemeCore update published on **April 21, 2026** points to two narratives moving at the same time:
 
 | Narrative | Read |
 |---|---|
@@ -95,16 +97,20 @@ For MemeCore, the evidence suggests both are happening at the same time.
 
 ## Catalyst 1: The Upgrade Narrative Is Still Being Priced In
 
-CoinMarketCap's latest MemeCore update says the market is still giving credit to the network's **March 25, 2026 Stable Hardfork & Account Abstraction** rollout. The practical message is simple: traders still see this as a project that is improving its chain experience, not just running on meme branding alone.
+CoinMarketCap's latest MemeCore update says the market is still giving credit to the network's **March 25, 2026 Stable Hardfork & Account Abstraction** rollout.
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td><em>The practical message is simple: traders still see this as a project that is improving its chain experience, not just running on meme branding alone.</em></td></tr></tbody></table></figure>
+<!-- /wp:table -->
 
 That interpretation is consistent with the project's own public documentation.
 
-From the user-facing [MemeCore docs for `$M`](https://docs.memecore.com/memecore/token/usdm) and [Proof of Meme](https://docs.memecore.com/memecore/proof-of-meme-pom), the project is trying to sell a coherent thesis:
+From the user-facing [MemeCore docs for M](https://docs.memecore.com/memecore/token/usdm) and [Proof of Meme](https://docs.memecore.com/memecore/proof-of-meme-pom), the project is trying to sell a coherent thesis:
 
 | Project pillar | Why traders may care |
 |---|---|
-| `M` as native gas + staking asset | Gives the token a chain-native role rather than purely meme status |
-| Proof of Meme (`PoM`) | Creates a distinct consensus / reward narrative |
+| M as native gas + staking asset | Gives the token a chain-native role rather than purely meme status |
+| Proof of Meme (PoM) | Creates a distinct consensus / reward narrative |
 | Viral Grants Reserve | Links on-chain traction to grant distribution |
 | Meme Vault and MRC-20 ecosystem | Expands the idea from one token into a broader launch-and-reward system |
 
@@ -114,7 +120,7 @@ That matters because pumps do not need universal belief. They only need a story 
 
 ## Catalyst 2: Exchange Access Is Broad Enough to Support Speculation
 
-MemeCore's official homepage states that `$M` is available across multiple exchanges and directly points users to:
+MemeCore's official homepage states that M is available across multiple exchanges and directly points users to:
 
 | Venue surfaced by MemeCore | Public page |
 |---|---|
@@ -128,7 +134,9 @@ This does not prove the market is healthy.
 
 It does prove the market is accessible.
 
-That distinction is important. A token can only turn narrative into price if traders have enough places to buy it, rotate into it, and chase momentum. MemeCore clearly has that. Once a coin is already close to all-time highs, easy access becomes part of the fuel.
+<!-- wp:table -->
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td><em>That distinction is important. A token can only turn narrative into price if traders have enough places to buy it, rotate into it, and chase momentum. MemeCore clearly has that. Once a coin is already close to all-time highs, easy access becomes part of the fuel.</em></td></tr></tbody></table></figure>
+<!-- /wp:table -->
 
 ## Catalyst 3: The Float Is Small Relative to the Valuation Narrative
 
@@ -259,17 +267,13 @@ The structure becomes even more unusual once you inspect the wallets themselves.
 
 Several of the biggest addresses on MemecoreScan display **TimelockMultiSigWallet** patterns, while another major holder appears as a **DelayedERC1967Proxy**.
 
-For beginners:
-
-- a **timelock** is a contract that can delay when funds move
-- a **multisig** usually means multiple signers are involved in control
-- a **proxy** is a contract wrapper that can route logic through another contract
-
-You do not need to know every technical detail to understand the market implication. These are not ordinary wallets casually holding tokens. These are control rails.
+<!-- wp:table -->
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td><em>For beginners: a timelock is a contract that can delay when funds move. A multisig usually means multiple signers are involved in control. A proxy is a contract wrapper that can route logic through another contract. You do not need to know every technical detail to understand the market implication. These are not ordinary wallets casually holding tokens. These are control rails.</em></td></tr></tbody></table></figure>
+<!-- /wp:table -->
 
 Put differently, the visible float does not look broad and organic. It looks staged.
 
-One of the clearest examples is the top holder, [`0x22eAc7cE...fBF859e98`](https://memecorescan.io/address/0x22eac7ce8e04052523369b93d50cdccfbf859e98), which currently holds about **1.65B M**.
+One of the clearest examples is the top holder, [0x22eAc7cE...fBF859e98](https://memecorescan.io/address/0x22eac7ce8e04052523369b93d50cdccfbf859e98), which currently holds about **1.65B M**.
 
 That wallet matters for two reasons.
 
@@ -277,23 +281,23 @@ First, the balance is enormous on its own.
 
 Second, the wallet did not stay still.
 
-The deeper flow review shows this address pushed more than **1.02B M** into a secondary timelock rail, including a **926,996,069 M** transfer and a later **100,000,000 M** transfer into [`0x74696D9e...187012EEe`](https://memecorescan.io/address/0x74696d9ed2885a1335a914f1ea53445187012eee).
+The deeper flow review shows this address pushed more than **1.02B M** into a secondary timelock rail, including a **926,996,069 M** transfer and a later **100,000,000 M** transfer into [0x74696D9e...187012EEe](https://memecorescan.io/address/0x74696d9ed2885a1335a914f1ea53445187012eee).
 
 That receiving timelock then sent material tranches outward again, including **30,000,000 M**, **6,000,000 M**, **50,000,000 M**, and smaller multi-million token distributions to downstream wallets.
 
-This is the key point:
-
-the largest bucket did not just hold supply. It appears to have **distributed supply through a second rail**.
+<!-- wp:table -->
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td><em>This is the key point: the largest bucket did not just hold supply. It appears to have distributed supply through a second rail.</em></td></tr></tbody></table></figure>
+<!-- /wp:table -->
 
 That is not what a naturally dispersed retail holder base looks like. It looks much more like a staged release system.
 
 The same pattern appears in a separate proxy path.
 
-The holder [`0xC0222729...21613aE99`](https://memecorescan.io/address/0xc02227299520cb75e2938695da843e721613ae99), which holds about **229.68M M**, is displayed by the explorer as a **DelayedERC1967Proxy**. It was funded by another proxy-like address, then fed tokens onward to an active downstream recipient wallet in smaller releases.
+The holder [0xC0222729...21613aE99](https://memecorescan.io/address/0xc02227299520cb75e2938695da843e721613ae99), which holds about **229.68M M**, is displayed by the explorer as a **DelayedERC1967Proxy**. It was funded by another proxy-like address, then fed tokens onward to an active downstream recipient wallet in smaller releases.
 
-Again, the takeaway is simple:
-
-this supply does not look like it moved from one whale to another by accident. It looks routed.
+<!-- wp:table -->
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td><em>Again, the takeaway is simple: this supply does not look like it moved from one whale to another by accident. It looks routed.</em></td></tr></tbody></table></figure>
+<!-- /wp:table -->
 
 ![MemeCore managed supply rails capture](../images/memecore/memecore-managed-rails-capture.png)
 
@@ -326,7 +330,7 @@ It means price may be reacting not only to belief, but also to **how the supply 
 
 One of the most revealing parts of the current setup is that the pump is happening while skepticism is already in the open.
 
-CoinMarketCap's April 21 update says on-chain investigator `ZachXBT` publicly flagged MemeCore among risky tokens and challenged the project over supply concentration. The same update also says price held firm despite that critique, supported by recent upgrades and on-chain activity.
+CoinMarketCap's April 21 update says on-chain investigator ZachXBT publicly flagged MemeCore among risky tokens and challenged the project over supply concentration. The same update also says price held firm despite that critique, supported by recent upgrades and on-chain activity.
 
 That combination is unusual enough to matter.
 
@@ -363,9 +367,9 @@ A better read is:
 
 That is why this move looks more like a **bullish narrative riding a fragile market structure** than a universally accepted long-term revaluation.
 
-If you are new to on-chain research, that is the main lesson to keep:
-
-> strong price does not automatically mean broad ownership, and broad ownership does not automatically exist just because a token trades on many venues
+<!-- wp:table -->
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td><em>If you are new to on-chain research, that is the main lesson to keep: strong price does not automatically mean broad ownership, and broad ownership does not automatically exist just because a token trades on many venues.</em></td></tr></tbody></table></figure>
+<!-- /wp:table -->
 
 ## Final Take
 
@@ -400,7 +404,7 @@ And the structure underneath it can still be fragile.
 |---|---|
 | Market data | [CoinGecko MemeCore page](https://www.coingecko.com/en/coins/memecore) |
 | Official project overview | [MemeCore homepage](https://memecore.com/) |
-| Token role and supply design | [MemeCore docs: `$M`](https://docs.memecore.com/memecore/token/usdm) |
+| Token role and supply design | [MemeCore docs: M](https://docs.memecore.com/memecore/token/usdm) |
 | Consensus and reward design | [MemeCore docs: Proof of Meme](https://docs.memecore.com/memecore/proof-of-meme-pom) |
 | Viral grant mechanism | [MemeCore docs: Viral Grants Reserve](https://docs.memecore.com/memecore/proof-of-meme-pom/viral-grants-reserve) |
 | Validator structure | [MemeCore docs: Validator](https://docs.memecore.com/guides/consensus/validator) |
