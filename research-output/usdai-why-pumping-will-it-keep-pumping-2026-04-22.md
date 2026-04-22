@@ -247,6 +247,88 @@ So current price strength can continue, but a lot of paper profit already exists
 
 *Research capture showing the key float math, DEX liquidity profile, and launch-window on-chain transfer behavior checked on April 22, 2026.*
 
+## Deep Onchain Read
+
+The first version of this note established that launch-hour flow looked like live routing, not obvious fresh mint dumping.
+
+The deeper onchain read adds three more important points.
+
+### 1. The post-launch token graph expanded very quickly
+
+Using public Arbitrum RPC data from **April 21, 2026 13:00 UTC** onward, the CHIP contract showed:
+
+| Metric | Value |
+|---|---:|
+| Transfer logs after live trading opened | **235,424** |
+| Unique addresses touched in that window | **9,049** |
+
+That matters because it shows the launch was not a tiny one-pool event.
+
+Even if much of the activity was routing and churn, the token still spread across a reasonably broad early-address graph very quickly.
+
+### 2. The early flow was dominated by market infrastructure, not obvious accumulation wallets
+
+In the first major launch window, roughly **13:00 to 15:43 UTC on April 21, 2026**, several addresses dominated flow:
+
+| Address / role | Launch-window flow read | Ending balance at check |
+|---|---|---:|
+| Main CHIP/USDC pair `0x4934...e9d8` | **11,514 in / 9,385 out** | **3.56M CHIP** |
+| Address commonly identified as LI.FI Diamond `0x1231...4eae` | **4,015 in / 4,105 out** | **0 CHIP** |
+| Address commonly identified as Uniswap v4 PoolManager `0x360e...fb32` | **4,688 in / 6,514 out** | **2.51M CHIP** |
+| Route wallet `0x5600...a306` | **3,697 in / 3,755 out** | **434.2K CHIP** |
+| Route wallet `0x6aba...1b90` | **3,559 in / 3,559 out** | **0 CHIP** |
+| Route wallet `0x5df4...1cdd` | **3,320 in / 2,785 out** | **0 CHIP** |
+| Route wallet `0x8f10...f996` | **3,017 in / 3,042 out** | **0 CHIP** |
+
+The interpretation is straightforward:
+
+- the main pair was the central inventory sink
+- major routing contracts were extremely active
+- several high-frequency route wallets finished with **zero** balance
+
+That is exactly what you expect from a launch driven by routing, pool recycling, and venue connectivity.
+
+It is **not** what you expect if the main story is one or two wallets simply accumulating and sitting still.
+
+### 3. Most supply still appears to sit outside active public float
+
+This is the most important structural point in the whole onchain section.
+
+GeckoTerminal's public CHIP pool pages state that the contract address **`0xe23796fbda930646e903c2c94a6ed1312409ca05`** holds the largest amount of CHIP, currently **9B CHIP**.
+
+Public Arbitrum RPC cross-checking also shows that this address is a **contract**, not an externally owned wallet.
+
+That matters because:
+
+- total supply is **10B CHIP**
+- CoinMarketCap shows only **2B CHIP** circulating
+- GeckoTerminal reports a **9B CHIP** top holder contract
+
+The disciplined read is not "one whale can dump 90% tomorrow."
+
+The better read is:
+
+- most supply still appears to be sitting in **managed contract-controlled buckets**
+- active public float is much smaller than the total supply number
+- price discovery is therefore happening on a relatively narrow tradable surface
+
+That is one of the clearest onchain reasons CHIP can overshoot in both directions.
+
+### What the deeper onchain read changes
+
+The first version of the article could already say that launch-day flow looked speculative.
+
+The deeper onchain read lets us say something stronger:
+
+| Onchain conclusion | Why it matters |
+|---|---|
+| Launch activity scaled fast across thousands of addresses | The move was not just a dead pool with no real engagement |
+| Early flow was dominated by pair and router infrastructure | The first move looked mechanical and routing-heavy |
+| Large route addresses often ended with little or no CHIP | Much of the flow was transit, not final accumulation |
+| A contract address appears to hold 9B CHIP | Most of the supply still sits outside active public float |
+
+That is a materially stronger explanation for the pump than "AI narrative" alone.
+
 ## What Onchain Actually Proves Right Now
 
 The onchain evidence is useful, but it does not prove everything.
@@ -309,18 +391,21 @@ It means calling a RAVE-like repeat already would be premature.
 
 Yes, but not in a simple one-headline way.
 
-The timing overlaps with a mixed but improving macro backdrop:
+The timing overlaps with a mixed but improving macro backdrop.
 
-| Date | Macro backdrop | Likely effect on CHIP |
-|---|---|---|
-| **April 17, 2026** | AP reported the Strait of Hormuz was declared fully open again, oil dropped about **9%**, and Wall Street rallied to a record high | Improved global risk appetite helped speculative launches generally |
-| **April 21-22, 2026** | The ceasefire backdrop still existed, but AP also reported renewed maritime attacks and continued regional instability | Macro was not cleanly bullish, but it was no longer worst-case panic |
-| **April 2026 earnings season** | AP also noted strong early U.S. earnings helped support equities | Broader risk-on conditions likely helped trader willingness to chase new listings |
+The useful way to read this is to align the macro tape with the exact CHIP timeline instead of treating macro as a vague background story.
+
+| Date | Macro event | CHIP event / state | Price state |
+|---|---|---|---|
+| **April 17, 2026** | AP reported that France and the U.K. welcomed the Strait of Hormuz reopening and pushed for permanent freedom of navigation. See [AP](https://apnews.com/article/hormuz-strait-iran-blockade-britain-france-10518e69aecbb986c9118ff42ab0ca02). AP also reported oil fell sharply and Wall Street rallied as Iran said the strait was open again. See [AP](https://apnews.com/article/stock-markets-trump-oil-iran-war-50e10bf2aa9b0b658c51e17db3eb3b13). | There was **no live CoinMarketCap spot range yet**. CHIP was still in the pre-spot stage, with leverage rails already building. The closest token-side milestone was the BitMart futures launch on **April 16, 2026**. See [BitMart futures announcement](https://www.bitmart.com/fa-IR/support/articles/28421981478683/28422943207579/49209414724123). | No public CMC spot print yet. The token had not entered true open-market price discovery. |
+| **April 21, 2026** | The improved post-ceasefire tone was still part of the backdrop, even though it was no longer fresh news. | This is when the real CHIP market opened. The main Arbitrum pair was created at **10:29:55 UTC** on DexScreener: [CHIP/USDC pair](https://dexscreener.com/arbitrum/0x49340dbb8fb5ece2f9b594e77ab774e65725e9d8). MEXC spot then opened at **12:20 / 12:40 UTC**: [MEXC listing](https://www.mexc.com/announcements/article/first-in-market-17827791534985). | CoinMarketCap later marked this day as the **ATL date** at **$0.03027**. See [CoinMarketCap](https://coinmarketcap.com/currencies/usd-ai/). |
+| **April 22, 2026** | AP reported renewed shipping attacks in the Strait of Hormuz even while the U.S. maintained the ceasefire line and blockade pressure. See [AP](https://apnews.com/article/us-iran-war-hormuz-israel-pakistan-ceasefire-april-22-2026-267230f7f32b436822484479313840f7). | There was **no matching fresh CHIP announcement of the same scale**. The token was mainly trading on the rails that had already been built. | CoinMarketCap marked this day as the **ATH date** at **$0.1171**. See [CoinMarketCap](https://coinmarketcap.com/currencies/usd-ai/). |
 
 My read is:
 
-- **CHIP did launch into a better macro tape than a pure panic environment**
-- **but the pump still looks mostly token-specific, not macro-led**
+- **April 17 improved the macro tape before CHIP entered true public spot trading**
+- **April 21 was the actual token-specific ignition point**
+- **April 22 shows the rally continued even after macro headlines became noisier again**
 
 So if the question is "did USD.AI pump because of a U.S.-Iran headline?"
 
@@ -328,7 +413,11 @@ The disciplined answer is:
 
 **No, not primarily.**
 
-The macro backdrop probably made speculation easier, but launch mechanics, float structure, and venue expansion were the main drivers.
+The better phrasing is:
+
+- macro made risk-taking easier
+- but CHIP only really ignited once the token got open-market rails
+- and the rally continuing into **April 22, 2026** despite worse shipping headlines argues that the move was still mainly **token-structure-led**
 
 ![USD.AI market comparison capture](../images/usdai/usdai-market-capture.png)
 
@@ -440,9 +529,11 @@ For now, the most disciplined stance is:
 17. AP News, Hormuz reopening and diplomatic response: https://apnews.com/article/hormuz-strait-iran-blockade-britain-france-10518e69aecbb986c9118ff42ab0ca02
 18. AP News, oil drop and Wall Street rally after reopening: https://apnews.com/article/stock-markets-trump-oil-iran-war-50e10bf2aa9b0b658c51e17db3eb3b13
 19. AP News, renewed shipping attacks despite ceasefire backdrop: https://apnews.com/article/us-iran-war-hormuz-israel-pakistan-ceasefire-april-22-2026-267230f7f32b436822484479313840f7
+20. GeckoTerminal CHIP pool page: https://www.geckoterminal.com/arbitrum/pools/0x49340dbb8fb5ece2f9b594e77ab774e65725e9d8
 
 ## Notes On Method
 
 - CoinMarketCap and DexScreener values were checked on April 22, 2026 and can move intraday.
 - The launch-window transfer analysis was derived from public Arbitrum RPC logs for the CHIP contract.
+- Some address-role labels above are inference-based, combining public address matches with observed flow behavior.
 - Scenario ranges are inference-based and are not price targets with certainty.
