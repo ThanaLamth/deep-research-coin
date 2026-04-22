@@ -16,9 +16,9 @@ But if you try to explain the move with one clean headline, the story breaks dow
 
 That last point is the important one.
 
-<!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td><em>For beginners, "float" simply means the tokens that are realistically available to trade right now. A coin can have a huge total supply on paper and still move violently if the supply that actually reaches the market is much smaller. That is the lens you need for MemeCore.</em></td></tr></tbody></table></figure>
-<!-- /wp:table -->
+| Note |
+|---|
+| *For beginners, "float" simply means the tokens that are realistically available to trade right now. A coin can have a huge total supply on paper and still move violently if the supply that actually reaches the market is much smaller. That is the lens you need for MemeCore.* |
 
 So the better question is not just "why is MemeCore pumping?" The better question is this:
 
@@ -37,9 +37,9 @@ Put more precisely, the current move appears to be driven by four forces acting 
 | Thin effective float vs valuation | CoinGecko shows only **1.29B** circulating against a **10B** max supply, so tradeable supply is much smaller than the headline valuation implies. |
 | Managed on-chain supply structure | MemecoreScan shows not only concentration, but large timelock and proxy-controlled buckets that can make price discovery fragile and squeezable. |
 
-<!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td><em>In simple terms, price is not rising because one magical headline suddenly changed everything. Price is rising because a bullish story is meeting a supply structure that may be much tighter than casual traders assume.</em></td></tr></tbody></table></figure>
-<!-- /wp:table -->
+| Note |
+|---|
+| *In simple terms, price is not rising because one magical headline suddenly changed everything. Price is rising because a bullish story is meeting a supply structure that may be much tighter than casual traders assume.* |
 
 That is why the move looks less like a normal fundamental repricing and more like a **narrative-backed, structure-assisted breakout**.
 
@@ -99,9 +99,9 @@ For MemeCore, the evidence suggests both are happening at the same time.
 
 CoinMarketCap's latest MemeCore update says the market is still giving credit to the network's **March 25, 2026 Stable Hardfork & Account Abstraction** rollout.
 
-<!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td><em>The practical message is simple: traders still see this as a project that is improving its chain experience, not just running on meme branding alone.</em></td></tr></tbody></table></figure>
-<!-- /wp:table -->
+| Note |
+|---|
+| *The practical message is simple: traders still see this as a project that is improving its chain experience, not just running on meme branding alone.* |
 
 That interpretation is consistent with the project's own public documentation.
 
@@ -134,9 +134,9 @@ This does not prove the market is healthy.
 
 It does prove the market is accessible.
 
-<!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td><em>That distinction is important. A token can only turn narrative into price if traders have enough places to buy it, rotate into it, and chase momentum. MemeCore clearly has that. Once a coin is already close to all-time highs, easy access becomes part of the fuel.</em></td></tr></tbody></table></figure>
-<!-- /wp:table -->
+| Note |
+|---|
+| *That distinction is important. A token can only turn narrative into price if traders have enough places to buy it, rotate into it, and chase momentum. MemeCore clearly has that. Once a coin is already close to all-time highs, easy access becomes part of the fuel.* |
 
 ## Catalyst 3: The Float Is Small Relative to the Valuation Narrative
 
@@ -267,9 +267,9 @@ The structure becomes even more unusual once you inspect the wallets themselves.
 
 Several of the biggest addresses on MemecoreScan display **TimelockMultiSigWallet** patterns, while another major holder appears as a **DelayedERC1967Proxy**.
 
-<!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td><em>For beginners: a timelock is a contract that can delay when funds move. A multisig usually means multiple signers are involved in control. A proxy is a contract wrapper that can route logic through another contract. You do not need to know every technical detail to understand the market implication. These are not ordinary wallets casually holding tokens. These are control rails.</em></td></tr></tbody></table></figure>
-<!-- /wp:table -->
+| Note |
+|---|
+| *For beginners: a timelock is a contract that can delay when funds move. A multisig usually means multiple signers are involved in control. A proxy is a contract wrapper that can route logic through another contract. You do not need to know every technical detail to understand the market implication. These are not ordinary wallets casually holding tokens. These are control rails.* |
 
 Put differently, the visible float does not look broad and organic. It looks staged.
 
@@ -285,9 +285,9 @@ The deeper flow review shows this address pushed more than **1.02B M** into a se
 
 That receiving timelock then sent material tranches outward again, including **30,000,000 M**, **6,000,000 M**, **50,000,000 M**, and smaller multi-million token distributions to downstream wallets.
 
-<!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td><em>This is the key point: the largest bucket did not just hold supply. It appears to have distributed supply through a second rail.</em></td></tr></tbody></table></figure>
-<!-- /wp:table -->
+| Note |
+|---|
+| *This is the key point: the largest bucket did not just hold supply. It appears to have distributed supply through a second rail.* |
 
 That is not what a naturally dispersed retail holder base looks like. It looks much more like a staged release system.
 
@@ -295,9 +295,9 @@ The same pattern appears in a separate proxy path.
 
 The holder [0xC0222729...21613aE99](https://memecorescan.io/address/0xc02227299520cb75e2938695da843e721613ae99), which holds about **229.68M M**, is displayed by the explorer as a **DelayedERC1967Proxy**. It was funded by another proxy-like address, then fed tokens onward to an active downstream recipient wallet in smaller releases.
 
-<!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td><em>Again, the takeaway is simple: this supply does not look like it moved from one whale to another by accident. It looks routed.</em></td></tr></tbody></table></figure>
-<!-- /wp:table -->
+| Note |
+|---|
+| *Again, the takeaway is simple: this supply does not look like it moved from one whale to another by accident. It looks routed.* |
 
 ![MemeCore managed supply rails capture](../images/memecore/memecore-managed-rails-capture.png)
 
@@ -367,9 +367,9 @@ A better read is:
 
 That is why this move looks more like a **bullish narrative riding a fragile market structure** than a universally accepted long-term revaluation.
 
-<!-- wp:table -->
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td><em>If you are new to on-chain research, that is the main lesson to keep: strong price does not automatically mean broad ownership, and broad ownership does not automatically exist just because a token trades on many venues.</em></td></tr></tbody></table></figure>
-<!-- /wp:table -->
+| Note |
+|---|
+| *If you are new to on-chain research, that is the main lesson to keep: strong price does not automatically mean broad ownership, and broad ownership does not automatically exist just because a token trades on many venues.* |
 
 ## Final Take
 
