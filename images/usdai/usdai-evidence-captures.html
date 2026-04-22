@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>USD.AI Evidence Captures</title>
+  <style>
+    :root {
+      --bg: #f2f0eb;
+      --paper: #fffdf9;
+      --ink: #10212b;
+      --muted: #5f6b72;
+      --line: #d8d0c5;
+      --accent: #0f7c77;
+      --accent-2: #c46735;
+      --accent-3: #214d8b;
+      --soft: rgba(15, 124, 119, 0.08);
+      --soft-2: rgba(196, 103, 53, 0.08);
+      --soft-3: rgba(33, 77, 139, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .capture {
+      width: 1500px;
+      min-height: 1100px;
+      margin: 34px auto;
+      padding: 46px 50px;
+      background:
+        radial-gradient(circle at top right, var(--soft), transparent 28%),
+        radial-gradient(circle at bottom left, var(--soft-2), transparent 28%),
+        var(--paper);
+      border: 1px solid var(--line);
+      box-shadow: 0 20px 48px rgba(16, 33, 43, 0.12);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(15, 124, 119, 0.2);
+      background: rgba(15, 124, 119, 0.1);
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: 46px;
+      line-height: 1.05;
+      max-width: 1180px;
+    }
+
+    .sub {
+      margin: 0 0 26px;
+      max-width: 1180px;
+      color: var(--muted);
+      font-size: 20px;
+      line-height: 1.45;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 22px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .panel {
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 22px 24px;
+    }
+
+    .panel h2 {
+      margin: 0 0 14px;
+      font-size: 24px;
+      line-height: 1.15;
+    }
+
+    .panel p,
+    .panel li,
+    .panel td,
+    .panel th {
+      font-size: 15px;
+      line-height: 1.48;
+    }
+
+    .kpis {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+
+    .kpi {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.86);
+      padding: 14px 16px;
+    }
+
+    .label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 12px;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .value {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.1;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th {
+      text-align: left;
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    td {
+      padding: 10px 0;
+      vertical-align: top;
+      border-bottom: 1px solid rgba(216, 208, 197, 0.75);
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.86);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 12px;
+    }
+
+    .event {
+      display: grid;
+      grid-template-columns: 170px 1fr;
+      gap: 14px;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(216, 208, 197, 0.72);
+    }
+
+    .event:last-child {
+      border-bottom: 0;
+    }
+
+    .date {
+      color: var(--accent-3);
+      font-weight: 700;
+      font-size: 15px;
+    }
+
+    .event strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 17px;
+    }
+
+    .route {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    .node {
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: #fff;
+    }
+
+    .arrow {
+      color: var(--accent-2);
+      font-weight: 700;
+    }
+
+    .good {
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .warn {
+      color: var(--accent-2);
+      font-weight: 700;
+    }
+
+    .note {
+      margin-top: 14px;
+      padding: 12px 14px;
+      border-radius: 16px;
+      border: 1px solid rgba(33, 77, 139, 0.18);
+      background: var(--soft-3);
+      font-size: 15px;
+      line-height: 1.45;
+    }
+
+    .footer {
+      margin-top: 20px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.45;
+    }
+  </style>
+</head>
+<body>
+  <section class="capture" id="timeline-capture">
+    <div class="eyebrow">USD.AI Capture 01</div>
+    <h1>The rails were built before the public pump</h1>
+    <p class="sub">CHIP did not jump out of a vacuum. Sale pricing, pre-market access, futures access, DEX liquidity, and spot trading all arrived in sequence before the token printed its first real public range.</p>
+
+    <div class="kpis">
+      <div class="kpi">
+        <span class="label">CoinList Sale Price</span>
+        <span class="value">$0.03</span>
+      </div>
+      <div class="kpi">
+        <span class="label">Live Price Check</span>
+        <span class="value">$0.1033</span>
+      </div>
+      <div class="kpi">
+        <span class="label">24H Volume</span>
+        <span class="value">$1.22B</span>
+      </div>
+      <div class="kpi">
+        <span class="label">Circulating Share</span>
+        <span class="value">20%</span>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="panel">
+        <h2>Launch Timeline</h2>
+        <div class="timeline">
+          <div class="event">
+            <div class="date">Feb 9, 2026</div>
+            <div>
+              <strong>ICO path became explicit</strong>
+              USD.AI published the CHIP ICO and airdrop plan, giving the market a formal path from protocol narrative to token sale.
+            </div>
+          </div>
+          <div class="event">
+            <div class="date">Feb 10, 2026</div>
+            <div>
+              <strong>CoinList priced the token</strong>
+              CoinList set a public benchmark at $0.03 with 700M CHIP offered and a $300M FDV reference point.
+            </div>
+          </div>
+          <div class="event">
+            <div class="date">Mar 14, 2026</div>
+            <div>
+              <strong>MEXC pre-market opened</strong>
+              Price discovery started before open spot. That is usually where early expectations and inventory positioning begin to form.
+            </div>
+          </div>
+          <div class="event">
+            <div class="date">Mar 18-19, 2026</div>
+            <div>
+              <strong>BitMart pre-market joined</strong>
+              A second venue helped build the launch rail before the crowd saw a live CoinMarketCap-style move.
+            </div>
+          </div>
+          <div class="event">
+            <div class="date">Apr 16, 2026</div>
+            <div>
+              <strong>Futures arrived first</strong>
+              BitMart listed CHIPUSDT futures with leverage before broad spot access, which is often a sign the market is being primed for a volatile launch.
+            </div>
+          </div>
+          <div class="event">
+            <div class="date">Apr 21, 2026</div>
+            <div>
+              <strong>DEX pair and MEXC spot went live</strong>
+              The main Uniswap Arbitrum pair appeared at 10:29:55 UTC, then MEXC opened spot trading the same day.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>Why This Sequence Matters</h2>
+        <div class="pill-row">
+          <span class="pill">Sale anchor first</span>
+          <span class="pill">Pre-market before spot</span>
+          <span class="pill">Leverage before broad access</span>
+          <span class="pill">DEX liquidity before ATH</span>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Signal</th>
+              <th>Read</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ATL on Apr 21 and ATH on Apr 22</td>
+              <td>The token is still in its first unstable public price-discovery band.</td>
+            </tr>
+            <tr>
+              <td>Volume is about 6x market cap</td>
+              <td>The tape looks launch-driven and mechanically unstable, not fully settled.</td>
+            </tr>
+            <tr>
+              <td>Price is about 3.44x sale price</td>
+              <td>The market is repricing the CoinList benchmark aggressively.</td>
+            </tr>
+            <tr>
+              <td>Protocol metrics already exist</td>
+              <td>This is not just a meme launch. Real deposits, TVL, revenue, and active loans support the story.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="note">
+          <span class="good">Core read:</span> CHIP is pumping because launch mechanics, narrative, and access expansion all arrived together. There is no need to force a single headline explanation when the structure itself already explains the move.
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      Sources used in this capture: CoinMarketCap, USD.AI, CoinList, MEXC, BitMart, DexScreener, Arbiscan. Checked on April 22, 2026.
+    </div>
+  </section>
+
+  <section class="capture" id="structure-capture">
+    <div class="eyebrow">USD.AI Capture 02</div>
+    <h1>The float looks large on paper, but the visible trading surface is still thin</h1>
+    <p class="sub">This is the structural reason CHIP can move harder than many readers expect. The circulating number is already limited, and the liquidity that is visibly sitting in the main DEX pool is tiny relative to supply and valuation.</p>
+
+    <div class="kpis">
+      <div class="kpi">
+        <span class="label">Circulating Supply</span>
+        <span class="value">2B CHIP</span>
+      </div>
+      <div class="kpi">
+        <span class="label">Max Supply</span>
+        <span class="value">10B</span>
+      </div>
+      <div class="kpi">
+        <span class="label">Main DEX Pool</span>
+        <span class="value">4.02M CHIP</span>
+      </div>
+      <div class="kpi">
+        <span class="label">Pool Share of Circulating</span>
+        <span class="value">0.20%</span>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="panel">
+        <h2>Pool and Float Math</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Metric</th>
+              <th>Value</th>
+              <th>Why it matters</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Price</td>
+              <td>$0.1106</td>
+              <td>DEX spot was already trading above the CoinList anchor during the checked window.</td>
+            </tr>
+            <tr>
+              <td>Main DEX liquidity</td>
+              <td>$1.51M</td>
+              <td>This is not a deep pool for a token already trading around a $1B FDV.</td>
+            </tr>
+            <tr>
+              <td>CHIP in pool</td>
+              <td>4.02M</td>
+              <td>Only 0.20% of circulating supply was visibly sitting in the main DEX pool.</td>
+            </tr>
+            <tr>
+              <td>USDC in pool</td>
+              <td>$1.07M</td>
+              <td>Thin quote-side depth means price can move sharply when new demand hits.</td>
+            </tr>
+            <tr>
+              <td>24h DEX volume</td>
+              <td>$10.63M</td>
+              <td>The pool turned over several times in a day, another sign of unstable launch-day churn.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="panel">
+        <h2>What the first launch hours showed on-chain</h2>
+        <div class="pill-row">
+          <span class="pill">74,473 transfers</span>
+          <span class="pill">0 mint events</span>
+          <span class="pill">0 burn events</span>
+          <span class="pill">Window: 12:57-15:43 UTC</span>
+        </div>
+
+        <div class="route">
+          <span class="node">Routing address</span>
+          <span class="arrow">→</span>
+          <span class="node">Bridge / router</span>
+          <span class="arrow">→</span>
+          <span class="node">Market-facing wallet</span>
+          <span class="arrow">→</span>
+          <span class="node">Main CHIP/USDC pair</span>
+        </div>
+
+        <ul>
+          <li>The measured window did not show obvious fresh minting into the market.</li>
+          <li>The flow looked like live routing and pool churn, not a clean treasury dump pattern.</li>
+          <li>That does not eliminate concentration risk, but it does change the first-order explanation for the pump.</li>
+        </ul>
+
+        <div class="note">
+          <span class="good">What this proves well:</span> the pump is happening on top of thin visible liquidity and intense live routing.<br />
+          <span class="warn">What it does not prove yet:</span> whether a few entities still control most of the liquid float across exchanges.
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-3" style="margin-top: 18px;">
+      <div class="panel">
+        <h2>Protocol Foundation</h2>
+        <table>
+          <tbody>
+            <tr>
+              <td>Total deposits</td>
+              <td><strong>$344M</strong></td>
+            </tr>
+            <tr>
+              <td>Users</td>
+              <td><strong>73,766</strong></td>
+            </tr>
+            <tr>
+              <td>Current APR</td>
+              <td><strong>7.11%</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="panel">
+        <h2>DefiLlama Cross-Check</h2>
+        <table>
+          <tbody>
+            <tr>
+              <td>TVL</td>
+              <td><strong>$282.98M</strong></td>
+            </tr>
+            <tr>
+              <td>Annualized revenue</td>
+              <td><strong>$10.37M</strong></td>
+            </tr>
+            <tr>
+              <td>Active loans</td>
+              <td><strong>$60.61M</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="panel">
+        <h2>Tokenomics Friction</h2>
+        <table>
+          <tbody>
+            <tr>
+              <td>Ecosystem bootstrapping</td>
+              <td><strong>27.5%</strong></td>
+            </tr>
+            <tr>
+              <td>Reserve</td>
+              <td><strong>19.5%</strong></td>
+            </tr>
+            <tr>
+              <td>Investor/core unlock before month 12</td>
+              <td><strong>0%</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="footer">
+      Sources used in this capture: CoinMarketCap, DexScreener, Arbitrum public RPC, USD.AI docs, DefiLlama. Checked on April 22, 2026.
+    </div>
+  </section>
+
+  <section class="capture" id="market-capture">
+    <div class="eyebrow">USD.AI Capture 03</div>
+    <h1>This looks closer to an initial repricing wave than a mature RAVE-style squeeze</h1>
+    <p class="sub">CHIP and RAVE share one important trait: the market infrastructure was built before the move. But the current USD.AI setup still looks like a first launch repricing event, not yet a delayed squeeze machine.</p>
+
+    <div class="grid-2">
+      <div class="panel">
+        <h2>USD.AI vs RAVE</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Question</th>
+              <th>USD.AI (CHIP)</th>
+              <th>RAVE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Were rails built before the move?</td>
+              <td>Yes. Sale, pre-market, futures, DEX, then spot.</td>
+              <td>Yes. Listing, routing, broader access, then delayed squeeze.</td>
+            </tr>
+            <tr>
+              <td>What phase is the token in now?</td>
+              <td>Initial launch repricing.</td>
+              <td>Post-setup squeeze and unwind cycle.</td>
+            </tr>
+            <tr>
+              <td>What is the biggest risk?</td>
+              <td>Public-sale overhang and unstable first-day speculation.</td>
+              <td>Concentration, leverage cascade, and exit-liquidity risk.</td>
+            </tr>
+            <tr>
+              <td>What would confirm another major leg?</td>
+              <td>New exchange access plus contained sale-cohort selling.</td>
+              <td>Renewed squeeze conditions with thin float and coordinated demand.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="panel">
+        <h2>Macro overlay around launch</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Backdrop</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Apr 17, 2026</td>
+              <td>Hormuz reopening and oil weakness improved broad risk appetite.</td>
+            </tr>
+            <tr>
+              <td>Apr 21-22, 2026</td>
+              <td>Regional instability had not disappeared, but the macro tape was no longer pure panic.</td>
+            </tr>
+            <tr>
+              <td>April earnings season</td>
+              <td>Firm U.S. equity sentiment supported speculative appetite generally.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="note">
+          <span class="good">Macro read:</span> the backdrop helped risk-taking, but it does not look like the primary reason CHIP pumped. The move still appears token-specific first and macro-assisted second.
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-3" style="margin-top: 18px;">
+      <div class="panel">
+        <h2>Bearish Unwind</h2>
+        <p><strong>$0.045 to $0.070</strong></p>
+        <ul>
+          <li>Sale-cohort profit taking accelerates</li>
+          <li>Launch novelty fades quickly</li>
+          <li>Liquidity deepens faster than demand</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h2>Base Consolidation</h2>
+        <p><strong>$0.070 to $0.120</strong></p>
+        <ul>
+          <li>Violent chop around the first public range</li>
+          <li>ATH zone is tested but not decisively broken</li>
+          <li>Market waits for the next real access catalyst</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h2>Bullish Continuation</h2>
+        <p><strong>$0.120 to $0.180</strong></p>
+        <ul>
+          <li>New venue access appears</li>
+          <li>Thin visible float persists</li>
+          <li>Protocol metrics and AI-credit narrative stay strong</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="note" style="margin-top: 18px;">
+      <span class="good">Bottom line:</span> CHIP can pump again, but only if the current launch spike turns into a real float squeeze. That transition has not been fully proven yet.
+    </div>
+
+    <div class="footer">
+      Sources used in this capture: USD.AI research notes, RAVE case notes, AP macro reporting, CoinMarketCap, DexScreener, Arbiscan, DefiLlama. Checked on April 22, 2026.
+    </div>
+  </section>
+</body>
+</html>
