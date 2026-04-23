@@ -1,9 +1,9 @@
-<svg width="1400" height="360" viewBox="0 0 1400 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<svg width="1680" height="410" viewBox="0 0 1680 410" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">USD.AI launch structure flow diagram</title>
-  <desc id="desc">A step-by-step flow showing how the USD.AI CHIP launch moved from CoinList to pre-market trading, futures, DEX liquidity, spot listings, tight float, and volatile price discovery.</desc>
-  <rect width="1400" height="360" rx="24" fill="#F5F1E8"/>
-  <text x="80" y="62" fill="#1E293B" font-family="Georgia, 'Times New Roman', serif" font-size="30" font-weight="700">USD.AI Launch Structure</text>
-  <text x="80" y="92" fill="#475569" font-family="Arial, Helvetica, sans-serif" font-size="18">How layered access and thin visible supply shaped the first repricing wave</text>
+  <desc id="desc">A step-by-step flow showing how the USD.AI CHIP launch moved from CoinList to pre-market trading, Aster pre-launch and futures, DEX liquidity, MEXC spot, Binance and Upbit listings, tight float, and volatile price discovery.</desc>
+  <rect width="1680" height="410" rx="24" fill="#F5F1E8"/>
+  <text x="80" y="64" fill="#1E293B" font-family="Georgia, 'Times New Roman', serif" font-size="32" font-weight="700">USD.AI Launch Structure</text>
+  <text x="80" y="96" fill="#475569" font-family="Arial, Helvetica, sans-serif" font-size="18">How layered exchange access and thin visible supply compressed the first CHIP repricing window</text>
 
   <defs>
     <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
@@ -15,49 +15,55 @@
   </defs>
 
   <g filter="url(#shadow)">
-    <rect x="80" y="138" width="155" height="96" rx="18" fill="#FFF8E7"/>
-    <text x="157.5" y="173" text-anchor="middle" fill="#7C2D12" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">CoinList</text>
-    <text x="157.5" y="198" text-anchor="middle" fill="#7C2D12" font-family="Arial, Helvetica, sans-serif" font-size="14">Public sale anchor</text>
-    <text x="157.5" y="218" text-anchor="middle" fill="#7C2D12" font-family="Arial, Helvetica, sans-serif" font-size="14">$0.03 reference price</text>
+    <rect x="80" y="150" width="150" height="104" rx="18" fill="#FFF8E7"/>
+    <text x="155" y="184" text-anchor="middle" fill="#7C2D12" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">CoinList</text>
+    <text x="155" y="208" text-anchor="middle" fill="#7C2D12" font-family="Arial, Helvetica, sans-serif" font-size="14">Public sale anchor</text>
+    <text x="155" y="228" text-anchor="middle" fill="#7C2D12" font-family="Arial, Helvetica, sans-serif" font-size="14">$0.03 reference price</text>
 
-    <rect x="270" y="138" width="155" height="96" rx="18" fill="#F2FCE7"/>
-    <text x="347.5" y="173" text-anchor="middle" fill="#166534" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Pre-Market</text>
-    <text x="347.5" y="198" text-anchor="middle" fill="#166534" font-family="Arial, Helvetica, sans-serif" font-size="14">MEXC and BitMart</text>
-    <text x="347.5" y="218" text-anchor="middle" fill="#166534" font-family="Arial, Helvetica, sans-serif" font-size="14">Early price framing</text>
+    <rect x="260" y="150" width="150" height="104" rx="18" fill="#F2FCE7"/>
+    <text x="335" y="184" text-anchor="middle" fill="#166534" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Pre-Market</text>
+    <text x="335" y="208" text-anchor="middle" fill="#166534" font-family="Arial, Helvetica, sans-serif" font-size="14">MEXC and BitMart</text>
+    <text x="335" y="228" text-anchor="middle" fill="#166534" font-family="Arial, Helvetica, sans-serif" font-size="14">Early price framing</text>
 
-    <rect x="460" y="138" width="155" height="96" rx="18" fill="#ECFEFF"/>
-    <text x="537.5" y="173" text-anchor="middle" fill="#155E75" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Futures</text>
-    <text x="537.5" y="198" text-anchor="middle" fill="#155E75" font-family="Arial, Helvetica, sans-serif" font-size="14">BitMart leverage</text>
-    <text x="537.5" y="218" text-anchor="middle" fill="#155E75" font-family="Arial, Helvetica, sans-serif" font-size="14">Before broad spot access</text>
+    <rect x="440" y="150" width="150" height="104" rx="18" fill="#ECFEFF"/>
+    <text x="515" y="184" text-anchor="middle" fill="#155E75" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Aster + Futures</text>
+    <text x="515" y="208" text-anchor="middle" fill="#155E75" font-family="Arial, Helvetica, sans-serif" font-size="14">Aster 5x pre-launch</text>
+    <text x="515" y="228" text-anchor="middle" fill="#155E75" font-family="Arial, Helvetica, sans-serif" font-size="14">BitMart leverage live</text>
 
-    <rect x="650" y="138" width="155" height="96" rx="18" fill="#EFF6FF"/>
-    <text x="727.5" y="173" text-anchor="middle" fill="#1D4ED8" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">DEX</text>
-    <text x="727.5" y="198" text-anchor="middle" fill="#1D4ED8" font-family="Arial, Helvetica, sans-serif" font-size="14">Uniswap pair live</text>
-    <text x="727.5" y="218" text-anchor="middle" fill="#1D4ED8" font-family="Arial, Helvetica, sans-serif" font-size="14">Liquidity still thin</text>
+    <rect x="620" y="150" width="150" height="104" rx="18" fill="#EFF6FF"/>
+    <text x="695" y="184" text-anchor="middle" fill="#1D4ED8" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">DEX</text>
+    <text x="695" y="208" text-anchor="middle" fill="#1D4ED8" font-family="Arial, Helvetica, sans-serif" font-size="14">Uniswap pair live</text>
+    <text x="695" y="228" text-anchor="middle" fill="#1D4ED8" font-family="Arial, Helvetica, sans-serif" font-size="14">Liquidity still thin</text>
 
-    <rect x="840" y="138" width="155" height="96" rx="18" fill="#FAF5FF"/>
-    <text x="917.5" y="173" text-anchor="middle" fill="#7E22CE" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Spot</text>
-    <text x="917.5" y="198" text-anchor="middle" fill="#7E22CE" font-family="Arial, Helvetica, sans-serif" font-size="14">MEXC public trading</text>
-    <text x="917.5" y="218" text-anchor="middle" fill="#7E22CE" font-family="Arial, Helvetica, sans-serif" font-size="14">Attention expands fast</text>
+    <rect x="800" y="150" width="150" height="104" rx="18" fill="#FAF5FF"/>
+    <text x="875" y="184" text-anchor="middle" fill="#7E22CE" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">MEXC Spot</text>
+    <text x="875" y="208" text-anchor="middle" fill="#7E22CE" font-family="Arial, Helvetica, sans-serif" font-size="14">Public spot opens</text>
+    <text x="875" y="228" text-anchor="middle" fill="#7E22CE" font-family="Arial, Helvetica, sans-serif" font-size="14">First broad access</text>
 
-    <rect x="1030" y="138" width="155" height="96" rx="18" fill="#FFF1F2"/>
-    <text x="1107.5" y="173" text-anchor="middle" fill="#BE123C" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Tight Float</text>
-    <text x="1107.5" y="198" text-anchor="middle" fill="#BE123C" font-family="Arial, Helvetica, sans-serif" font-size="14">Limited visible supply</text>
-    <text x="1107.5" y="218" text-anchor="middle" fill="#BE123C" font-family="Arial, Helvetica, sans-serif" font-size="14">High sensitivity to demand</text>
+    <rect x="980" y="150" width="160" height="104" rx="18" fill="#FFF1F2"/>
+    <text x="1060" y="184" text-anchor="middle" fill="#BE123C" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Binance + Upbit</text>
+    <text x="1060" y="208" text-anchor="middle" fill="#BE123C" font-family="Arial, Helvetica, sans-serif" font-size="14">Global plus Korea</text>
+    <text x="1060" y="228" text-anchor="middle" fill="#BE123C" font-family="Arial, Helvetica, sans-serif" font-size="14">Access widens fast</text>
 
-    <rect x="1220" y="138" width="120" height="96" rx="18" fill="#1E293B"/>
-    <text x="1280" y="173" text-anchor="middle" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Volatile</text>
-    <text x="1280" y="198" text-anchor="middle" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif" font-size="14">Price discovery</text>
-    <text x="1280" y="218" text-anchor="middle" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif" font-size="14">Fast repricing</text>
+    <rect x="1170" y="150" width="150" height="104" rx="18" fill="#FEF3C7"/>
+    <text x="1245" y="184" text-anchor="middle" fill="#92400E" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Tight Float</text>
+    <text x="1245" y="208" text-anchor="middle" fill="#92400E" font-family="Arial, Helvetica, sans-serif" font-size="14">Visible supply stays</text>
+    <text x="1245" y="228" text-anchor="middle" fill="#92400E" font-family="Arial, Helvetica, sans-serif" font-size="14">narrow versus demand</text>
+
+    <rect x="1350" y="150" width="180" height="104" rx="18" fill="#1E293B"/>
+    <text x="1440" y="184" text-anchor="middle" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Volatile Price Discovery</text>
+    <text x="1440" y="208" text-anchor="middle" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif" font-size="14">Fast repricing and</text>
+    <text x="1440" y="228" text-anchor="middle" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif" font-size="14">unstable launch range</text>
   </g>
 
-  <line x1="235" y1="186" x2="270" y2="186" stroke="#64748B" stroke-width="4" marker-end="url(#arrow)"/>
-  <line x1="425" y1="186" x2="460" y2="186" stroke="#64748B" stroke-width="4" marker-end="url(#arrow)"/>
-  <line x1="615" y1="186" x2="650" y2="186" stroke="#64748B" stroke-width="4" marker-end="url(#arrow)"/>
-  <line x1="805" y1="186" x2="840" y2="186" stroke="#64748B" stroke-width="4" marker-end="url(#arrow)"/>
-  <line x1="995" y1="186" x2="1030" y2="186" stroke="#64748B" stroke-width="4" marker-end="url(#arrow)"/>
-  <line x1="1185" y1="186" x2="1220" y2="186" stroke="#64748B" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="230" y1="202" x2="260" y2="202" stroke="#64748B" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="410" y1="202" x2="440" y2="202" stroke="#64748B" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="590" y1="202" x2="620" y2="202" stroke="#64748B" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="770" y1="202" x2="800" y2="202" stroke="#64748B" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="950" y1="202" x2="980" y2="202" stroke="#64748B" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="1140" y1="202" x2="1170" y2="202" stroke="#64748B" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="1320" y1="202" x2="1350" y2="202" stroke="#64748B" stroke-width="4" marker-end="url(#arrow)"/>
 
-  <text x="80" y="290" fill="#475569" font-family="Arial, Helvetica, sans-serif" font-size="16">Reading guide: the launch became more explosive as each access layer opened before the market had a chance to absorb supply normally.</text>
-  <text x="80" y="318" fill="#475569" font-family="Arial, Helvetica, sans-serif" font-size="16">That is why the move looked less like a normal listing and more like a compressed launch sequence hitting a narrow tradable float.</text>
+  <text x="80" y="316" fill="#475569" font-family="Arial, Helvetica, sans-serif" font-size="16">Reading guide: price discovery accelerated because new access arrived in layers before the market had time to absorb supply in a more orderly way.</text>
+  <text x="80" y="344" fill="#475569" font-family="Arial, Helvetica, sans-serif" font-size="16">Adding Binance and Upbit into the same launch window matters because it widened global and Korean participation at the same moment visible float still looked thin.</text>
 </svg>

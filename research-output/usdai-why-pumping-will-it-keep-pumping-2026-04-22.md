@@ -74,9 +74,9 @@ That setup does not guarantee continuation, but it does explain why the first re
 
 This same-day global-plus-Korea access pattern is not unique to CHIP. Similar launch windows were reported for LayerZero (ZRO) on June 20, 2024, Movement (MOVE) on December 9, 2024, and Magic Eden (ME) on December 10, 2024, when Binance and Upbit were both part of the initial exchange wave. The point is not that all of these tokens should trade the same way. The point is that simultaneous access across Binance and Upbit can compress price discovery into a much shorter and more volatile window than a staggered listing schedule usually would.
 
-![Flow diagram showing the CHIP launch path from CoinList to pre-market, futures, DEX liquidity, spot access, tight float, and volatile price discovery](../images/usdai/usdai-launch-flow-diagram.svg)
+![Flow diagram showing the CHIP launch path from CoinList to pre-market, Aster and futures, DEX liquidity, MEXC spot, Binance and Upbit access, tight float, and volatile price discovery](../images/usdai/usdai-launch-flow-diagram.svg)
 
-*Flow diagram showing how the USD.AI launch moved from CoinList to pre-market trading, futures, DEX liquidity, spot access, tight visible float, and then volatile price discovery.*
+*Flow diagram showing how the USD.AI launch moved from CoinList to pre-market trading, Aster and futures, DEX liquidity, MEXC spot, Binance and Upbit access, tight visible float, and then volatile price discovery.*
 
 ### Early onchain flow looked like live market routing rather than obvious fresh-mint distribution
 
