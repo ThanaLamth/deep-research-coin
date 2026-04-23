@@ -72,6 +72,10 @@ The sequence matters more than any single headline. CoinList had already publish
 
 That setup does not guarantee continuation, but it does explain why the first repricing wave was so forceful. Demand arrived into a market that had already been partially wired together.
 
+![Flow diagram showing the CHIP launch path from CoinList to pre-market, futures, DEX liquidity, spot access, tight float, and volatile price discovery](../images/usdai/usdai-launch-flow-diagram.svg)
+
+*Flow diagram showing how the USD.AI launch moved from CoinList to pre-market trading, futures, DEX liquidity, spot access, tight visible float, and then volatile price discovery.*
+
 ### Early onchain flow looked like live market routing rather than obvious fresh-mint distribution
 
 Using public Arbitrum RPC together with the [Arbiscan CHIP token page](https://arbiscan.io/token/0x0c1c1c109fe34733fca54b82d7b46b75cfb71f6e), the contract reads with 18 decimals and a total supply of 10 billion CHIP.
