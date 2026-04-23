@@ -68,9 +68,11 @@ The main pool held only about 4.02 million CHIP, which is roughly 0.20% of circu
 
 ### The listing rails were built before broad attention arrived
 
-The sequence matters more than any single headline. CoinList had already published sale terms, MEXC pre-market had already opened on March 14, BitMart pre-market followed on March 18 to 19, BitMart futures arrived on April 16, the main Uniswap pair went live on April 21, and MEXC spot opened later that same day. By the time the move became visible on CoinMarketCap, the market structure had already been assembled.
+The sequence matters more than any single headline. CoinList had already published sale terms, MEXC pre-market had already opened on March 14, BitMart pre-market followed on March 18 to 19, BitMart futures arrived on April 16, and Aster added a CHIP 5x pre-launch market on April 16 as well. The main Uniswap pair then went live on April 21, MEXC spot opened later that same day, and the access stack broadened further as Upbit officially announced CHIP trading support in KRW, BTC, and USDT markets on April 21. Published market coverage citing Binance's exchange notice also reported a same-day Binance spot listing with CHIP/USDT, CHIP/USDC, and CHIP/TRY pairs and a Seed Tag applied.
 
 That setup does not guarantee continuation, but it does explain why the first repricing wave was so forceful. Demand arrived into a market that had already been partially wired together.
+
+This same-day global-plus-Korea access pattern is not unique to CHIP. Similar launch windows were reported for LayerZero (ZRO) on June 20, 2024, Movement (MOVE) on December 9, 2024, and Magic Eden (ME) on December 10, 2024, when Binance and Upbit were both part of the initial exchange wave. The point is not that all of these tokens should trade the same way. The point is that simultaneous access across Binance and Upbit can compress price discovery into a much shorter and more volatile window than a staggered listing schedule usually would.
 
 ![Flow diagram showing the CHIP launch path from CoinList to pre-market, futures, DEX liquidity, spot access, tight float, and volatile price discovery](../images/usdai/usdai-launch-flow-diagram.svg)
 
@@ -229,3 +231,9 @@ This article is for research and informational purposes only and should not be t
 18. AP News, Hormuz reopening and diplomatic response: https://apnews.com/article/hormuz-strait-iran-blockade-britain-france-10518e69aecbb986c9118ff42ab0ca02
 19. AP News, oil drop and Wall Street rally after reopening: https://apnews.com/article/stock-markets-trump-oil-iran-war-50e10bf2aa9b0b658c51e17db3eb3b13
 20. AP News, renewed shipping attacks despite ceasefire backdrop: https://apnews.com/article/us-iran-war-hormuz-israel-pakistan-ceasefire-april-22-2026-267230f7f32b436822484479313840f7
+21. Aster announcement 174, New Listings: https://www.asterdex.com/en/announcement/174?category=ALL
+22. Upbit official notice 6158, CHIP listing: https://www.upbit.com/service_center/notice?id=6158
+23. TronWeekly summary of Binance and Upbit CHIP listing window: https://www.tronweekly.com/binance-upbit-list-chip-on-april-21-with-3-trad/
+24. Crypto.ro, Binance and Upbit list LayerZero (ZRO): https://crypto.ro/en/news/binance-lists-layerzero-zro-trading-begins-today-at-1200-utc/
+25. Cryptopolitan, Binance and Upbit list Movement (MOVE): https://www.cryptopolitan.com/move-token-listed-by-binance-and-upbit/
+26. Crypto.news, Binance and Upbit list Magic Eden (ME): https://crypto.news/binance-upbit-and-bithumb-set-to-list-magic-eden-token-on-dec-10/
