@@ -1,0 +1,53 @@
+<svg width="1400" height="900" viewBox="0 0 1400 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Katana market snapshot capture</title>
+  <desc id="desc">A visual summary of Katana Network token market metrics on April 24, 2026, including price, market cap, volume, FDV, circulating supply, and chain TVL.</desc>
+  <rect width="1400" height="900" rx="28" fill="#F5F1E8"/>
+  <text x="70" y="74" fill="#1E293B" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700">Katana Market Snapshot</text>
+  <text x="70" y="108" fill="#475569" font-family="Arial, Helvetica, sans-serif" font-size="18">Point-in-time market and chain metrics used in the April 24, 2026 why-pumping review</text>
+
+  <rect x="70" y="150" width="300" height="130" rx="22" fill="#FFF7ED"/>
+  <text x="98" y="194" fill="#9A3412" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Price</text>
+  <text x="98" y="242" fill="#9A3412" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700">$0.01579</text>
+  <text x="98" y="268" fill="#9A3412" font-family="Arial, Helvetica, sans-serif" font-size="16">24h change: +57.49%</text>
+
+  <rect x="390" y="150" width="300" height="130" rx="22" fill="#ECFDF5"/>
+  <text x="418" y="194" fill="#166534" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Market Cap</text>
+  <text x="418" y="242" fill="#166534" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700">$37.01M</text>
+  <text x="418" y="268" fill="#166534" font-family="Arial, Helvetica, sans-serif" font-size="16">CoinGecko snapshot</text>
+
+  <rect x="710" y="150" width="300" height="130" rx="22" fill="#EFF6FF"/>
+  <text x="738" y="194" fill="#1D4ED8" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">24h Volume</text>
+  <text x="738" y="242" fill="#1D4ED8" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700">$434.85M</text>
+  <text x="738" y="268" fill="#1D4ED8" font-family="Arial, Helvetica, sans-serif" font-size="16">About 11.8x market cap</text>
+
+  <rect x="1030" y="150" width="300" height="130" rx="22" fill="#FEF2F2"/>
+  <text x="1058" y="194" fill="#B91C1C" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">FDV</text>
+  <text x="1058" y="242" fill="#B91C1C" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700">$158.01M</text>
+  <text x="1058" y="268" fill="#B91C1C" font-family="Arial, Helvetica, sans-serif" font-size="16">About 4.27x market cap</text>
+
+  <rect x="70" y="320" width="400" height="180" rx="22" fill="#FFFBEB"/>
+  <text x="98" y="362" fill="#92400E" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Supply</text>
+  <text x="98" y="402" fill="#92400E" font-family="Arial, Helvetica, sans-serif" font-size="18">Circulating: 2.342B KAT</text>
+  <text x="98" y="436" fill="#92400E" font-family="Arial, Helvetica, sans-serif" font-size="18">Total: 10.0B KAT</text>
+  <text x="98" y="470" fill="#92400E" font-family="Arial, Helvetica, sans-serif" font-size="18">ATH: $0.01850 on March 18, 2026</text>
+
+  <rect x="500" y="320" width="400" height="180" rx="22" fill="#F0FDF4"/>
+  <text x="528" y="362" fill="#166534" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Chain Value</text>
+  <text x="528" y="402" fill="#166534" font-family="Arial, Helvetica, sans-serif" font-size="18">Katana TVL: $243.35M</text>
+  <text x="528" y="436" fill="#166534" font-family="Arial, Helvetica, sans-serif" font-size="18">TVL / KAT market cap: 6.58x</text>
+  <text x="528" y="470" fill="#166534" font-family="Arial, Helvetica, sans-serif" font-size="18">The chain is far larger than the token</text>
+
+  <rect x="930" y="320" width="400" height="180" rx="22" fill="#EEF2FF"/>
+  <text x="958" y="362" fill="#4338CA" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Holder Base</text>
+  <text x="958" y="402" fill="#4338CA" font-family="Arial, Helvetica, sans-serif" font-size="18">Explorer holders: 18,402</text>
+  <text x="958" y="436" fill="#4338CA" font-family="Arial, Helvetica, sans-serif" font-size="18">Top holder alone: 44.97% of supply</text>
+  <text x="958" y="470" fill="#4338CA" font-family="Arial, Helvetica, sans-serif" font-size="18">Top 10 holders: 70.63%</text>
+
+  <rect x="70" y="560" width="1260" height="240" rx="26" fill="#FFFFFF"/>
+  <text x="98" y="604" fill="#1E293B" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Why these numbers matter</text>
+  <text x="98" y="646" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="18">KAT is trading like a small-cap launch token, but the chain underneath it already shows a much larger economic footprint.</text>
+  <text x="98" y="682" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="18">That mismatch does not prove the token is cheap, but it does explain why the market can justify a fast repricing once volume returns.</text>
+  <text x="98" y="718" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="18">The most important tension is simple: the chain looks substantial, the token market cap still looks relatively small, and the visible tradable float is not as broad as the headline supply suggests.</text>
+
+  <text x="70" y="850" fill="#64748B" font-family="Arial, Helvetica, sans-serif" font-size="15">Sources used for this capture: CoinGecko, DefiLlama, Katana explorer. Metrics checked on April 24, 2026.</text>
+</svg>
