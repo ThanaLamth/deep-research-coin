@@ -18,7 +18,10 @@
   <rect x="74" y="68" width="1252" height="784" fill="#F6EEDB" stroke="#2D2430" stroke-width="3"/>
 
   <text x="116" y="136" fill="#2D2430" font-family="Georgia, 'Times New Roman', serif" font-size="38" font-weight="700">Terra Classic Market Snapshot</text>
-  <text x="116" y="172" fill="#7D3A3E" font-family="Arial, Helvetica, sans-serif" font-size="18">April 28, 2026 • LUNC is breaking out, but the move still sits inside a legacy-asset structure.</text>
+  <text x="116" y="172" fill="#7D3A3E" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <tspan x="116" dy="0">April 28, 2026 • LUNC is breaking out,</tspan>
+    <tspan x="116" dy="24">but the move still sits inside a legacy-asset structure.</tspan>
+  </text>
 
   <rect x="116" y="216" width="260" height="150" fill="#E7A0A4"/>
   <rect x="132" y="232" width="260" height="150" fill="#B3472F"/>
@@ -62,12 +65,21 @@
   <text x="740" y="466" fill="#8C2F39" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">SUPPLY</text>
   <text x="740" y="512" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Circulating: 5.507T LUNC</text>
   <text x="740" y="548" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Total: 6.463T LUNC</text>
-  <text x="740" y="582" fill="#7D3A3E" font-family="Arial, Helvetica, sans-serif" font-size="17">That gap is where the real float story starts, not where it ends.</text>
+  <text x="740" y="582" fill="#7D3A3E" font-family="Arial, Helvetica, sans-serif" font-size="17">
+    <tspan x="740" dy="0">That gap is where the real float story starts,</tspan>
+    <tspan x="740" dy="22">not where it ends.</tspan>
+  </text>
 
   <rect x="116" y="654" width="1172" height="142" fill="#E7A0A4"/>
   <rect x="136" y="674" width="1172" height="142" fill="#B3472F"/>
   <rect x="116" y="654" width="1172" height="142" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
   <text x="148" y="694" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700">EDITORIAL READ</text>
-  <text x="148" y="734" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">LUNC is not moving like a random dead-chain bounce. It is trading as a still-liquid legacy asset whose supply story looks cleaner when staking, burns, and zero inflation are viewed together.</text>
-  <text x="148" y="770" fill="#7D3A3E" font-family="Arial, Helvetica, sans-serif" font-size="16">Source base: CoinMarketCap, LuncScan, Terra Classic public-node data.</text>
+  <text x="148" y="726" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <tspan x="148" dy="0">LUNC is not moving like a random dead-chain bounce. It is trading as a still-liquid</tspan>
+    <tspan x="148" dy="24">legacy asset whose supply story looks cleaner when staking, burns,</tspan>
+    <tspan x="148" dy="24">and zero inflation are viewed together.</tspan>
+  </text>
+  <text x="148" y="786" fill="#7D3A3E" font-family="Arial, Helvetica, sans-serif" font-size="16">Source base: CoinMarketCap, LuncScan, Terra Classic public-node data.</text>
+  <rect x="590" y="812" width="220" height="40" rx="20" fill="#2D2430"/>
+  <image href="https://coincu.com/wp-content/uploads/2025/03/CCNews_white.png" x="648" y="821" width="104" height="22" preserveAspectRatio="xMidYMid meet"/>
 </svg>

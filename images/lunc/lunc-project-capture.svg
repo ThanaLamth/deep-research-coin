@@ -18,28 +18,40 @@
   <rect x="72" y="62" width="1254" height="756" fill="#F6EEDB" stroke="#2D2430" stroke-width="3"/>
 
   <text x="114" y="132" fill="#2D2430" font-family="Georgia, 'Times New Roman', serif" font-size="38" font-weight="700">What Terra Classic Is Now</text>
-  <text x="114" y="168" fill="#7D3A3E" font-family="Arial, Helvetica, sans-serif" font-size="18">The modern LUNC thesis is about survival, supply discipline, and tradable structure, not about pretending 2022 never happened.</text>
+  <text x="114" y="168" fill="#7D3A3E" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <tspan x="114" dy="0">The modern LUNC thesis is about survival, supply discipline, and tradable structure,</tspan>
+    <tspan x="114" dy="24">not about pretending 2022 never happened.</tspan>
+  </text>
 
   <rect x="114" y="214" width="356" height="192" fill="#E7A0A4"/>
   <rect x="132" y="232" width="356" height="192" fill="#B3472F"/>
   <rect x="114" y="214" width="356" height="192" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
   <text x="142" y="254" fill="#8C2F39" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">IDENTITY</text>
   <text x="142" y="302" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Not Terra 2.0</text>
-  <text x="142" y="338" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">The asset on the linked CoinMarketCap page is Terra Classic and the ticker is LUNC, not the newer LUNA token.</text>
+  <text x="142" y="338" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <tspan x="142" dy="0">The asset on the linked CoinMarketCap page is Terra Classic</tspan>
+    <tspan x="142" dy="24">and the ticker is LUNC, not the newer LUNA token.</tspan>
+  </text>
 
   <rect x="522" y="214" width="356" height="192" fill="#D98858"/>
   <rect x="540" y="232" width="356" height="192" fill="#6B2B30"/>
   <rect x="522" y="214" width="356" height="192" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
   <text x="550" y="254" fill="#8C2F39" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">OPERATING FRAME</text>
   <text x="550" y="302" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Community-run legacy chain</text>
-  <text x="550" y="338" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">Validators, governance, staking, and a smaller but still active ecosystem keep the chain from becoming a static archive.</text>
+  <text x="550" y="338" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <tspan x="550" dy="0">Validators, governance, staking, and a smaller but still active ecosystem</tspan>
+    <tspan x="550" dy="24">keep the chain from becoming a static archive.</tspan>
+  </text>
 
   <rect x="930" y="214" width="356" height="192" fill="#E7A0A4"/>
   <rect x="948" y="232" width="356" height="192" fill="#B3472F"/>
   <rect x="930" y="214" width="356" height="192" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
   <text x="958" y="254" fill="#8C2F39" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">WHY IT STILL TRADES</text>
   <text x="958" y="302" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">A scarcity narrative survived</text>
-  <text x="958" y="338" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">Burned supply, bonded staking, and zero mint inflation give LUNC a cleaner structure than its giant headline supply suggests.</text>
+  <text x="958" y="338" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <tspan x="958" dy="0">Burned supply, bonded staking, and zero mint inflation give LUNC</tspan>
+    <tspan x="958" dy="24">a cleaner structure than its giant headline supply suggests.</tspan>
+  </text>
 
   <rect x="114" y="462" width="1172" height="256" fill="#D98858"/>
   <rect x="134" y="482" width="1172" height="256" fill="#6B2B30"/>
@@ -49,5 +61,10 @@
   <text x="148" y="594" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="19">2. Bonded staking currently absorbs 932.78B LUNC.</text>
   <text x="148" y="632" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="19">3. The mint module currently reports zero inflation and zero annual provisions.</text>
   <text x="148" y="670" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="19">4. The asset stays tradable because enough validator and community structure still exists.</text>
-  <text x="148" y="708" fill="#7D3A3E" font-family="Arial, Helvetica, sans-serif" font-size="17">That combination is why LUNC can still be repriced seriously, even if it is not a high-growth chain narrative.</text>
+  <text x="148" y="708" fill="#7D3A3E" font-family="Arial, Helvetica, sans-serif" font-size="17">
+    <tspan x="148" dy="0">That combination is why LUNC can still be repriced seriously,</tspan>
+    <tspan x="148" dy="22">even if it is not a high-growth chain narrative.</tspan>
+  </text>
+  <rect x="590" y="756" width="220" height="40" rx="20" fill="#2D2430"/>
+  <image href="https://coincu.com/wp-content/uploads/2025/03/CCNews_white.png" x="648" y="765" width="104" height="22" preserveAspectRatio="xMidYMid meet"/>
 </svg>

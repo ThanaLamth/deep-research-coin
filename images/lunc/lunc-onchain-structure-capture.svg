@@ -18,7 +18,10 @@
   <rect x="70" y="60" width="1260" height="850" fill="#F6EEDB" stroke="#2D2430" stroke-width="3"/>
 
   <text x="112" y="132" fill="#2D2430" font-family="Georgia, 'Times New Roman', serif" font-size="38" font-weight="700">LUNC Onchain Structure</text>
-  <text x="112" y="168" fill="#7D3A3E" font-family="Arial, Helvetica, sans-serif" font-size="18">The real story is not just that burns exist. It is how burns, staking, and zero inflation interact inside the same supply map.</text>
+  <text x="112" y="168" fill="#7D3A3E" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <tspan x="112" dy="0">The real story is not just that burns exist.</tspan>
+    <tspan x="112" dy="24">It is how burns, staking, and zero inflation interact inside the same supply map.</tspan>
+  </text>
 
   <rect x="112" y="216" width="356" height="204" fill="#E7A0A4"/>
   <rect x="130" y="234" width="356" height="204" fill="#B3472F"/>
@@ -42,7 +45,10 @@
   <text x="960" y="256" fill="#8C2F39" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">MINT SIDE</text>
   <text x="960" y="304" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Inflation: 0</text>
   <text x="960" y="342" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">Annual provisions: 0.</text>
-  <text x="960" y="374" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">No visible mint offset to the burn narrative.</text>
+  <text x="960" y="374" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <tspan x="960" dy="0">No visible mint offset</tspan>
+    <tspan x="960" dy="24">to the burn narrative.</tspan>
+  </text>
 
   <rect x="112" y="474" width="1176" height="250" fill="#D98858"/>
   <rect x="132" y="494" width="1176" height="250" fill="#8C2F39"/>
@@ -51,11 +57,19 @@
   <text x="144" y="566" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="19">60 latest blocks checked around 03:19 UTC on April 28, 2026.</text>
   <text x="144" y="604" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="19">Average transactions per block: 19.78</text>
   <text x="144" y="642" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="19">Median transactions per block: 2.5</text>
-  <text x="144" y="680" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="19">Interpretation: chain activity exists, but the median block still looks thin.</text>
+  <text x="144" y="680" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="19">
+    <tspan x="144" dy="0">Interpretation: chain activity exists,</tspan>
+    <tspan x="144" dy="24">but the median block still looks thin.</tspan>
+  </text>
 
   <rect x="112" y="770" width="1176" height="96" fill="#E7A0A4"/>
   <rect x="128" y="786" width="1176" height="96" fill="#B3472F"/>
   <rect x="112" y="770" width="1176" height="96" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
   <text x="144" y="824" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">INVESTIGATIVE READ</text>
-  <text x="360" y="824" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">LUNC has enough onchain evidence for a tighter-float thesis, but not yet enough usage evidence for a full fundamentals-led comeback.</text>
+  <text x="360" y="816" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <tspan x="360" dy="0">LUNC has enough onchain evidence for a tighter-float thesis,</tspan>
+    <tspan x="360" dy="24">but not yet enough usage evidence for a full fundamentals-led comeback.</tspan>
+  </text>
+  <rect x="590" y="882" width="220" height="40" rx="20" fill="#2D2430"/>
+  <image href="https://coincu.com/wp-content/uploads/2025/03/CCNews_white.png" x="648" y="891" width="104" height="22" preserveAspectRatio="xMidYMid meet"/>
 </svg>

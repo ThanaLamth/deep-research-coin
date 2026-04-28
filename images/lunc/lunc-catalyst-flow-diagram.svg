@@ -21,7 +21,10 @@
   <rect x="56" y="44" width="1488" height="330" fill="#F6EEDB" stroke="#2D2430" stroke-width="3"/>
 
   <text x="98" y="104" fill="#2D2430" font-family="Georgia, 'Times New Roman', serif" font-size="36" font-weight="700">LUNC Repricing Flow</text>
-  <text x="98" y="138" fill="#7D3A3E" font-family="Arial, Helvetica, sans-serif" font-size="18">The move only makes sense when legacy supply mechanics and revived risk appetite are read together.</text>
+  <text x="98" y="138" fill="#7D3A3E" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <tspan x="98" dy="0">The move only makes sense when legacy supply mechanics</tspan>
+    <tspan x="98" dy="24">and revived risk appetite are read together.</tspan>
+  </text>
 
   <rect x="98" y="190" width="200" height="104" fill="#E7A0A4"/>
   <rect x="114" y="206" width="200" height="104" fill="#B3472F"/>
@@ -57,4 +60,6 @@
   <line x1="552" y1="242" x2="606" y2="242" stroke="#2D2430" stroke-width="4" marker-end="url(#arrow)"/>
   <line x1="806" y1="242" x2="860" y2="242" stroke="#2D2430" stroke-width="4" marker-end="url(#arrow)"/>
   <line x1="1084" y1="242" x2="1138" y2="242" stroke="#2D2430" stroke-width="4" marker-end="url(#arrow)"/>
+  <rect x="690" y="318" width="220" height="40" rx="20" fill="#2D2430"/>
+  <image href="https://coincu.com/wp-content/uploads/2025/03/CCNews_white.png" x="748" y="327" width="104" height="22" preserveAspectRatio="xMidYMid meet"/>
 </svg>
