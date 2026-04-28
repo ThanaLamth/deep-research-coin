@@ -30,13 +30,15 @@ Today, Terra Classic is better described as a community-run legacy Layer 1 than 
 
 The Terra Classic ecosystem hub also frames the network as community-owned rather than company-owned, which is a useful clue about how the chain should be analyzed. This is not a project where one centralized operating company can simply be treated as the whole story.
 
+Once that identity is clear, the next question almost always becomes a supply question. That is where most of the confusion around LUNC starts, and it is also where the token becomes easier to understand.
+
 ![Terra Classic project snapshot showing LUNC as a community-run legacy chain centered on burns, staking, and survival](../images/lunc/lunc-project-capture.svg)
 
 *The broad identity of Terra Classic today: a community-run legacy chain where survival, supply discipline, and governance matter more than expansion slogans.*
 
 ## How LUNC Supply Works
 
-The cleanest way to understand LUNC is to separate supply into buckets instead of treating one headline number as the full story.
+The cleanest way to understand LUNC is to separate supply into buckets instead of treating one headline number as the full story. That shift sounds minor, but it changes the whole interpretation of the token.
 
 Total supply is the broadest number. It reflects how many LUNC tokens currently exist.
 
@@ -46,6 +48,8 @@ Then there is the non-circulating gap, which is the difference between total sup
 
 This is why LUNC often looks simpler on paper than it really is in practice. A token can still have a very large total supply while behaving differently in the market if part of that supply has already been burned and another part is bonded under staking rules.
 
+That naturally leads to the next layer of the story. Once supply is broken into buckets, the first mechanism readers need to understand is burning, because burning is what permanently changes the base.
+
 ## How Burns Affect LUNC
 
 Burning means tokens are sent to addresses or mechanisms that remove them from usable circulation permanently. For LUNC, burns matter because the chain is trying to repair a supply base that became excessively large after the collapse.
@@ -54,13 +58,17 @@ That gives burns a clear narrative role. Every burn reduces the remaining supply
 
 But the burn story has limits. Burns are not the same thing as a full fundamental recovery. They do not automatically create new usage, and they do not automatically turn a very large token base into a scarce asset overnight. The right way to think about burns is that they improve the structure over time. They do not erase all legacy supply problems by themselves.
 
+And that is exactly why the LUNC story does not stop at burns. Even after tokens are removed permanently, the market still has to deal with the supply that remains, which is where staking starts to matter.
+
 ## How Staking Changes the Visible Float
 
-Staking is one of the most important parts of the modern LUNC story because it changes how much supply feels immediately available to the market.
+Staking is one of the most important parts of the modern LUNC story because it changes how much supply feels immediately available to the market. In other words, burns explain how the supply base shrinks, while staking helps explain why the live float can feel tighter than the headline numbers imply.
 
 When LUNC is bonded to validators, it is no longer instantly liquid. It can still come back later, but not on demand. According to the Terra Classic staking documentation, the default unbonding period is three weeks. That delay matters because the market does not treat delayed supply the same way it treats instantly tradeable supply.
 
 This is why traders often watch bonded supply closely. If a large amount of LUNC is staked, the effective float can look tighter than the total supply number first suggests. That does not make staked supply permanently gone. It does make the live market structure more constrained.
+
+Once supply mechanics are laid out that way, another question follows almost automatically: if this is a community-run chain now, who is actually making decisions and steering upgrades?
 
 ![LUNC burn and staking supply comparison showing total supply reduction and bonded token absorption](../images/lunc/lunc-supply-sinks-graph.svg)
 
@@ -68,7 +76,7 @@ This is why traders often watch bonded supply closely. If a large amount of LUNC
 
 ## Who Runs Terra Classic Now?
 
-This is the wrong question if it is asked in the old startup sense and the right question if it is asked as a power-structure question.
+This is the wrong question if it is asked in the old startup sense and the right question if it is asked as a power-structure question. Terra Classic still has people and institutions behind it, but not in the neat founder-investor-operator stack that readers might expect from a newer project.
 
 Historically, Terra came from Terraform Labs and Do Kwon. That legacy remains part of the asset's baggage and still matters for trust. But Terra Classic no longer operates as a founder-led project in the traditional sense.
 
@@ -81,6 +89,8 @@ The second group is validators. Validators do not just help secure the chain. Th
 The third group is delegators. Delegators ultimately decide where stake goes, and that means they influence which validators keep power and how much concentrated weight the upper tier of the validator set can hold.
 
 The right conclusion is not that Terra Classic has no one behind it. The better conclusion is that it is now a community-governed system where code maintainers, validators, and delegators together shape the chain.
+
+That distributed structure is part of what keeps the chain alive, but it also creates the next part of the analysis. A system like this can function without a single founder in charge, yet still carry very real structural risks.
 
 ## Main Risks of Holding or Trading LUNC
 
@@ -102,6 +112,8 @@ The fifth risk is thesis confusion. LUNC can attract attention because of supply
 | Uneven validator influence | Governance power is not perfectly distributed |
 | Narrative can outrun fundamentals | Traders may overread supply mechanics as full recovery |
 
+Those risks are exactly why LUNC remains a divisive asset. They do not erase the reasons people keep watching it, but they do explain why attention around the token never comes with simple consensus.
+
 ## Why Traders Still Care About LUNC
 
 LUNC tends to attract attention when traders focus on supply compression, legacy high-beta assets, and tokens where visible float may be tighter than headline supply suggests.
@@ -109,6 +121,8 @@ LUNC tends to attract attention when traders focus on supply compression, legacy
 That does not mean Terra Classic has reclaimed leadership as a growth chain. The more durable explanation is narrower. Traders still watch LUNC because its supply structure is more complex than a single total-supply number, and because burns, staking, and governance concentration all shape how the token behaves.
 
 This is why Terra Classic remains relevant even without a simple comeback narrative. It still offers a structure that traders can model, debate, and periodically reprice.
+
+That broader explanation is the evergreen part. The numbers underneath it will change, which is why it makes sense to separate the mechanism from the latest snapshot.
 
 ![LUNC onchain structure summary covering burns, bonded staking, zero inflation, and supply interpretation](../images/lunc/lunc-onchain-structure-capture.svg)
 
