@@ -1,40 +1,53 @@
 <svg width="1400" height="880" viewBox="0 0 1400 880" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">LUNC project snapshot capture</title>
-  <desc id="desc">A visual summary of Terra Classic's current positioning as a community-run legacy chain driven by burns, staking, and supply discipline.</desc>
-  <rect width="1400" height="880" rx="28" fill="#F5F1E8"/>
-  <text x="70" y="74" fill="#1E293B" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700">What Terra Classic Is Now</text>
-  <text x="70" y="108" fill="#475569" font-family="Arial, Helvetica, sans-serif" font-size="18">A community-run legacy chain where burns, staking, and survival matter more than pure expansion</text>
+  <title id="title">Terra Classic project capture</title>
+  <desc id="desc">Editorial-style project snapshot for Terra Classic showing the modern LUNC thesis in a print-inspired institutional visual language.</desc>
+  <defs>
+    <filter id="grain" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.05"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1400" height="880" fill="#F1E6CF"/>
+  <rect width="1400" height="880" fill="#F1E6CF" filter="url(#grain)"/>
 
-  <rect x="70" y="150" width="380" height="220" rx="22" fill="#FFF7ED"/>
-  <text x="98" y="192" fill="#9A3412" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Not Terra 2.0</text>
-  <text x="98" y="232" fill="#9A3412" font-family="Arial, Helvetica, sans-serif" font-size="18">The CoinMarketCap page in this case maps to Terra Classic</text>
-  <text x="98" y="264" fill="#9A3412" font-family="Arial, Helvetica, sans-serif" font-size="18">and its token LUNC, not to the newer LUNA asset.</text>
-  <text x="98" y="296" fill="#9A3412" font-family="Arial, Helvetica, sans-serif" font-size="18">That changes the entire research frame.</text>
+  <rect x="72" y="62" width="1254" height="756" fill="#F6EEDB"/>
+  <rect x="90" y="80" width="1254" height="756" fill="#2D2430"/>
+  <rect x="72" y="62" width="1254" height="756" fill="#F6EEDB" stroke="#2D2430" stroke-width="3"/>
 
-  <rect x="490" y="150" width="380" height="220" rx="22" fill="#ECFDF5"/>
-  <text x="518" y="192" fill="#166534" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Community-run legacy chain</text>
-  <text x="518" y="232" fill="#166534" font-family="Arial, Helvetica, sans-serif" font-size="18">The chain still maintains validators, governance,</text>
-  <text x="518" y="264" fill="#166534" font-family="Arial, Helvetica, sans-serif" font-size="18">staking, and a smaller but active ecosystem.</text>
-  <text x="518" y="296" fill="#166534" font-family="Arial, Helvetica, sans-serif" font-size="18">It trades on resilience, not on fresh-chain novelty.</text>
+  <text x="114" y="132" fill="#2D2430" font-family="Georgia, 'Times New Roman', serif" font-size="38" font-weight="700">What Terra Classic Is Now</text>
+  <text x="114" y="168" fill="#7D3A3E" font-family="Arial, Helvetica, sans-serif" font-size="18">The modern LUNC thesis is about survival, supply discipline, and tradable structure, not about pretending 2022 never happened.</text>
 
-  <rect x="910" y="150" width="380" height="220" rx="22" fill="#EFF6FF"/>
-  <text x="938" y="192" fill="#1D4ED8" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Current market pitch</text>
-  <text x="938" y="232" fill="#1D4ED8" font-family="Arial, Helvetica, sans-serif" font-size="18">Burned supply, bonded staking, zero inflation,</text>
-  <text x="938" y="264" fill="#1D4ED8" font-family="Arial, Helvetica, sans-serif" font-size="18">and enough live infrastructure to keep LUNC tradable.</text>
-  <text x="938" y="296" fill="#1D4ED8" font-family="Arial, Helvetica, sans-serif" font-size="18">That is the modern LUNC thesis in one line.</text>
+  <rect x="114" y="214" width="356" height="192" fill="#E7A0A4"/>
+  <rect x="132" y="232" width="356" height="192" fill="#B3472F"/>
+  <rect x="114" y="214" width="356" height="192" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
+  <text x="142" y="254" fill="#8C2F39" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">IDENTITY</text>
+  <text x="142" y="302" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Not Terra 2.0</text>
+  <text x="142" y="338" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">The asset on the linked CoinMarketCap page is Terra Classic and the ticker is LUNC, not the newer LUNA token.</text>
 
-  <rect x="70" y="420" width="600" height="250" rx="22" fill="#FEF2F2"/>
-  <text x="98" y="464" fill="#B91C1C" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Why traders still care</text>
-  <text x="98" y="506" fill="#B91C1C" font-family="Arial, Helvetica, sans-serif" font-size="18">Burns have already removed 444.18B LUNC from supply.</text>
-  <text x="98" y="540" fill="#B91C1C" font-family="Arial, Helvetica, sans-serif" font-size="18">Bonded staking currently absorbs 932.78B LUNC.</text>
-  <text x="98" y="574" fill="#B91C1C" font-family="Arial, Helvetica, sans-serif" font-size="18">The mint module currently reports zero inflation and zero annual provisions.</text>
-  <text x="98" y="608" fill="#B91C1C" font-family="Arial, Helvetica, sans-serif" font-size="18">That combination gives LUNC a live scarcity narrative even without a full ecosystem renaissance.</text>
+  <rect x="522" y="214" width="356" height="192" fill="#D98858"/>
+  <rect x="540" y="232" width="356" height="192" fill="#6B2B30"/>
+  <rect x="522" y="214" width="356" height="192" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
+  <text x="550" y="254" fill="#8C2F39" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">OPERATING FRAME</text>
+  <text x="550" y="302" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Community-run legacy chain</text>
+  <text x="550" y="338" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">Validators, governance, staking, and a smaller but still active ecosystem keep the chain from becoming a static archive.</text>
 
-  <rect x="710" y="420" width="580" height="250" rx="22" fill="#EEF2FF"/>
-  <text x="738" y="464" fill="#4338CA" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">What the market is really buying</text>
-  <text x="738" y="506" fill="#4338CA" font-family="Arial, Helvetica, sans-serif" font-size="18">The current bid is not a claim that Terra Classic has become a top growth chain again.</text>
-  <text x="738" y="540" fill="#4338CA" font-family="Arial, Helvetica, sans-serif" font-size="18">It is a bet that post-burn supply, bonded staking, and improved sentiment can create a sharper repricing than many expect.</text>
-  <text x="738" y="574" fill="#4338CA" font-family="Arial, Helvetica, sans-serif" font-size="18">That is a narrower story, but it is also a more defensible one.</text>
+  <rect x="930" y="214" width="356" height="192" fill="#E7A0A4"/>
+  <rect x="948" y="232" width="356" height="192" fill="#B3472F"/>
+  <rect x="930" y="214" width="356" height="192" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
+  <text x="958" y="254" fill="#8C2F39" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">WHY IT STILL TRADES</text>
+  <text x="958" y="302" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">A scarcity narrative survived</text>
+  <text x="958" y="338" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">Burned supply, bonded staking, and zero mint inflation give LUNC a cleaner structure than its giant headline supply suggests.</text>
 
-  <text x="70" y="790" fill="#64748B" font-family="Arial, Helvetica, sans-serif" font-size="15">Sources used for this capture: CoinMarketCap, Terra Classic Money, LuncScan, Terra Classic public-node data.</text>
+  <rect x="114" y="462" width="1172" height="256" fill="#D98858"/>
+  <rect x="134" y="482" width="1172" height="256" fill="#6B2B30"/>
+  <rect x="114" y="462" width="1172" height="256" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
+  <text x="148" y="506" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">THE CURRENT MARKET PITCH</text>
+  <text x="148" y="556" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="19">1. Burns have already removed 444.18B LUNC from supply.</text>
+  <text x="148" y="594" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="19">2. Bonded staking currently absorbs 932.78B LUNC.</text>
+  <text x="148" y="632" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="19">3. The mint module currently reports zero inflation and zero annual provisions.</text>
+  <text x="148" y="670" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="19">4. The asset stays tradable because enough validator and community structure still exists.</text>
+  <text x="148" y="708" fill="#7D3A3E" font-family="Arial, Helvetica, sans-serif" font-size="17">That combination is why LUNC can still be repriced seriously, even if it is not a high-growth chain narrative.</text>
 </svg>

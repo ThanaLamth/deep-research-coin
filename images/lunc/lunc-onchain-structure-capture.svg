@@ -1,43 +1,61 @@
 <svg width="1400" height="980" viewBox="0 0 1400 980" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">LUNC onchain structure capture</title>
-  <desc id="desc">A visual summary of Terra Classic burned supply, bonded staking, zero inflation, and recent block activity on April 28, 2026.</desc>
-  <rect width="1400" height="980" rx="28" fill="#F5F1E8"/>
-  <text x="70" y="74" fill="#1E293B" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700">LUNC Onchain Structure</text>
-  <text x="70" y="108" fill="#475569" font-family="Arial, Helvetica, sans-serif" font-size="18">Supply, staking, inflation, and point-in-time block activity from Terra Classic public data</text>
+  <title id="title">Terra Classic onchain structure capture</title>
+  <desc id="desc">Editorial-style onchain summary for Terra Classic highlighting burns, bonded staking, zero inflation, and restrained chain activity.</desc>
+  <defs>
+    <filter id="grain" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.05"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1400" height="980" fill="#F1E6CF"/>
+  <rect width="1400" height="980" fill="#F1E6CF" filter="url(#grain)"/>
 
-  <rect x="70" y="150" width="420" height="260" rx="22" fill="#FFF7ED"/>
-  <text x="98" y="192" fill="#9A3412" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Supply structure</text>
-  <text x="98" y="236" fill="#9A3412" font-family="Arial, Helvetica, sans-serif" font-size="18">Total supply: 6.463T LUNC</text>
-  <text x="98" y="268" fill="#9A3412" font-family="Arial, Helvetica, sans-serif" font-size="18">Circulating: 5.507T LUNC</text>
-  <text x="98" y="300" fill="#9A3412" font-family="Arial, Helvetica, sans-serif" font-size="18">Gap: 955.9B LUNC</text>
-  <text x="98" y="332" fill="#9A3412" font-family="Arial, Helvetica, sans-serif" font-size="18">Burned to date: 444.18B LUNC</text>
-  <text x="98" y="364" fill="#9A3412" font-family="Arial, Helvetica, sans-serif" font-size="18">Average burn/day: 306.97M LUNC</text>
+  <rect x="70" y="60" width="1260" height="850" fill="#F6EEDB"/>
+  <rect x="88" y="78" width="1260" height="850" fill="#2D2430"/>
+  <rect x="70" y="60" width="1260" height="850" fill="#F6EEDB" stroke="#2D2430" stroke-width="3"/>
 
-  <rect x="520" y="150" width="380" height="260" rx="22" fill="#ECFDF5"/>
-  <text x="548" y="192" fill="#166534" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Bonded staking</text>
-  <text x="548" y="236" fill="#166534" font-family="Arial, Helvetica, sans-serif" font-size="18">Bonded: 932.78B LUNC</text>
-  <text x="548" y="268" fill="#166534" font-family="Arial, Helvetica, sans-serif" font-size="18">14.43% of total supply</text>
-  <text x="548" y="300" fill="#166534" font-family="Arial, Helvetica, sans-serif" font-size="18">16.94% of circulating supply</text>
-  <text x="548" y="332" fill="#166534" font-family="Arial, Helvetica, sans-serif" font-size="18">97.6% of the non-circulating gap</text>
-  <text x="548" y="364" fill="#166534" font-family="Arial, Helvetica, sans-serif" font-size="18">Unbonding time: 21 days</text>
+  <text x="112" y="132" fill="#2D2430" font-family="Georgia, 'Times New Roman', serif" font-size="38" font-weight="700">LUNC Onchain Structure</text>
+  <text x="112" y="168" fill="#7D3A3E" font-family="Arial, Helvetica, sans-serif" font-size="18">The real story is not just that burns exist. It is how burns, staking, and zero inflation interact inside the same supply map.</text>
 
-  <rect x="930" y="150" width="400" height="260" rx="22" fill="#EFF6FF"/>
-  <text x="958" y="192" fill="#1D4ED8" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Mint side</text>
-  <text x="958" y="236" fill="#1D4ED8" font-family="Arial, Helvetica, sans-serif" font-size="18">Inflation: 0</text>
-  <text x="958" y="268" fill="#1D4ED8" font-family="Arial, Helvetica, sans-serif" font-size="18">Annual provisions: 0</text>
-  <text x="958" y="300" fill="#1D4ED8" font-family="Arial, Helvetica, sans-serif" font-size="18">Burn pressure is not visibly offset by mint issuance.</text>
+  <rect x="112" y="216" width="356" height="204" fill="#E7A0A4"/>
+  <rect x="130" y="234" width="356" height="204" fill="#B3472F"/>
+  <rect x="112" y="216" width="356" height="204" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
+  <text x="140" y="256" fill="#8C2F39" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">BURNS</text>
+  <text x="140" y="304" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">444.18B LUNC removed</text>
+  <text x="140" y="342" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">6.43% of total supply is gone.</text>
+  <text x="140" y="374" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">Average burn/day: 306.97M LUNC.</text>
 
-  <rect x="70" y="460" width="1260" height="300" rx="22" fill="#FFFFFF"/>
-  <text x="98" y="504" fill="#1E293B" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Recent block activity sample</text>
-  <text x="98" y="548" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="18">Sample used: the most recent 60 Terra Classic blocks around 03:19 UTC on April 28, 2026.</text>
-  <text x="98" y="582" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="18">Average transactions per block: 19.78</text>
-  <text x="98" y="616" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="18">Median transactions per block: 2.5</text>
-  <text x="98" y="650" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="18">Blocks with at least one transaction: 53 of 60</text>
-  <text x="98" y="684" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="18">Maximum transactions in one sampled block: 92</text>
-  <text x="98" y="718" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="18">Read: activity exists, but the median block still looks thin. The move appears to be led more by supply and sentiment than by a broad demand breakout.</text>
+  <rect x="522" y="216" width="356" height="204" fill="#D98858"/>
+  <rect x="540" y="234" width="356" height="204" fill="#6B2B30"/>
+  <rect x="522" y="216" width="356" height="204" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
+  <text x="550" y="256" fill="#8C2F39" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">BONDED STAKING</text>
+  <text x="550" y="304" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">932.78B LUNC bonded</text>
+  <text x="550" y="342" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">14.43% of total supply.</text>
+  <text x="550" y="374" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">97.6% of the non-circulating gap.</text>
 
-  <rect x="70" y="800" width="1260" height="110" rx="22" fill="#FEF3C7"/>
-  <text x="98" y="846" fill="#92400E" font-family="Arial, Helvetica, sans-serif" font-size="18">Key read: LUNC does have real onchain support for a tighter-float narrative. Burns are large, bonded staking is larger, and inflation is currently zero. What it does not yet have is equally clear evidence of a full usage-driven comeback.</text>
+  <rect x="932" y="216" width="356" height="204" fill="#E7A0A4"/>
+  <rect x="950" y="234" width="356" height="204" fill="#B3472F"/>
+  <rect x="932" y="216" width="356" height="204" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
+  <text x="960" y="256" fill="#8C2F39" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">MINT SIDE</text>
+  <text x="960" y="304" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Inflation: 0</text>
+  <text x="960" y="342" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">Annual provisions: 0.</text>
+  <text x="960" y="374" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">No visible mint offset to the burn narrative.</text>
 
-  <text x="70" y="948" fill="#64748B" font-family="Arial, Helvetica, sans-serif" font-size="15">Sources used for this capture: LuncScan, Terra Classic public nodes, Terra Classic LCD data. Metrics checked on April 28, 2026.</text>
+  <rect x="112" y="474" width="1176" height="250" fill="#D98858"/>
+  <rect x="132" y="494" width="1176" height="250" fill="#8C2F39"/>
+  <rect x="112" y="474" width="1176" height="250" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
+  <text x="144" y="518" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">BLOCK ACTIVITY SAMPLE</text>
+  <text x="144" y="566" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="19">60 latest blocks checked around 03:19 UTC on April 28, 2026.</text>
+  <text x="144" y="604" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="19">Average transactions per block: 19.78</text>
+  <text x="144" y="642" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="19">Median transactions per block: 2.5</text>
+  <text x="144" y="680" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="19">Interpretation: chain activity exists, but the median block still looks thin.</text>
+
+  <rect x="112" y="770" width="1176" height="96" fill="#E7A0A4"/>
+  <rect x="128" y="786" width="1176" height="96" fill="#B3472F"/>
+  <rect x="112" y="770" width="1176" height="96" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
+  <text x="144" y="824" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">INVESTIGATIVE READ</text>
+  <text x="360" y="824" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">LUNC has enough onchain evidence for a tighter-float thesis, but not yet enough usage evidence for a full fundamentals-led comeback.</text>
 </svg>
