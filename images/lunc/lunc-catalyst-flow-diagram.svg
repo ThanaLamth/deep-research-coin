@@ -1,0 +1,51 @@
+<svg width="1600" height="430" viewBox="0 0 1600 430" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">LUNC catalyst flow diagram</title>
+  <desc id="desc">A flow diagram showing how burns, staking, zero inflation, and better sentiment combined into a sharper Terra Classic repricing.</desc>
+  <rect width="1600" height="430" rx="28" fill="#F5F1E8"/>
+  <text x="70" y="66" fill="#1E293B" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700">LUNC Repricing Flow</text>
+  <text x="70" y="98" fill="#475569" font-family="Arial, Helvetica, sans-serif" font-size="18">The supply structure and sentiment chain behind the current Terra Classic rally</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0L12 6L0 12V0Z" fill="#64748B"/>
+    </marker>
+  </defs>
+
+  <rect x="70" y="170" width="210" height="120" rx="22" fill="#FFF7ED"/>
+  <text x="175" y="208" text-anchor="middle" fill="#9A3412" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Burned Supply</text>
+  <text x="175" y="236" text-anchor="middle" fill="#9A3412" font-family="Arial, Helvetica, sans-serif" font-size="15">444.18B LUNC removed</text>
+  <text x="175" y="258" text-anchor="middle" fill="#9A3412" font-family="Arial, Helvetica, sans-serif" font-size="15">Supply no longer at 6.9T+</text>
+
+  <rect x="320" y="170" width="210" height="120" rx="22" fill="#ECFDF5"/>
+  <text x="425" y="208" text-anchor="middle" fill="#166534" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Bonded Staking</text>
+  <text x="425" y="236" text-anchor="middle" fill="#166534" font-family="Arial, Helvetica, sans-serif" font-size="15">932.78B LUNC bonded</text>
+  <text x="425" y="258" text-anchor="middle" fill="#166534" font-family="Arial, Helvetica, sans-serif" font-size="15">21-day unbonding friction</text>
+
+  <rect x="570" y="170" width="210" height="120" rx="22" fill="#EFF6FF"/>
+  <text x="675" y="208" text-anchor="middle" fill="#1D4ED8" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Zero Inflation</text>
+  <text x="675" y="236" text-anchor="middle" fill="#1D4ED8" font-family="Arial, Helvetica, sans-serif" font-size="15">Mint module: 0</text>
+  <text x="675" y="258" text-anchor="middle" fill="#1D4ED8" font-family="Arial, Helvetica, sans-serif" font-size="15">No visible issuance offset</text>
+
+  <rect x="820" y="170" width="230" height="120" rx="22" fill="#FEF2F2"/>
+  <text x="935" y="208" text-anchor="middle" fill="#B91C1C" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Sentiment Improves</text>
+  <text x="935" y="236" text-anchor="middle" fill="#B91C1C" font-family="Arial, Helvetica, sans-serif" font-size="15">High-beta crypto appetite returns</text>
+  <text x="935" y="258" text-anchor="middle" fill="#B91C1C" font-family="Arial, Helvetica, sans-serif" font-size="15">Legal overhang feels less one-sided</text>
+
+  <rect x="1090" y="170" width="230" height="120" rx="22" fill="#EEF2FF"/>
+  <text x="1205" y="208" text-anchor="middle" fill="#4338CA" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Float Repricing</text>
+  <text x="1205" y="236" text-anchor="middle" fill="#4338CA" font-family="Arial, Helvetica, sans-serif" font-size="15">Traders focus on what can move now</text>
+  <text x="1205" y="258" text-anchor="middle" fill="#4338CA" font-family="Arial, Helvetica, sans-serif" font-size="15">not only on total supply headlines</text>
+
+  <rect x="1360" y="170" width="170" height="120" rx="22" fill="#1E293B"/>
+  <text x="1445" y="208" text-anchor="middle" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Sharp Rally</text>
+  <text x="1445" y="236" text-anchor="middle" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif" font-size="15">LUNC reprices fast</text>
+  <text x="1445" y="258" text-anchor="middle" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif" font-size="15">into a tighter visible float</text>
+
+  <line x1="280" y1="230" x2="320" y2="230" stroke="#64748B" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="530" y1="230" x2="570" y2="230" stroke="#64748B" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="780" y1="230" x2="820" y2="230" stroke="#64748B" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="1050" y1="230" x2="1090" y2="230" stroke="#64748B" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="1320" y1="230" x2="1360" y2="230" stroke="#64748B" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <text x="70" y="360" fill="#475569" font-family="Arial, Helvetica, sans-serif" font-size="16">The important takeaway is that burns alone are not carrying this move. The stronger explanation is that a reduced total supply, a heavily bonded non-circulating layer, zero inflation, and better market mood all started reinforcing each other at once.</text>
+</svg>
