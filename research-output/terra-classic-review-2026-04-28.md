@@ -19,6 +19,7 @@ That does not mean Terra Classic has returned as a leading growth chain. It mean
 - The strongest part of the LUNC case is supply structure. Bonded staking now explains almost all of the current gap between total and circulating supply.
 - Burns are large enough to matter, but not large enough to transform the network by themselves. The average burn rate remains slow relative to a 6.463 trillion supply base.
 - The mint module still showing zero inflation and zero annual provisions makes the supply-repair story cleaner than it would be under active protocol issuance.
+- Terra Classic no longer has a simple founder-led team structure. In practice, power now sits across community contributors, the classic-terra codebase, and a validator set with meaningful concentration.
 - Terra Classic still carries severe reputational damage and does not currently read like a leading 2026 sector winner. It is better understood as a legacy recovery trade than as a fresh growth-chain thesis.
 
 ## Quick Verdict
@@ -68,6 +69,28 @@ What has changed is the center of gravity. Terra Classic no longer competes on t
 ![Terra Classic project snapshot showing LUNC as a community-run legacy chain centered on burns, staking, and survival](../images/lunc/lunc-project-capture.svg)
 
 *The simplest 2026 framing for Terra Classic: a community-run legacy network whose strongest story is not expansion, but survival and supply discipline.*
+
+## Who Actually Runs Terra Classic Now?
+
+This is the part of the Terra Classic story that needs the most careful wording. If this were a new token launch, the natural question would be who the founder team is, who the backers are, and who controls the treasury. Terra Classic in 2026 does not fit that mold anymore.
+
+Historically, the chain came from Terraform Labs and Do Kwon. That remains part of the asset's baggage and cannot be written out of the story. But the current operating reality is different. Terra Classic now presents itself as a decentralized, community-owned network, and the community ecosystem hub explicitly says the chain has no official website in the centralized-company sense. In other words, the modern question is not who owns Terra Classic. It is who still maintains, upgrades, and influences it.
+
+The first layer is the codebase. The classic-terra GitHub organization currently shows 61 public repositories, and the classic-terra/core repository was updated on April 27, 2026, with the v4.0.1 prerelease published the same day. Recent merged commits on that repository show active work by contributors including TropicalDog17 and kien6034, with co-authors or nearby merged work involving StrathCole and DevOrbitlabs. That does not prove a single core team in the traditional startup sense. It does prove that protocol maintenance is still happening in public.
+
+The second layer is the validator set, because Terra Classic governance and chain operations run through validators and delegated stake rather than through one executive team. A full validator pull from the PublicNode staking endpoint on April 28, 2026 returned 646 validators in total, with 94 in bonded status. That alone tells you the chain is not being run by a single machine room. But it does not mean influence is evenly distributed.
+
+When bonded stake is ranked by validator, the top three bonded validators accounted for about 30.15% of bonded supply at the time of check, while the top ten accounted for about 55.23%. The largest bonded validator names in that pull included DutchLUNC, Allnodes, HappyCattyCrypto, LUNCLIVE, and KuCoin LUNC Node. That is a real concentration pattern. It does not make Terra Classic centrally controlled in the corporate sense, because delegators can move stake and override validator governance votes. But it does mean proposal momentum, social narrative, and upgrade execution are shaped by a relatively small upper tier of operators.
+
+| Power layer | What the evidence shows |
+|---|---|
+| Original founders | Terra Classic still inherits Terraform Labs and Do Kwon history, but that is legacy baggage rather than proof of present-day operational control |
+| Current code maintenance | The classic-terra GitHub organization remains active, with 61 public repositories and a core repo updated on April 27, 2026 |
+| Recent protocol work | Recent merged commits and releases show active contributions from current community developers rather than a silent or frozen codebase |
+| Governance and operations | Chain influence now sits heavily with validators and delegators, not a single executive team |
+| Power concentration | The top 10 bonded validators control about 55.23% of bonded stake, which makes the system community-run but not evenly distributed |
+
+The cleanest conclusion is that Terra Classic in 2026 is not teamless, but it is no longer team-led in the old sense either. It is better understood as a community-governed legacy chain with three overlapping power centers: public code maintainers, high-influence validators, and the delegator base that ultimately decides which operators keep weight.
 
 ## What Still Works
 
@@ -154,7 +177,7 @@ But the review cannot stop there. Terra Classic still carries exceptional narrat
 
 ## Methodology
 
-This review is based on public materials checked on April 28, 2026. LuncScan burn and supply figures were taken from the LUNC Burn Tracker page updated at 13:59:02 UTC. Terra Classic staking, inflation, and annual provision figures were checked directly from the PublicNode LCD endpoints at 14:30 UTC. The review also used the Terra Classic community ecosystem hub and the official Terra Classic documentation for project context and staking mechanics.
+This review is based on public materials checked on April 28, 2026. LuncScan burn and supply figures were taken from the LUNC Burn Tracker page updated at 13:59:02 UTC. Terra Classic staking, inflation, and annual provision figures were checked directly from the PublicNode LCD endpoints at 14:30 UTC. The review also used the Terra Classic community ecosystem hub, the official Terra Classic documentation, and the public classic-terra GitHub organization and core repository pages for project context, maintenance activity, and governance structure clues.
 
 The review is strongest on directly reproducible supply-side evidence. It does not claim to prove a broad demand breakout from a full historical activity dataset. Where the article discusses Terra Classic's weaker position versus newer 2026 narratives, that is an editorial inference built from the source material and broader market context, not a direct onchain measurement.
 
@@ -172,3 +195,8 @@ This article is for research and informational purposes only and should not be t
 6. Terra Classic PublicNode LCD, staking pool: https://terra-classic-lcd.publicnode.com/cosmos/staking/v1beta1/pool
 7. Terra Classic PublicNode LCD, mint inflation: https://terra-classic-lcd.publicnode.com/cosmos/mint/v1beta1/inflation
 8. Terra Classic PublicNode LCD, annual provisions: https://terra-classic-lcd.publicnode.com/cosmos/mint/v1beta1/annual_provisions
+9. Terra Classic GitHub organization: https://github.com/classic-terra
+10. Terra Classic core repository: https://github.com/classic-terra/core
+11. Terra Classic core release v4.0.1: https://github.com/classic-terra/core/releases/tag/v4.0.1
+12. Recent core commit, April 27, 2026: https://github.com/classic-terra/core/commit/9a5ee563874ce3906c3ca7069f0160de51f89c40
+13. Recent core commit, April 24, 2026: https://github.com/classic-terra/core/commit/dcea6a8174bda20a9aa8f2d6f647d65fc3ac3c73
