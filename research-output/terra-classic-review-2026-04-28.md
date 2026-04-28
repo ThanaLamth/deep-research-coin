@@ -9,9 +9,9 @@
 
 At first glance, Terra Classic looks like the kind of token most readers think they already understand. The name brings back the 2022 collapse. The supply looks enormous. The instinctive conclusion is simple: this is a broken asset living on borrowed time.
 
-That first impression is not entirely wrong, but it is incomplete. Terra Classic is best understood as a legacy chain whose economic story now depends heavily on burns, staking, validator-led governance, and a community-maintained survival model rather than on a fresh high-growth narrative.
+That first impression is not entirely wrong, but it is incomplete. The more useful framework is narrower and more mechanical. Terra Classic is best understood as a legacy chain whose economic story now depends on burns, staking, validator-led governance, and a community-maintained survival model rather than on a fresh high-growth narrative.
 
-That distinction matters because many readers still approach LUNC through outdated shortcuts. Some see only the collapse. Others see only the huge total supply. Neither shortcut explains why traders still come back to the token. The more useful framework is narrower and more mechanical. Terra Classic is the original Terra chain that remained online after the collapse, while Terra 2.0 became a separate network. LUNC is the token of that legacy chain. Its story now revolves around how much supply has been burned, how much supply is bonded in staking, how governance power is distributed across validators and delegators, and how much structural risk still remains.
+Many readers still approach LUNC through outdated shortcuts. Some see only the collapse. Others see only the huge total supply. Neither shortcut explains why the asset still gets recurring attention. Terra Classic is the original Terra chain that remained online after the collapse, while Terra 2.0 became a separate network. LUNC is the token of that legacy chain, and its story now revolves around how much supply has been burned, how much supply is bonded in staking, how governance power is distributed across validators and delegators, and how much structural risk still remains.
 
 ## Key Takeaways
 
@@ -24,9 +24,9 @@ That distinction matters because many readers still approach LUNC through outdat
 
 ## What Is Terra Classic?
 
-To understand Terra Classic, it helps to start with the split that many casual readers still blur together. Terra Classic is the original Terra blockchain that remained online after the collapse of the original Terra ecosystem in 2022. Terra 2.0 is a separate network launched later. That separation is essential, because many readers still confuse LUNC with the newer LUNA asset.
+To understand Terra Classic, it helps to start with the split that many casual readers still blur together. Terra Classic is the original Terra blockchain that remained online after the [collapse of the original Terra ecosystem](https://coincu.com/news/terraform-labs-sec-lawsuit-settled-for-4-47b/) in 2022. Terra 2.0 is a separate network launched later. That separation is essential, because many readers still confuse LUNC with the newer LUNA asset.
 
-Once that split is clear, the modern picture becomes easier to read. Today, Terra Classic is better described as a community-run legacy Layer 1 than as a conventional restart story. The chain still has validators, staking, governance, public infrastructure, and a community ecosystem hub. It is no longer selling a clean frontier-growth narrative. Instead, it survives through a combination of community persistence, supply-repair mechanics, and enough infrastructure to remain tradable and usable.
+Once that split is clear, the modern picture becomes easier to read. Today, Terra Classic is better described as a community-run legacy Layer 1 than as a conventional restart story. The chain still has validators, staking, governance, public infrastructure, and a community ecosystem hub. It is no longer selling a clean frontier-growth narrative. Instead, it survives through a combination of community persistence, supply-repair mechanics, and enough infrastructure to remain tradable and usable. Coincu's earlier coverage of the [Terra Classic parity upgrade](https://coincu.com/195186-terra-classic-completes-parity-upgrade/) is a useful reminder that the network did not simply freeze after the collapse.
 
 The Terra Classic ecosystem hub also frames the network as community-owned rather than company-owned, which is a useful clue about how the chain should be analyzed. This is not a project where one centralized operating company can simply be treated as the whole story.
 
@@ -52,7 +52,7 @@ That naturally leads to the next layer of the story. Once supply is broken into 
 
 ## How Burns Affect LUNC
 
-Burning means tokens are sent to addresses or mechanisms that remove them from usable circulation permanently. For LUNC, burns matter because the chain is trying to repair a supply base that ballooned after the collapse.
+Burning means tokens are sent to addresses or mechanisms that remove them from usable circulation permanently. For readers who want a quick background refresher, Coincu's [crypto glossary](https://coincu.com/crypto-glossary/) includes the basic token-burn concept. For LUNC, burns matter because the chain is trying to repair a supply base that ballooned after the collapse.
 
 That gives burns a clear narrative role. Every burn reduces the remaining supply and helps support the long-running deflation story around Terra Classic.
 
@@ -62,11 +62,11 @@ And that is exactly why the LUNC story does not stop at burns. Even after tokens
 
 ## How Staking Changes the Visible Float
 
-Staking is one of the most important parts of the modern LUNC story because it changes how much supply feels immediately available to the market. In other words, burns explain how the supply base shrinks, while staking helps explain why the live float can feel tighter than the headline numbers imply.
+Staking is one of the most important parts of the modern LUNC story because it changes how much supply feels immediately available to the market. Readers who want a broader conceptual refresher can compare this with Coincu's [Proof-of-Stake explainer](https://coincu.com/229757-proof-of-stake-pos/). In other words, burns explain how the supply base shrinks, while staking helps explain why the live float can feel tighter than the headline numbers imply.
 
 When LUNC is bonded to validators, it is no longer instantly liquid. It can still come back later, but not on demand. According to the Terra Classic staking documentation, the default unbonding period is three weeks. That delay matters because the market does not treat delayed supply the same way it treats instantly tradeable supply.
 
-This is why traders often watch bonded supply closely. If a large amount of LUNC is staked, the effective float can look tighter than the total supply number first suggests. That does not make staked supply permanently gone. It does make the live market structure more constrained, and that difference is large enough to shape how people price the token.
+This is why bonded supply remains one of the most closely watched structural metrics. If a large amount of LUNC is staked, the effective float can look tighter than the total supply number first suggests. That does not make staked supply permanently gone. It does make the live market structure more constrained, and that difference is large enough to shape how people interpret the token.
 
 Once supply mechanics are laid out that way, another question follows almost automatically: if this is a community-run chain now, who is actually making decisions and steering upgrades?
 
@@ -78,7 +78,7 @@ Once supply mechanics are laid out that way, another question follows almost aut
 
 This is the wrong question if it is asked in the old startup sense and the right question if it is asked as a power-structure question. Terra Classic still has people and institutions behind it, but not in the neat founder-investor-operator stack that readers might expect from a newer project. There is no clean single protagonist standing on stage and speaking for the chain.
 
-Historically, Terra came from Terraform Labs and Do Kwon. That legacy remains part of the asset's baggage and still matters for trust. But the current operating model is different enough that readers need a new mental map. Terra Classic now runs through three linked rails: code maintainers ship changes, governance proposals move those changes onto the chain's decision track, and validators plus delegators decide whether the upgrade path actually goes live.
+Historically, Terra came from Terraform Labs and Do Kwon. That legacy remains part of the asset's baggage and still matters for trust. But the current operating model is different enough that readers need a new mental map. Terra Classic now runs through three linked rails: code maintainers ship changes, governance proposals move those changes onto the chain's decision track, and validators plus delegators decide whether the upgrade path actually goes live. Coincu's earlier note on [Terra Classic and Terra tokens surging amid market speculation](https://coincu.com/terra-classic-luna-market-surge/) shows how quickly that legacy narrative can resurface, even when the underlying operating model has already changed.
 
 | Power rail | Who matters most | Why it matters |
 |---|---|---|
@@ -100,6 +100,8 @@ The validator side of that system is concentrated enough to matter. Terra's prot
 
 That concentration does not mean Terra Classic is secretly a corporation in disguise. Delegators can reallocate stake, and governance rules formally give them the right to override validator voting. But it does mean the upper layer of validator operators has outsized influence over proposal momentum, consensus participation, and the social direction of the chain.
 
+Bonded-stake concentration is a useful signal of influence, but it is not identical to a full historical analysis of governance outcomes.
+
 The code side tells a similar story of decentralization with a small visible working core. The classic-terra GitHub organization currently shows 61 public repositories, but no public organization members are listed on GitHub, which makes the human roster less transparent than the code itself. The better signal is recent activity. The classic-terra/core repository was updated on April 27, 2026, and a v4.0.1 prerelease was published the same day. In the most recent 40 commits checked for this review, the heaviest visible commit activity came from StrathCole, Kien Trinh, DevOrbitlabs, Tuan Tran, and Till Ziegler. That does not prove a formal “core team” in the startup sense. It does show a recurring group of contributors carrying maintenance work in public.
 
 The most useful current example is how those rails connect in real time. On April 27, 2026, the classic-terra/core repository published v4.0.1 as a prerelease. On April 28, 2026, on-chain proposal 12221 entered voting as a software upgrade to v4.0.1, with a voting window running through May 5, 2026. That single chain of events captures how Terra Classic is run now: code is prepared off-chain, but chain-level legitimacy still has to pass through governance and bonded voting power before an upgrade becomes reality.
@@ -110,11 +112,11 @@ That distributed structure is part of what keeps the chain alive, but it also cr
 
 ## Main Risks of Holding or Trading LUNC
 
-The first major risk is reputational damage. Terra Classic still carries the memory of one of crypto's most destructive collapses. That does not disappear just because the surviving chain is now community-run. Every new argument in favor of LUNC still has to pass through that shadow first.
+The first major risk is reputational damage. Terra Classic still carries the memory of one of crypto's most destructive collapses. That does not disappear just because the surviving chain is now community-run. Every new argument in favor of LUNC still has to pass through that shadow first, and Coincu's coverage of [Do Kwon's legal overhang](https://coincu.com/do-kwon-second-trial-south-korea/) is part of why that baggage remains relevant.
 
 The second risk is supply scale. Even with burns, the remaining supply base is still very large, which means the tokenomics problem has been improved rather than eliminated. The story has moved from runaway damage to partial repair, not from damage to full reset.
 
-The third risk is staking reversal. Bonded supply is not permanently locked away. If market conditions change, staked LUNC can eventually re-enter the market after the unbonding period.
+The third risk is staking reversal. Bonded supply is not permanently locked away. If market conditions change, staked LUNC can eventually re-enter the market after the unbonding period. The same general release-pressure logic appears in Coincu's explainer on [token unlock risk](https://coincu.com/knowledge/taking-advantage-token-unlock-make-profit/), even though LUNC reaches that problem through staking rather than a standard VC unlock calendar.
 
 The fourth risk is governance concentration. Terra Classic is community-run, but community-run does not mean influence is evenly spread. A relatively small upper tier of validators can still shape proposal momentum and operational direction.
 
@@ -130,13 +132,13 @@ The fifth risk is thesis confusion. LUNC can attract attention because of supply
 
 Those risks are exactly why LUNC remains a divisive asset. They do not erase the reasons people keep watching it, but they do explain why attention around the token never comes with simple consensus.
 
-## Why Traders Still Care About LUNC
+## Why LUNC Still Gets Attention
 
-LUNC tends to attract attention when traders focus on supply compression, legacy high-beta assets, and tokens where visible float may be tighter than headline supply suggests. That recurring interest is not random. It comes from the same structural tension that runs through the whole asset.
+LUNC still gets attention because its structure keeps posing live questions that many failed chains no longer can. Readers still want to know how much supply is actually gone for good, how much is bonded rather than instantly tradeable, and who carries upgrade responsibility now that the founder-era project is gone. Those are not marketing questions. They are operating questions, and Terra Classic still has to answer them in public.
 
-That does not mean Terra Classic has reclaimed leadership as a growth chain. The more durable explanation is narrower. Traders still watch LUNC because its supply structure is more complex than a single total-supply number, and because burns, staking, and governance concentration all shape how the token behaves.
+That does not mean Terra Classic has reclaimed leadership as a growth chain. The more durable explanation is narrower. LUNC remains structurally relevant because its supply profile is more complex than a single total-supply number, and because burns, staking, and governance concentration still shape how the chain is interpreted.
 
-This is why Terra Classic remains relevant even without a simple comeback narrative. It still offers a structure that traders can model, debate, and periodically reprice. The collapse explains why the token is controversial. The post-collapse mechanics explain why it refuses to become irrelevant.
+This is why Terra Classic remains relevant even without a simple comeback narrative. The collapse explains why the token is controversial. The post-collapse mechanics explain why it refuses to become irrelevant. For readers, that makes LUNC less a clean recovery story than a continuing case study in how a damaged crypto network can keep functioning through supply repair, delegated governance, and community maintenance.
 
 That broader explanation is the evergreen part. The numbers underneath it will change, which is why it makes sense to separate the mechanism from the latest snapshot.
 
@@ -152,7 +154,6 @@ The sections above are meant to stay useful over time. The figures below are the
 
 | Metric | Value |
 |---|---:|
-| Spot price on LuncScan | $0.00006311 |
 | Burned to date | 444.30B LUNC |
 | Burned share of total supply | 6.43% |
 | Total supply | 6.463T LUNC |
