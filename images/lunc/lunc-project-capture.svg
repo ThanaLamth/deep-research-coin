@@ -27,30 +27,40 @@
   <rect x="132" y="232" width="356" height="192" fill="#B3472F"/>
   <rect x="114" y="214" width="356" height="192" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
   <text x="142" y="254" fill="#8C2F39" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">IDENTITY</text>
-  <text x="142" y="302" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Not Terra 2.0</text>
-  <text x="142" y="338" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">
-    <tspan x="142" dy="0">The asset on the linked CoinMarketCap page is Terra Classic</tspan>
-    <tspan x="142" dy="24">and the ticker is LUNC, not the newer LUNA token.</tspan>
+  <text x="142" y="302" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">Not Terra 2.0</text>
+  <text x="142" y="338" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="16">
+    <tspan x="142" dy="0">The linked CoinMarketCap page tracks</tspan>
+    <tspan x="142" dy="21">Terra Classic under the LUNC ticker,</tspan>
+    <tspan x="142" dy="21">not the newer LUNA token.</tspan>
   </text>
 
   <rect x="522" y="214" width="356" height="192" fill="#D98858"/>
   <rect x="540" y="232" width="356" height="192" fill="#6B2B30"/>
   <rect x="522" y="214" width="356" height="192" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
   <text x="550" y="254" fill="#8C2F39" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">OPERATING FRAME</text>
-  <text x="550" y="302" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Community-run legacy chain</text>
-  <text x="550" y="338" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">
-    <tspan x="550" dy="0">Validators, governance, staking, and a smaller but still active ecosystem</tspan>
-    <tspan x="550" dy="24">keep the chain from becoming a static archive.</tspan>
+  <text x="550" y="300" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">
+    <tspan x="550" dy="0">Community-run</tspan>
+    <tspan x="550" dy="28">legacy chain</tspan>
+  </text>
+  <text x="550" y="350" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="16">
+    <tspan x="550" dy="0">Validators, governance, staking,</tspan>
+    <tspan x="550" dy="21">and a smaller active ecosystem</tspan>
+    <tspan x="550" dy="21">still keep the chain from going static.</tspan>
   </text>
 
   <rect x="930" y="214" width="356" height="192" fill="#E7A0A4"/>
   <rect x="948" y="232" width="356" height="192" fill="#B3472F"/>
   <rect x="930" y="214" width="356" height="192" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
   <text x="958" y="254" fill="#8C2F39" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">WHY IT STILL TRADES</text>
-  <text x="958" y="302" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">A scarcity narrative survived</text>
-  <text x="958" y="338" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">
-    <tspan x="958" dy="0">Burned supply, bonded staking, and zero mint inflation give LUNC</tspan>
-    <tspan x="958" dy="24">a cleaner structure than its giant headline supply suggests.</tspan>
+  <text x="958" y="296" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">
+    <tspan x="958" dy="0">Scarcity thesis</tspan>
+    <tspan x="958" dy="26">stayed alive</tspan>
+  </text>
+  <text x="958" y="338" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="16">
+    <tspan x="958" dy="0">Burns, bonded staking,</tspan>
+    <tspan x="958" dy="20">and zero mint inflation</tspan>
+    <tspan x="958" dy="20">make LUNC cleaner than</tspan>
+    <tspan x="958" dy="20">the headline supply implies.</tspan>
   </text>
 
   <rect x="114" y="462" width="1172" height="256" fill="#D98858"/>
