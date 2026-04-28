@@ -78,17 +78,33 @@ Once supply mechanics are laid out that way, another question follows almost aut
 
 This is the wrong question if it is asked in the old startup sense and the right question if it is asked as a power-structure question. Terra Classic still has people and institutions behind it, but not in the neat founder-investor-operator stack that readers might expect from a newer project. There is no clean single protagonist standing on stage and speaking for the chain.
 
-Historically, Terra came from Terraform Labs and Do Kwon. That legacy remains part of the asset's baggage and still matters for trust. But Terra Classic no longer operates as a founder-led project in the traditional sense.
+Historically, Terra came from Terraform Labs and Do Kwon. That legacy remains part of the asset's baggage and still matters for trust. But the current operating model is different enough that readers need a new mental map. Terra Classic now runs through three linked rails: code maintainers ship changes, governance proposals move those changes onto the chain's decision track, and validators plus delegators decide whether the upgrade path actually goes live.
 
-In practice, power now sits across three overlapping groups, and the tension between them is part of what makes Terra Classic unusual.
+| Power rail | Who matters most | Why it matters |
+|---|---|---|
+| Code maintenance | A small recurring contributor set in the classic-terra repositories | They write, review, and publish the upgrades that later reach governance |
+| Governance and validation | Bonded validators, especially the upper tier by stake | They shape proposal momentum and secure the chain once upgrades are approved |
+| Delegated voting power | Delegators who decide where stake sits and whether to override validator votes | They do not write code, but they determine which validators keep influence |
 
-The first group is code maintainers. The classic-terra GitHub organization and the core repository show that public protocol maintenance is still happening. That means the chain is not frozen. Somewhere behind the scenes, there are still people shipping updates, reviewing changes, and publishing releases.
+The rules are explicit in the documentation. Terra describes itself as a decentralized public blockchain governed by community members. One staked Luna equals one vote. If a delegator does not cast a vote, that vote defaults to the validator they are staked to, while validators vote with their full stake unless delegators override them. Proposals currently face a seven-day voting period, a 40% quorum requirement, a simple-majority threshold above 50%, and a 33.4% veto threshold. That means governance power is not abstract reputation. It is directly tied to staked weight and voting participation.
 
-The second group is validators. Validators do not just help secure the chain. They also matter politically, because governance influence tends to cluster around operators that attract large bonded stake.
+The validator side of that system is concentrated enough to matter. Terra's protocol docs say only the top 130 validators by stake can participate in consensus. A full validator pull from the PublicNode staking endpoint on April 28, 2026 returned 646 validators in total but only 94 in bonded status, which means the active bonded set currently sits below the theoretical maximum. Within that bonded set, the weight is far from evenly distributed: the largest bonded validator alone, DutchLUNC, held about 15.28% of bonded stake at the time of check. The top three bonded validators controlled about 30.15%, and the top ten controlled about 55.23%.
 
-The third group is delegators. Delegators ultimately decide where stake goes, and that means they influence which validators keep power and how much concentrated weight the upper tier of the validator set can hold.
+| Current validator power map | Point-in-time reading on April 28, 2026 |
+|---|---|
+| Bonded validators | 94 |
+| Top validator share | DutchLUNC at 15.28% of bonded stake |
+| Top 3 validator share | 30.15% of bonded stake |
+| Top 10 validator share | 55.23% of bonded stake |
+| Large visible validator brands | DutchLUNC, Allnodes, HappyCattyCrypto, LUNCLIVE, KuCoin LUNC Node |
 
-The right conclusion is not that Terra Classic has no one behind it. The better conclusion is that it is now a community-governed system where code maintainers, validators, and delegators together shape the chain.
+That concentration does not mean Terra Classic is secretly a corporation in disguise. Delegators can reallocate stake, and governance rules formally give them the right to override validator voting. But it does mean the upper layer of validator operators has outsized influence over proposal momentum, consensus participation, and the social direction of the chain.
+
+The code side tells a similar story of decentralization with a small visible working core. The classic-terra GitHub organization currently shows 61 public repositories, but no public organization members are listed on GitHub, which makes the human roster less transparent than the code itself. The better signal is recent activity. The classic-terra/core repository was updated on April 27, 2026, and a v4.0.1 prerelease was published the same day. In the most recent 40 commits checked for this review, the heaviest visible commit activity came from StrathCole, Kien Trinh, DevOrbitlabs, Tuan Tran, and Till Ziegler. That does not prove a formal “core team” in the startup sense. It does show a recurring group of contributors carrying maintenance work in public.
+
+The most useful current example is how those rails connect in real time. On April 27, 2026, the classic-terra/core repository published v4.0.1 as a prerelease. On April 28, 2026, on-chain proposal 12221 entered voting as a software upgrade to v4.0.1, with a voting window running through May 5, 2026. That single chain of events captures how Terra Classic is run now: code is prepared off-chain, but chain-level legitimacy still has to pass through governance and bonded voting power before an upgrade becomes reality.
+
+So the right conclusion is not that Terra Classic has no one behind it. The better conclusion is that it is run by a layered power structure: a small visible contributor group maintains the code, a concentrated validator class holds a large share of bonded influence, and delegators remain the final swing force because their stake determines which validators keep that influence in the first place.
 
 That distributed structure is part of what keeps the chain alive, but it also creates the next part of the analysis. A system like this can function without a single founder in charge, yet still carry very real structural risks.
 
@@ -162,7 +178,7 @@ At the time of the validator check, the largest bonded validator names included 
 
 ## Methodology
 
-This explainer is based on public materials checked on April 28, 2026. LuncScan burn and supply figures were taken from the LUNC Burn Tracker page updated at 13:59:02 UTC. Terra Classic staking, inflation, and annual provision figures were checked directly from the PublicNode LCD endpoints at 14:30 UTC. Validator concentration figures were derived from a full PublicNode validator pull completed on the same date. The article also used the Terra Classic community ecosystem hub, the official Terra Classic documentation, and the public classic-terra GitHub organization and core repository pages for project context, maintenance activity, and governance structure clues.
+This explainer is based on public materials checked on April 28, 2026. LuncScan burn and supply figures were taken from the LUNC Burn Tracker page updated at 13:59:02 UTC. Terra Classic staking, inflation, annual provision, governance parameter, and live proposal figures were checked directly from the PublicNode LCD endpoints between 14:30 UTC and 15:05 UTC. Validator concentration figures were derived from a full PublicNode validator pull completed on the same date. The article also used the Terra Classic community ecosystem hub, the official Terra Classic documentation, and the public classic-terra GitHub organization and core repository pages for project context, maintenance activity, and governance structure clues.
 
 The core body is written as a system explainer first. Current figures are isolated in the snapshot section so the page can be updated without rewriting the full thesis.
 
@@ -186,3 +202,7 @@ This article is for research and informational purposes only and should not be t
 12. Terra Classic core release v4.0.1: https://github.com/classic-terra/core/releases/tag/v4.0.1
 13. Recent core commit, April 27, 2026: https://github.com/classic-terra/core/commit/9a5ee563874ce3906c3ca7069f0160de51f89c40
 14. Recent core commit, April 24, 2026: https://github.com/classic-terra/core/commit/dcea6a8174bda20a9aa8f2d6f647d65fc3ac3c73
+15. Terra Classic PublicNode LCD, governance voting params: https://terra-classic-lcd.publicnode.com/cosmos/gov/v1/params/voting
+16. Terra Classic PublicNode LCD, governance tallying params: https://terra-classic-lcd.publicnode.com/cosmos/gov/v1/params/tallying
+17. Terra Classic PublicNode LCD, proposal 12221: https://terra-classic-lcd.publicnode.com/cosmos/gov/v1/proposals/12221
+18. Terra Classic documents repository, v14_2 proposal: https://github.com/classic-terra/documents/blob/main/proposals/v14_2-proposal.md
