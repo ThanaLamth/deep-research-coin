@@ -1,0 +1,68 @@
+<svg width="1400" height="900" viewBox="0 0 1400 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Humanity project capture</title>
+  <desc id="desc">A visual overview of Humanity Protocol showing project identity, proof of trust framing, launch stack, and tokenomics.</desc>
+  <rect width="1400" height="900" fill="#F3E8D5"/>
+  <rect x="60" y="56" width="1280" height="788" rx="26" fill="#F8F1E2" stroke="#2F2A2B" stroke-width="3"/>
+
+  <circle cx="116" cy="118" r="30" fill="#2E6DF6"/>
+  <text x="116" y="128" text-anchor="middle" fill="#FFFFFF" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="700">H</text>
+  <text x="164" y="112" fill="#2F2A2B" font-family="Georgia, 'Times New Roman', serif" font-size="40" font-weight="700">Humanity Protocol</text>
+  <text x="164" y="148" fill="#7C3A3E" font-family="Arial, Helvetica, sans-serif" font-size="18">A trust and identity layer built around human verification, reusable credentials, and privacy-preserving proofs</text>
+
+  <rect x="88" y="190" width="380" height="214" rx="18" fill="#FFF7ED" stroke="#2F2A2B" stroke-width="2.5"/>
+  <text x="112" y="224" fill="#9A3412" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">WHAT THE PROJECT IS</text>
+  <text x="112" y="264" fill="#2F2A2B" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="700">
+    <tspan x="112" dy="0">Identity infrastructure,</tspan>
+    <tspan x="112" dy="32">not just another chain</tspan>
+  </text>
+  <text x="112" y="324" fill="#2F2A2B" font-family="Arial, Helvetica, sans-serif" font-size="16">
+    <tspan x="112" dy="0">Humanity is positioning H as the</tspan>
+    <tspan x="112" dy="21">economic layer behind Human ID,</tspan>
+    <tspan x="112" dy="21">trust signals, credentials, and</tspan>
+    <tspan x="112" dy="21">privacy-preserving proof systems.</tspan>
+  </text>
+
+  <rect x="510" y="190" width="380" height="214" rx="18" fill="#EEF6FF" stroke="#2F2A2B" stroke-width="2.5"/>
+  <text x="534" y="224" fill="#1D4ED8" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">WHAT CHANGED</text>
+  <text x="534" y="264" fill="#2F2A2B" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="700">
+    <tspan x="534" dy="0">From proof of humanity</tspan>
+    <tspan x="534" dy="32">to proof of trust</tspan>
+  </text>
+  <text x="534" y="324" fill="#2F2A2B" font-family="Arial, Helvetica, sans-serif" font-size="16">
+    <tspan x="534" dy="0">Official materials now frame Humanity</tspan>
+    <tspan x="534" dy="21">as a broader identity and credential</tspan>
+    <tspan x="534" dy="21">hub for both Web3 and Web2-facing</tspan>
+    <tspan x="534" dy="21">applications.</tspan>
+  </text>
+
+  <rect x="932" y="190" width="380" height="214" rx="18" fill="#FDF2F8" stroke="#2F2A2B" stroke-width="2.5"/>
+  <text x="956" y="224" fill="#BE185D" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">WHY THE MARKET CARES</text>
+  <text x="956" y="264" fill="#2F2A2B" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="700">
+    <tspan x="956" dy="0">A full launch stack</tspan>
+    <tspan x="956" dy="32">arrived at once</tspan>
+  </text>
+  <text x="956" y="324" fill="#2F2A2B" font-family="Arial, Helvetica, sans-serif" font-size="16">
+    <tspan x="956" dy="0">Mainnet, staking, fairdrop, Fireblocks,</tspan>
+    <tspan x="956" dy="21">Mastercard, and D’CENT all landed</tspan>
+    <tspan x="956" dy="21">in the same April 24 window, which</tspan>
+    <tspan x="956" dy="21">made repricing easier to justify.</tspan>
+  </text>
+
+  <rect x="88" y="446" width="1224" height="170" rx="18" fill="#FFFFFF" stroke="#2F2A2B" stroke-width="2.5"/>
+  <text x="112" y="482" fill="#2F2A2B" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Tokenomics at a glance</text>
+  <text x="112" y="518" fill="#374151" font-family="Arial, Helvetica, sans-serif" font-size="17">Team: 19% with 12-month cliff, 24-month vesting, 0% unlocked at TGE</text>
+  <text x="112" y="550" fill="#374151" font-family="Arial, Helvetica, sans-serif" font-size="17">Investors: 10% with 12-month cliff, 18-month vesting, 0% unlocked at TGE</text>
+  <text x="112" y="582" fill="#374151" font-family="Arial, Helvetica, sans-serif" font-size="17">Community incentives: 12%, fully unlocked at TGE</text>
+  <text x="700" y="518" fill="#374151" font-family="Arial, Helvetica, sans-serif" font-size="17">Foundation operations treasury: 12%, 48-month vesting, 50% unlocked at TGE</text>
+  <text x="700" y="550" fill="#374151" font-family="Arial, Helvetica, sans-serif" font-size="17">Ecosystem fund: 24%, 48-month vesting, 0% unlocked at TGE</text>
+  <text x="700" y="582" fill="#374151" font-family="Arial, Helvetica, sans-serif" font-size="17">Identity verification rewards: 18%, 6-month cliff, 42-month vesting</text>
+
+  <rect x="88" y="652" width="1224" height="152" rx="18" fill="#FFF7ED" stroke="#2F2A2B" stroke-width="2.5"/>
+  <text x="112" y="688" fill="#2F2A2B" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Launch stack on April 24, 2026</text>
+  <text x="112" y="724" fill="#374151" font-family="Arial, Helvetica, sans-serif" font-size="17">Mainnet live and zkTLS applications available</text>
+  <text x="112" y="756" fill="#374151" font-family="Arial, Helvetica, sans-serif" font-size="17">Fairdrop claim opened with a 90-day stake path and 25% bonus</text>
+  <text x="700" y="724" fill="#374151" font-family="Arial, Helvetica, sans-serif" font-size="17">Fireblocks support expanded institutional custody access</text>
+  <text x="700" y="756" fill="#374151" font-family="Arial, Helvetica, sans-serif" font-size="17">Mastercard and D’CENT integrations widened the trust and access narrative</text>
+
+  <text x="60" y="872" fill="#6B7280" font-family="Arial, Helvetica, sans-serif" font-size="15">Sources used for this capture: Humanity token page and Humanity official blog posts checked on April 29, 2026.</text>
+</svg>

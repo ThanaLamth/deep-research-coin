@@ -1,0 +1,68 @@
+<svg width="1400" height="820" viewBox="0 0 1400 820" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Humanity catalyst flow diagram</title>
+  <desc id="desc">A flow diagram showing how Humanity Protocol's launch stack, staking sink, exchange access, and thin visible public liquidity can drive a sharp repricing.</desc>
+  <rect width="1400" height="820" rx="28" fill="#F5F1E8"/>
+  <text x="70" y="76" fill="#1E293B" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700">How H Repriced So Fast</text>
+  <text x="70" y="112" fill="#475569" font-family="Arial, Helvetica, sans-serif" font-size="18">The move looks more like a launch-stack repricing amplified by thin visible public float than a purely DEX-led pump</text>
+
+  <rect x="70" y="168" width="220" height="116" rx="20" fill="#FFF7ED" stroke="#9A3412" stroke-width="2.5"/>
+  <text x="100" y="206" fill="#9A3412" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Mainnet Live</text>
+  <text x="100" y="238" fill="#7C2D12" font-family="Arial, Helvetica, sans-serif" font-size="16">
+    <tspan x="100" dy="0">Humanity moved from</tspan>
+    <tspan x="100" dy="20">roadmap to production.</tspan>
+  </text>
+
+  <rect x="340" y="168" width="220" height="116" rx="20" fill="#EEF6FF" stroke="#1D4ED8" stroke-width="2.5"/>
+  <text x="370" y="206" fill="#1D4ED8" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Fairdrop Choice</text>
+  <text x="370" y="238" fill="#1E3A8A" font-family="Arial, Helvetica, sans-serif" font-size="16">
+    <tspan x="370" dy="0">Claim now, or stake</tspan>
+    <tspan x="370" dy="20">90 days for +25%.</tspan>
+  </text>
+
+  <rect x="610" y="168" width="220" height="116" rx="20" fill="#F0FDF4" stroke="#166534" stroke-width="2.5"/>
+  <text x="640" y="206" fill="#166534" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Staking Sink</text>
+  <text x="640" y="238" fill="#14532D" font-family="Arial, Helvetica, sans-serif" font-size="16">
+    <tspan x="640" dy="0">Part of early supply</tspan>
+    <tspan x="640" dy="20">is pushed off the tape.</tspan>
+  </text>
+
+  <rect x="880" y="168" width="220" height="116" rx="20" fill="#FEF2F2" stroke="#B91C1C" stroke-width="2.5"/>
+  <text x="910" y="206" fill="#B91C1C" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Access Widens</text>
+  <text x="910" y="238" fill="#991B1B" font-family="Arial, Helvetica, sans-serif" font-size="16">
+    <tspan x="910" dy="0">Major exchanges,</tspan>
+    <tspan x="910" dy="20">wallets, and custody rails.</tspan>
+  </text>
+
+  <rect x="1150" y="168" width="180" height="116" rx="20" fill="#FDF2F8" stroke="#BE185D" stroke-width="2.5"/>
+  <text x="1180" y="206" fill="#BE185D" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Narrative Lift</text>
+  <text x="1180" y="238" fill="#9D174D" font-family="Arial, Helvetica, sans-serif" font-size="16">
+    <tspan x="1180" dy="0">Mastercard and</tspan>
+    <tspan x="1180" dy="20">proof-of-trust framing.</tspan>
+  </text>
+
+  <path d="M290 226H340" stroke="#92400E" stroke-width="4" stroke-linecap="round"/>
+  <path d="M560 226H610" stroke="#2563EB" stroke-width="4" stroke-linecap="round"/>
+  <path d="M830 226H880" stroke="#166534" stroke-width="4" stroke-linecap="round"/>
+  <path d="M1100 226H1150" stroke="#B91C1C" stroke-width="4" stroke-linecap="round"/>
+
+  <rect x="188" y="382" width="1024" height="172" rx="24" fill="#FFFFFF" stroke="#2E2930" stroke-width="3"/>
+  <text x="222" y="424" fill="#2E2930" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Market structure consequence</text>
+  <text x="222" y="466" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <tspan x="222" dy="0">Demand gained more routes into H at the same moment that part of the earliest supply was being nudged into delay rather than instant sale.</tspan>
+    <tspan x="222" dy="30">Meanwhile, the public Ethereum-side liquidity visible on DexScreener remained extremely small relative to both circulating supply and headline market-wide volume.</tspan>
+    <tspan x="222" dy="30">That combination is enough to produce a sharp repricing even before long-term token demand is fully proven.</tspan>
+  </text>
+
+  <path d="M700 284V350" stroke="#2E2930" stroke-width="4" stroke-linecap="round"/>
+  <path d="M700 350L684 334" stroke="#2E2930" stroke-width="4" stroke-linecap="round"/>
+  <path d="M700 350L716 334" stroke="#2E2930" stroke-width="4" stroke-linecap="round"/>
+
+  <rect x="430" y="620" width="540" height="122" rx="24" fill="#EEF2FF" stroke="#4338CA" stroke-width="2.5"/>
+  <text x="460" y="660" fill="#4338CA" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Observed outcome</text>
+  <text x="460" y="698" fill="#312E81" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <tspan x="460" dy="0">H repriced quickly because access expanded faster</tspan>
+    <tspan x="460" dy="24">than visible float depth.</tspan>
+  </text>
+
+  <text x="70" y="780" fill="#64748B" font-family="Arial, Helvetica, sans-serif" font-size="15">Flow built from Humanity official announcements, CoinMarketCap, and DexScreener checks completed on April 29, 2026.</text>
+</svg>

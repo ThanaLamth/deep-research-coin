@@ -1,0 +1,54 @@
+<svg width="1400" height="920" viewBox="0 0 1400 920" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Humanity onchain structure capture</title>
+  <desc id="desc">A visual summary of Humanity Protocol onchain structure, including explorer usage metrics, visible public pool depth, and supply interpretation.</desc>
+  <rect width="1400" height="920" rx="28" fill="#F5F1E8"/>
+  <text x="70" y="76" fill="#1E293B" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700">Humanity Onchain Structure</text>
+  <text x="70" y="112" fill="#475569" font-family="Arial, Helvetica, sans-serif" font-size="18">Usage metrics are real, but the public Ethereum-side float still looks much smaller than the headline supply base</text>
+
+  <rect x="70" y="154" width="300" height="160" rx="22" fill="#FFF7ED"/>
+  <text x="98" y="194" fill="#9A3412" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Verified Users</text>
+  <text x="98" y="244" fill="#9A3412" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700">476,121</text>
+  <text x="98" y="274" fill="#9A3412" font-family="Arial, Helvetica, sans-serif" font-size="16">Humanity Explorer overview</text>
+
+  <rect x="390" y="154" width="300" height="160" rx="22" fill="#ECFDF5"/>
+  <text x="418" y="194" fill="#166534" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Total Users</text>
+  <text x="418" y="244" fill="#166534" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700">8.95M</text>
+  <text x="418" y="274" fill="#166534" font-family="Arial, Helvetica, sans-serif" font-size="16">Broad user footprint signal</text>
+
+  <rect x="710" y="154" width="300" height="160" rx="22" fill="#EFF6FF"/>
+  <text x="738" y="194" fill="#1D4ED8" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Credentials Issued</text>
+  <text x="738" y="244" fill="#1D4ED8" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700">9.30M</text>
+  <text x="738" y="274" fill="#1D4ED8" font-family="Arial, Helvetica, sans-serif" font-size="16">Identity activity is not empty</text>
+
+  <rect x="1030" y="154" width="300" height="160" rx="22" fill="#FEF2F2"/>
+  <text x="1058" y="194" fill="#B91C1C" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Issuers</text>
+  <text x="1058" y="244" fill="#B91C1C" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700">20</text>
+  <text x="1058" y="274" fill="#B91C1C" font-family="Arial, Helvetica, sans-serif" font-size="16">Credential providers visible</text>
+
+  <rect x="70" y="354" width="610" height="220" rx="24" fill="#FFFFFF"/>
+  <text x="98" y="396" fill="#1E293B" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Visible public Ethereum-side liquidity</text>
+  <text x="98" y="438" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="18">Reviewed DEX liquidity: $586.08K</text>
+  <text x="98" y="472" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="18">Reviewed H inventory: 2.2819M H</text>
+  <text x="98" y="506" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="18">Share of circulating supply: 0.084%</text>
+  <text x="98" y="540" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="18">Share of max supply: 0.023%</text>
+  <text x="98" y="566" fill="#64748B" font-family="Arial, Helvetica, sans-serif" font-size="15">Best read as a public-liquidity proxy, not as the full market float.</text>
+
+  <rect x="720" y="354" width="610" height="220" rx="24" fill="#FFFFFF"/>
+  <text x="748" y="396" fill="#1E293B" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Visible DEX flow versus market-wide flow</text>
+  <text x="748" y="438" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="18">Visible DEX 24h volume: $7.81K</text>
+  <text x="748" y="472" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="18">CoinMarketCap 24h volume: $76.96M</text>
+  <text x="748" y="506" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="18">Visible DEX share: 0.010%</text>
+  <text x="748" y="540" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="18">Inference: repricing is likely happening mostly outside these pools</text>
+  <text x="748" y="566" fill="#64748B" font-family="Arial, Helvetica, sans-serif" font-size="15">This is the strongest clue that the move is not being carried by public DEX flow alone.</text>
+
+  <rect x="70" y="618" width="1260" height="212" rx="24" fill="#FFF7ED"/>
+  <text x="98" y="660" fill="#1E293B" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">What the onchain evidence actually supports</text>
+  <text x="98" y="704" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <tspan x="98" dy="0">1. Humanity already has measurable identity and credential activity, so the network is not launching into a blank slate.</tspan>
+    <tspan x="98" dy="30">2. The public Ethereum-side pools are too small relative to supply and market-wide turnover to make this a stable or deep market.</tspan>
+    <tspan x="98" dy="30">3. The current surge is more consistent with access-and-float repricing than with visible onchain DEX accumulation.</tspan>
+    <tspan x="98" dy="30">4. The evidence is strongest on liquidity structure and usage context, not on a full holder-distribution map.</tspan>
+  </text>
+
+  <text x="70" y="886" fill="#64748B" font-family="Arial, Helvetica, sans-serif" font-size="15">Sources used for this capture: Humanity Explorer, DexScreener, CoinMarketCap, and Humanity official tokenomics checked on April 29, 2026.</text>
+</svg>
