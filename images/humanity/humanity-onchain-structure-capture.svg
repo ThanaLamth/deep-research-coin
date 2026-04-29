@@ -65,8 +65,5 @@
   <rect x="126" y="828" width="1116" height="110" fill="#B3472F"/>
   <rect x="108" y="810" width="1116" height="110" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
   <text x="142" y="860" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">BOTTOM LINE</text>
-  <text x="142" y="896" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">
-    <tspan x="142" dy="0">The strongest onchain thesis is access-and-float repricing.</tspan>
-    <tspan x="142" dy="24">This does not look like a public DEX-led accumulation story.</tspan>
-  </text>
+  <text x="142" y="893" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">Access and float explain the move better than a public DEX accumulation story.</text>
 </svg>
