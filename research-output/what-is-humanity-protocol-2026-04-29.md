@@ -46,6 +46,15 @@ One reason Humanity is easier to analyze than some community-run crypto networks
 
 According to the official team page, Terence Kwok is listed as Founder. Yeewai Chong is listed as Interim Foundation CEO. Mario Nawfal and Yat Siu are listed as Foundation Directors. That matters because Humanity is still operating through a recognisable founder-and-foundation structure, even while official mission materials say the long-term goal is a community-governed protocol.
 
+The official team page also surfaces public X profiles for the main leadership figures, which makes the operator layer easier to verify directly:
+
+| Role | Person | Public social |
+| --- | --- | --- |
+| Founder | Terence Kwok | [X](https://x.com/terencekwok) |
+| Interim Foundation CEO | Yeewai Chong | [X](https://x.com/Dr_YWC) |
+| Foundation Director | Mario Nawfal | [X](https://x.com/MarioNawfal) |
+| Foundation Director | Yat Siu | [X](https://x.com/ysiu) |
+
 The funding side reinforces that reading. Humanity’s official funding announcement says the project secured a strategic round co-led by Jump Crypto and Pantera Capital at a $1.1 billion fully diluted valuation. That does not prove future success, but it does show that the identity and trust thesis already attracted serious capital and institutional attention.
 
 The practical conclusion is straightforward. Humanity is not a faceless protocol with no visible operator layer, and it is not yet a fully diffuse community-governed system either. In 2026, it still looks like a protocol project with a public founder, a formal foundation layer, and a decentralization destination that remains in progress rather than fully achieved.
