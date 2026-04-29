@@ -29,31 +29,25 @@
   <rect x="126" y="258" width="356" height="204" fill="#B3472F"/>
   <rect x="108" y="240" width="356" height="204" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
   <text x="142" y="282" fill="#8C2F39" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">USAGE FOOTPRINT</text>
-  <text x="142" y="324" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">
-    <tspan x="142" dy="0">476,121 verified</tspan>
-    <tspan x="142" dy="30">users</tspan>
-  </text>
-  <text x="142" y="392" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">8.95M total users</text>
-  <text x="142" y="420" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">9.30M credentials issued</text>
+  <text x="142" y="334" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">476,121 verified users</text>
+  <text x="142" y="388" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">8.95M total users</text>
+  <text x="142" y="418" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">9.30M credentials issued</text>
 
   <rect x="522" y="240" width="356" height="204" fill="#D98858"/>
   <rect x="540" y="258" width="356" height="204" fill="#6B2B30"/>
   <rect x="522" y="240" width="356" height="204" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
   <text x="556" y="282" fill="#8C2F39" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">VISIBLE DEX FLOAT</text>
-  <text x="556" y="324" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">
-    <tspan x="556" dy="0">2.2819M H</tspan>
-    <tspan x="556" dy="30">in public pools</tspan>
-  </text>
-  <text x="556" y="392" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">0.084% of circulating supply</text>
-  <text x="556" y="420" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">0.023% of max supply</text>
+  <text x="556" y="334" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">2.2819M H in public pools</text>
+  <text x="556" y="388" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">0.084% of circulating supply</text>
+  <text x="556" y="418" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">0.023% of max supply</text>
 
   <rect x="936" y="240" width="288" height="204" fill="#E7A0A4"/>
   <rect x="954" y="258" width="288" height="204" fill="#B3472F"/>
   <rect x="936" y="240" width="288" height="204" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
   <text x="968" y="282" fill="#8C2F39" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">FLOW GAP</text>
-  <text x="968" y="332" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">DEX 24h: $7.81K</text>
-  <text x="968" y="392" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">CMC 24h: $76.96M</text>
-  <text x="968" y="420" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">Visible DEX share: 0.010%</text>
+  <text x="968" y="334" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">DEX 24h: $7.81K</text>
+  <text x="968" y="388" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">CMC 24h: $76.96M</text>
+  <text x="968" y="418" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">Visible DEX share: 0.010%</text>
 
   <rect x="108" y="488" width="1116" height="290" fill="#D98858"/>
   <rect x="126" y="506" width="1116" height="290" fill="#6B2B30"/>
@@ -62,11 +56,9 @@
   <text x="142" y="580" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">
     <tspan x="142" dy="0">1. Humanity is not launching into a blank activity slate.</tspan>
     <tspan x="142" dy="34">2. Visible public Ethereum-side depth is still small.</tspan>
-    <tspan x="142" dy="34">3. That mix explains why the move can look explainable</tspan>
-    <tspan x="170" dy="24">without looking stable.</tspan>
+    <tspan x="142" dy="34">3. That mix explains why the move can look explainable without looking stable.</tspan>
     <tspan x="142" dy="34">4. The project has enough real footprint to attract attention.</tspan>
-    <tspan x="142" dy="34">5. The visible public float is still narrow enough</tspan>
-    <tspan x="170" dy="24">to let repricing turn violent.</tspan>
+    <tspan x="142" dy="34">5. The visible public float is still narrow enough to let repricing turn violent.</tspan>
   </text>
 
   <rect x="108" y="810" width="1116" height="110" fill="#E7A0A4"/>
