@@ -81,10 +81,6 @@
   <rect x="126" y="694" width="1124" height="168" fill="#B3472F"/>
   <rect x="108" y="676" width="1124" height="168" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
   <text x="142" y="720" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700">EDITORIAL READ</text>
-  <text x="142" y="762" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">
-    <tspan x="142" dy="0">H is acting like a launch token with wide access</tspan>
-    <tspan x="142" dy="24">and narrow visible public depth.</tspan>
-    <tspan x="142" dy="24">That is why the move can look real and still stay unstable.</tspan>
-  </text>
+  <text x="142" y="775" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">H is repricing like a launch token with wide access and narrow visible public depth.</text>
   <text x="142" y="828" fill="#7D3A3E" font-family="Arial, Helvetica, sans-serif" font-size="16">Source base: CoinMarketCap, DexScreener, Humanity Explorer.</text>
 </svg>

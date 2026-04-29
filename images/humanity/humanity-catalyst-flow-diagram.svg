@@ -81,8 +81,5 @@
   <rect x="114" y="378" width="1366" height="76" fill="#B3472F"/>
   <rect x="98" y="360" width="1366" height="76" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
   <text x="132" y="392" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700">READ</text>
-  <text x="238" y="388" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="16">
-    <tspan x="238" dy="0">Access expanded while early supply still faced delay incentives.</tspan>
-    <tspan x="238" dy="20">Visible public depth remained thin enough to amplify repricing.</tspan>
-  </text>
+  <text x="238" y="392" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="16">Access widened before visible public depth did, making repricing easier to accelerate.</text>
 </svg>
