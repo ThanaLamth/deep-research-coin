@@ -20,7 +20,7 @@
   <text x="112" y="132" fill="#2D2430" font-family="Georgia, 'Times New Roman', serif" font-size="38" font-weight="700">H Onchain Structure</text>
   <text x="112" y="168" fill="#7D3A3E" font-family="Arial, Helvetica, sans-serif" font-size="18">
     <tspan x="112" dy="0">The cleanest onchain story is not a single whale chart.</tspan>
-    <tspan x="112" dy="24">It is the combination of real activity and still-thin visible public liquidity.</tspan>
+    <tspan x="112" dy="24">It is the mix of real activity and still-thin public liquidity.</tspan>
   </text>
 
   <rect x="112" y="216" width="356" height="204" fill="#E7A0A4"/>
@@ -51,11 +51,12 @@
   <rect x="130" y="492" width="1176" height="250" fill="#6B2B30"/>
   <rect x="112" y="474" width="1176" height="250" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
   <text x="146" y="518" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">INVESTIGATIVE READ</text>
-  <text x="146" y="566" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="19">The explorer metrics make one thing clear: Humanity is not launching into a blank activity slate.</text>
-  <text x="146" y="604" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="19">The public Ethereum-side pools make the second thing clear: visible public depth is still very small.</text>
+  <text x="146" y="566" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">The explorer metrics make one thing clear: Humanity is not launching into a blank activity slate.</text>
+  <text x="146" y="602" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">The public Ethereum-side pools make the second thing clear: visible public depth is still small.</text>
   <text x="146" y="642" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="19">
     <tspan x="146" dy="0">That is why the move can look explainable without looking stable.</tspan>
-    <tspan x="146" dy="24">The project has enough real footprint to attract attention, while the visible public float is still narrow enough to let repricing turn violent.</tspan>
+    <tspan x="146" dy="24">The project has enough real footprint to attract attention.</tspan>
+    <tspan x="146" dy="24">The visible public float is still narrow enough to let repricing turn violent.</tspan>
   </text>
 
   <rect x="112" y="770" width="1176" height="96" fill="#E7A0A4"/>

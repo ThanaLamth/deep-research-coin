@@ -24,9 +24,11 @@ Use the LUNC-style editorial system as the default for future SVG captures.
 ## Writing Inside Captures
 
 - Keep text short and scannable.
+- Text should stay within roughly 90% of the panel width.
 - Avoid paragraph-length blocks.
 - Use one strong interpretive line per panel, not four weak ones.
 - If a line risks overflow, shorten the sentence instead of forcing ugly wraps.
+- Prefer two short lines over one long line.
 - Treat the last wide panel as the editorial read or bottom line.
 
 ## Content Rules

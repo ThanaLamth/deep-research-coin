@@ -20,7 +20,7 @@
   <text x="112" y="132" fill="#2D2430" font-family="Georgia, 'Times New Roman', serif" font-size="38" font-weight="700">Visible Float Compression</text>
   <text x="112" y="168" fill="#7D3A3E" font-family="Arial, Helvetica, sans-serif" font-size="18">
     <tspan x="112" dy="0">This chart is not saying only 2.2819M H can trade.</tspan>
-    <tspan x="112" dy="24">It is showing how small the visible public Ethereum-side inventory still is.</tspan>
+    <tspan x="112" dy="24">It is showing how small the visible public inventory still is.</tspan>
   </text>
 
   <text x="126" y="278" fill="#8C2F39" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">MAX SUPPLY</text>
@@ -50,6 +50,6 @@
   <text x="146" y="686" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">READ</text>
   <text x="252" y="678" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">
     <tspan x="252" dy="0">This is why the public market can look tradable and still stay unstable.</tspan>
-    <tspan x="252" dy="24">Visible depth is small enough that marginal demand can move price faster than most readers expect.</tspan>
+    <tspan x="252" dy="24">Visible depth is small enough that marginal demand can move price fast.</tspan>
   </text>
 </svg>

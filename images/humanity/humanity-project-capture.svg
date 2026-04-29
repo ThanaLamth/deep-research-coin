@@ -21,7 +21,10 @@
   <circle cx="144" cy="166" r="28" fill="#2E6DF6"/>
   <text x="144" y="175" text-anchor="middle" fill="#FFFFFF" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="700">H</text>
   <text x="188" y="166" fill="#2D2430" font-family="Georgia, 'Times New Roman', serif" font-size="40" font-weight="700">Humanity Protocol</text>
-  <text x="188" y="200" fill="#7D3A3E" font-family="Arial, Helvetica, sans-serif" font-size="18">A digital identity network now being framed as broader trust infrastructure rather than a narrow proof-of-humanity token story.</text>
+  <text x="188" y="194" fill="#7D3A3E" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <tspan x="188" dy="0">A digital identity network now being framed as broader</tspan>
+    <tspan x="188" dy="22">trust infrastructure, not just a proof-of-humanity token story.</tspan>
+  </text>
   <text x="1120" y="154" fill="#8C2F39" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">TOKEN</text>
   <text x="1120" y="180" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">H</text>
   <text x="1120" y="204" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="15">Max supply: 10.0B</text>
@@ -51,9 +54,9 @@
   </text>
   <text x="552" y="370" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="16">
     <tspan x="552" dy="0">The April 24 rollout widened the story</tspan>
-    <tspan x="552" dy="21">from uniqueness checks toward a more</tspan>
-    <tspan x="552" dy="21">ambitious proof-of-trust identity layer</tspan>
-    <tspan x="552" dy="21">for both Web3 and Web2 use cases.</tspan>
+    <tspan x="552" dy="21">from uniqueness checks toward a broader</tspan>
+    <tspan x="552" dy="21">proof-of-trust identity layer for Web3</tspan>
+    <tspan x="552" dy="21">and Web2 use cases.</tspan>
   </text>
 
   <rect x="932" y="236" width="356" height="194" fill="#E7A0A4"/>
@@ -66,21 +69,21 @@
   </text>
   <text x="962" y="370" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="16">
     <tspan x="962" dy="0">Mainnet, fairdrop, staking, Fireblocks,</tspan>
-    <tspan x="962" dy="20">Mastercard, and wallet access landed</tspan>
-    <tspan x="962" dy="20">in the same window, which made fast</tspan>
-    <tspan x="962" dy="20">repricing much easier to justify.</tspan>
+    <tspan x="962" dy="20">Mastercard, and wallet access all landed</tspan>
+    <tspan x="962" dy="20">in the same window.</tspan>
+    <tspan x="962" dy="20">That made fast repricing easier to justify.</tspan>
   </text>
 
   <rect x="112" y="484" width="1176" height="236" fill="#D98858"/>
   <rect x="130" y="502" width="1176" height="236" fill="#6B2B30"/>
   <rect x="112" y="484" width="1176" height="236" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
   <text x="146" y="528" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">AT A GLANCE</text>
-  <text x="146" y="576" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="19">1. Team and investor buckets both show 0% unlocked at TGE on the official token page.</text>
-  <text x="146" y="614" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="19">2. Fairdrop users could stake for 90 days and receive a 25% bonus instead of claiming immediately.</text>
-  <text x="146" y="652" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="19">3. Fireblocks support widened institutional custody access while Mastercard widened the real-world finance angle.</text>
-  <text x="146" y="690" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="19">4. That mix gave H both a crypto-native launch story and a broader infrastructure narrative at the same time.</text>
+  <text x="146" y="576" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">1. Team and investor buckets both show 0% unlocked at TGE.</text>
+  <text x="146" y="612" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">2. Fairdrop users could stake for 90 days and receive a 25% bonus.</text>
+  <text x="146" y="648" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">3. Fireblocks widened custody access. Mastercard widened the finance angle.</text>
+  <text x="146" y="684" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">4. Together, that gave H both a launch story and a broader infra narrative.</text>
   <text x="146" y="724" fill="#7D3A3E" font-family="Arial, Helvetica, sans-serif" font-size="17">
     <tspan x="146" dy="0">The shorthand is simple: Humanity was not just listed.</tspan>
-    <tspan x="146" dy="22">It was introduced to the market through a full stack of claims, sinks, and access rails.</tspan>
+    <tspan x="146" dy="22">It reached the market through a full stack of claims, sinks, and access rails.</tspan>
   </text>
 </svg>
