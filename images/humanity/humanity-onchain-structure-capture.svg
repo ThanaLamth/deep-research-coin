@@ -51,9 +51,15 @@
   <rect x="130" y="492" width="1176" height="250" fill="#6B2B30"/>
   <rect x="112" y="474" width="1176" height="250" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
   <text x="146" y="518" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">INVESTIGATIVE READ</text>
-  <text x="146" y="566" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">The explorer metrics make one thing clear: Humanity is not launching into a blank activity slate.</text>
-  <text x="146" y="602" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">The public Ethereum-side pools make the second thing clear: visible public depth is still small.</text>
-  <text x="146" y="642" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="19">
+  <text x="146" y="566" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <tspan x="146" dy="0">The explorer metrics make one thing clear:</tspan>
+    <tspan x="146" dy="22">Humanity is not launching into a blank activity slate.</tspan>
+  </text>
+  <text x="146" y="618" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <tspan x="146" dy="0">The public Ethereum-side pools make the second thing clear:</tspan>
+    <tspan x="146" dy="22">visible public depth is still small.</tspan>
+  </text>
+  <text x="146" y="676" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">
     <tspan x="146" dy="0">That is why the move can look explainable without looking stable.</tspan>
     <tspan x="146" dy="24">The project has enough real footprint to attract attention.</tspan>
     <tspan x="146" dy="24">The visible public float is still narrow enough to let repricing turn violent.</tspan>

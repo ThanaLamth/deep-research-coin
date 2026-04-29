@@ -24,25 +24,31 @@
   </text>
 
   <text x="126" y="278" fill="#8C2F39" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">MAX SUPPLY</text>
-  <rect x="318" y="242" width="902" height="66" fill="#E7A0A4"/>
-  <rect x="336" y="260" width="902" height="66" fill="#B3472F"/>
-  <rect x="318" y="242" width="902" height="66" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
-  <rect x="318" y="242" width="902" height="66" fill="#B3472F"/>
-  <text x="1248" y="286" text-anchor="end" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">10.0B H</text>
+  <rect x="318" y="242" width="760" height="66" fill="#E7A0A4"/>
+  <rect x="336" y="260" width="760" height="66" fill="#B3472F"/>
+  <rect x="318" y="242" width="760" height="66" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
+  <rect x="318" y="242" width="760" height="66" fill="#B3472F"/>
+  <text x="1110" y="282" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700">10.0B H</text>
 
   <text x="126" y="410" fill="#8C2F39" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">CIRCULATING SUPPLY</text>
-  <rect x="318" y="374" width="902" height="66" fill="#D98858"/>
-  <rect x="336" y="392" width="902" height="66" fill="#6B2B30"/>
-  <rect x="318" y="374" width="902" height="66" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
-  <rect x="318" y="374" width="246" height="66" fill="#6B2B30"/>
-  <text x="1248" y="418" text-anchor="end" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">2.7268B H or 27.27% of max</text>
+  <rect x="318" y="374" width="760" height="66" fill="#D98858"/>
+  <rect x="336" y="392" width="760" height="66" fill="#6B2B30"/>
+  <rect x="318" y="374" width="760" height="66" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
+  <rect x="318" y="374" width="207" height="66" fill="#6B2B30"/>
+  <text x="1110" y="408" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">
+    <tspan x="1110" dy="0">2.7268B H</tspan>
+    <tspan x="1110" dy="22">27.27% of max</tspan>
+  </text>
 
   <text x="126" y="542" fill="#8C2F39" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">VISIBLE PUBLIC DEX H</text>
-  <rect x="318" y="506" width="902" height="66" fill="#E7A0A4"/>
-  <rect x="336" y="524" width="902" height="66" fill="#B3472F"/>
-  <rect x="318" y="506" width="902" height="66" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
+  <rect x="318" y="506" width="760" height="66" fill="#E7A0A4"/>
+  <rect x="336" y="524" width="760" height="66" fill="#B3472F"/>
+  <rect x="318" y="506" width="760" height="66" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
   <rect x="318" y="506" width="8" height="66" fill="#2D2430"/>
-  <text x="1248" y="550" text-anchor="end" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">2.2819M H or 0.023% of max</text>
+  <text x="1110" y="540" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">
+    <tspan x="1110" dy="0">2.2819M H</tspan>
+    <tspan x="1110" dy="22">0.023% of max</tspan>
+  </text>
 
   <rect x="112" y="632" width="1176" height="96" fill="#D98858"/>
   <rect x="130" y="650" width="1176" height="96" fill="#6B2B30"/>

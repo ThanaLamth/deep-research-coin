@@ -21,9 +21,9 @@
   <circle cx="144" cy="166" r="28" fill="#2E6DF6"/>
   <text x="144" y="175" text-anchor="middle" fill="#FFFFFF" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="700">H</text>
   <text x="188" y="166" fill="#2D2430" font-family="Georgia, 'Times New Roman', serif" font-size="40" font-weight="700">Humanity Protocol</text>
-  <text x="188" y="194" fill="#7D3A3E" font-family="Arial, Helvetica, sans-serif" font-size="18">
+  <text x="188" y="194" fill="#7D3A3E" font-family="Arial, Helvetica, sans-serif" font-size="17">
     <tspan x="188" dy="0">April 29, 2026 • H is repricing inside a launch structure</tspan>
-    <tspan x="188" dy="22">where access widened faster than visible public depth.</tspan>
+    <tspan x="188" dy="21">where access widened faster than visible public depth.</tspan>
   </text>
 
   <rect x="112" y="236" width="262" height="148" fill="#E7A0A4"/>
@@ -69,7 +69,10 @@
   <rect x="718" y="450" width="588" height="178" fill="#B3472F"/>
   <rect x="700" y="432" width="588" height="178" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
   <text x="734" y="474" fill="#8C2F39" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">VISIBLE PUBLIC FLOAT</text>
-  <text x="734" y="518" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">$586.08K public liquidity reviewed</text>
+  <text x="734" y="514" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700">
+    <tspan x="734" dy="0">$586.08K public</tspan>
+    <tspan x="734" dy="24">liquidity reviewed</tspan>
+  </text>
   <text x="734" y="552" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">2.2819M H or 0.084% of circulating</text>
   <text x="734" y="582" fill="#7D3A3E" font-family="Arial, Helvetica, sans-serif" font-size="17">
     <tspan x="734" dy="0">Enough to trade.</tspan>
@@ -80,7 +83,7 @@
   <rect x="130" y="676" width="1176" height="138" fill="#B3472F"/>
   <rect x="112" y="658" width="1176" height="138" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
   <text x="146" y="700" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700">EDITORIAL READ</text>
-  <text x="146" y="734" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">
+  <text x="146" y="730" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">
     <tspan x="146" dy="0">H is acting like a launch token with wide access</tspan>
     <tspan x="146" dy="24">and narrow visible public depth.</tspan>
     <tspan x="146" dy="24">That is why the move can look real and still stay unstable.</tspan>
