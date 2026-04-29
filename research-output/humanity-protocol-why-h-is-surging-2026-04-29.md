@@ -179,7 +179,8 @@ That conclusion should be kept narrow. It does not prove that future supply pres
 
 ![Humanity onchain structure capture](../images/humanity/humanity-onchain-structure-capture.svg)
 
-*Usage metrics, visible pool depth, and tokenomics-based supply interpretation from Humanity Explorer, DexScreener, CoinMarketCap, and official Humanity pages checked on April 29, 2026.*
+*Usage metrics and visible pool depth checked on April 29, 2026.*
+*Source base: Humanity Explorer, DexScreener, CoinMarketCap, and official Humanity pages.*
 
 ![Humanity float compression graph](../images/humanity/humanity-float-compression-graph.svg)
 
