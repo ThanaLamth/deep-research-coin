@@ -37,6 +37,10 @@ Use the LUNC-style editorial system as the default for future SVG captures.
   what it is, what makes it different, why it matters, plus one at-a-glance panel.
 - Onchain capture:
   3 headline evidence cards, 1 large investigative panel, 1 bottom-line panel.
+- Flow diagram:
+  5 short cards in sequence, arrowed left to right, plus one short framing line.
+- Supply graph:
+  use the same editorial shell, not default chart styling; compare max, circulating, and visible float with one closing interpretive panel.
 
 ## What To Avoid
 
