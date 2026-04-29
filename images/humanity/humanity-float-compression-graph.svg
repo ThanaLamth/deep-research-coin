@@ -1,6 +1,6 @@
-<svg width="1400" height="820" viewBox="0 0 1400 820" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<svg width="1400" height="900" viewBox="0 0 1400 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Humanity float compression graph</title>
-  <desc id="desc">Editorial supply comparison for Humanity Protocol showing how small the visible public Ethereum-side inventory is relative to max and circulating supply.</desc>
+  <desc id="desc">Editorial supply comparison for Humanity Protocol with separate label and bar zones to prevent clipping and improve scanability.</desc>
   <defs>
     <filter id="grain" x="-20%" y="-20%" width="140%" height="140%">
       <feTurbulence type="fractalNoise" baseFrequency="0.84" numOctaves="2" stitchTiles="stitch" result="noise"/>
@@ -10,52 +10,57 @@
       </feComponentTransfer>
     </filter>
   </defs>
-  <rect width="1400" height="820" fill="#F1E6CF"/>
-  <rect width="1400" height="820" fill="#F1E6CF" filter="url(#grain)"/>
 
-  <rect x="72" y="60" width="1256" height="704" fill="#F6EEDB"/>
-  <rect x="90" y="78" width="1256" height="704" fill="#2D2430"/>
-  <rect x="72" y="60" width="1256" height="704" fill="#F6EEDB" stroke="#2D2430" stroke-width="3"/>
+  <rect width="1400" height="900" fill="#F1E6CF"/>
+  <rect width="1400" height="900" fill="#F1E6CF" filter="url(#grain)"/>
 
-  <text x="112" y="132" fill="#2D2430" font-family="Georgia, 'Times New Roman', serif" font-size="38" font-weight="700">Visible Float Compression</text>
-  <text x="112" y="168" fill="#7D3A3E" font-family="Arial, Helvetica, sans-serif" font-size="18">
-    <tspan x="112" dy="0">This chart is not saying only 2.2819M H can trade.</tspan>
-    <tspan x="112" dy="24">It is showing how small the visible public inventory still is.</tspan>
+  <rect x="68" y="56" width="1264" height="788" fill="#F6EEDB"/>
+  <rect x="86" y="74" width="1264" height="788" fill="#2D2430"/>
+  <rect x="68" y="56" width="1264" height="788" fill="#F6EEDB" stroke="#2D2430" stroke-width="3"/>
+
+  <text x="108" y="114" fill="#8C2F39" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="2">SUPPLY COMPARISON</text>
+  <text x="108" y="162" fill="#2D2430" font-family="Georgia, 'Times New Roman', serif" font-size="40" font-weight="700">Visible Float Compression</text>
+  <text x="108" y="196" fill="#7D3A3E" font-family="Arial, Helvetica, sans-serif" font-size="17">
+    <tspan x="108" dy="0">This chart is not saying only 2.2819M H can trade.</tspan>
+    <tspan x="108" dy="22">It is showing how small the visible public inventory still is.</tspan>
   </text>
 
-  <text x="126" y="278" fill="#8C2F39" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">MAX SUPPLY</text>
-  <rect x="318" y="242" width="760" height="66" fill="#E7A0A4"/>
-  <rect x="336" y="260" width="760" height="66" fill="#B3472F"/>
-  <rect x="318" y="242" width="760" height="66" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
-  <rect x="318" y="242" width="760" height="66" fill="#B3472F"/>
-  <text x="1110" y="282" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700">10.0B H</text>
+  <text x="124" y="304" fill="#8C2F39" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">MAX SUPPLY</text>
+  <rect x="314" y="266" width="676" height="72" fill="#E7A0A4"/>
+  <rect x="332" y="284" width="676" height="72" fill="#B3472F"/>
+  <rect x="314" y="266" width="676" height="72" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
+  <rect x="314" y="266" width="676" height="72" fill="#B3472F"/>
+  <rect x="1038" y="266" width="206" height="72" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
+  <text x="1141" y="311" text-anchor="middle" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">10.0B H</text>
 
-  <text x="126" y="410" fill="#8C2F39" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">CIRCULATING SUPPLY</text>
-  <rect x="318" y="374" width="760" height="66" fill="#D98858"/>
-  <rect x="336" y="392" width="760" height="66" fill="#6B2B30"/>
-  <rect x="318" y="374" width="760" height="66" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
-  <rect x="318" y="374" width="207" height="66" fill="#6B2B30"/>
-  <text x="1110" y="408" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">
-    <tspan x="1110" dy="0">2.7268B H</tspan>
-    <tspan x="1110" dy="22">27.27% of max</tspan>
+  <text x="124" y="454" fill="#8C2F39" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">CIRCULATING SUPPLY</text>
+  <rect x="314" y="416" width="676" height="72" fill="#D98858"/>
+  <rect x="332" y="434" width="676" height="72" fill="#6B2B30"/>
+  <rect x="314" y="416" width="676" height="72" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
+  <rect x="314" y="416" width="191" height="72" fill="#6B2B30"/>
+  <rect x="1038" y="416" width="206" height="72" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
+  <text x="1141" y="444" text-anchor="middle" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">
+    <tspan x="1141" dy="0">2.7268B H</tspan>
+    <tspan x="1141" dy="22">27.27% max</tspan>
   </text>
 
-  <text x="126" y="542" fill="#8C2F39" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">VISIBLE PUBLIC DEX H</text>
-  <rect x="318" y="506" width="760" height="66" fill="#E7A0A4"/>
-  <rect x="336" y="524" width="760" height="66" fill="#B3472F"/>
-  <rect x="318" y="506" width="760" height="66" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
-  <rect x="318" y="506" width="8" height="66" fill="#2D2430"/>
-  <text x="1110" y="540" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">
-    <tspan x="1110" dy="0">2.2819M H</tspan>
-    <tspan x="1110" dy="22">0.023% of max</tspan>
+  <text x="124" y="604" fill="#8C2F39" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">VISIBLE PUBLIC DEX H</text>
+  <rect x="314" y="566" width="676" height="72" fill="#E7A0A4"/>
+  <rect x="332" y="584" width="676" height="72" fill="#B3472F"/>
+  <rect x="314" y="566" width="676" height="72" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
+  <rect x="314" y="566" width="8" height="72" fill="#2D2430"/>
+  <rect x="1038" y="566" width="206" height="72" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
+  <text x="1141" y="594" text-anchor="middle" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">
+    <tspan x="1141" dy="0">2.2819M H</tspan>
+    <tspan x="1141" dy="22">0.023% max</tspan>
   </text>
 
-  <rect x="112" y="632" width="1176" height="96" fill="#D98858"/>
-  <rect x="130" y="650" width="1176" height="96" fill="#6B2B30"/>
-  <rect x="112" y="632" width="1176" height="96" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
-  <text x="146" y="686" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">READ</text>
-  <text x="252" y="678" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">
-    <tspan x="252" dy="0">This is why the public market can look tradable and still stay unstable.</tspan>
-    <tspan x="252" dy="24">Visible depth is small enough that marginal demand can move price fast.</tspan>
+  <rect x="108" y="696" width="1136" height="100" fill="#D98858"/>
+  <rect x="126" y="714" width="1136" height="100" fill="#6B2B30"/>
+  <rect x="108" y="696" width="1136" height="100" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
+  <text x="142" y="748" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">READ</text>
+  <text x="246" y="740" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <tspan x="246" dy="0">This is why the public market can look tradable and still stay unstable.</tspan>
+    <tspan x="246" dy="24">Visible depth is small enough that marginal demand can move price fast.</tspan>
   </text>
 </svg>

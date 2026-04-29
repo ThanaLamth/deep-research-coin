@@ -31,6 +31,23 @@ Use the LUNC-style editorial system as the default for future SVG captures.
 - Prefer two short lines over one long line.
 - Treat the last wide panel as the editorial read or bottom line.
 
+## Layout QA Checklist
+
+- No text overflow.
+- No text clipping.
+- No no-wrap overflow.
+- No insufficient container height.
+- Padding must be consistent across comparable panels.
+- Alignment anchors must be consistent within each file.
+- Spacing must stay even between title, body, and footer zones.
+- Content should never look crowded for the sake of preserving exact wording.
+- Typography hierarchy must be obvious at a glance.
+- Line height must leave breathing room between stacked lines.
+- Avoid emphasis overload. Keep one main emphasis level per panel.
+- No text overlap.
+- No label overflow.
+- Layout should adapt by shortening or reflowing text, not by squeezing it harder.
+
 ## Content Rules
 
 - Market capture:
