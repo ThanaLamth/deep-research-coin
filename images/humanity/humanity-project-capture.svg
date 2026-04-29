@@ -1,6 +1,6 @@
 <svg width="1400" height="900" viewBox="0 0 1400 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Humanity project capture</title>
-  <desc id="desc">Editorial-style project snapshot for Humanity Protocol showing what the project is, what changed, and why the launch stack mattered.</desc>
+  <desc id="desc">Editorial project overview for Humanity Protocol showing what the project is, what changed in its narrative, and why the launch stack mattered to price.</desc>
   <defs>
     <filter id="grain" x="-20%" y="-20%" width="140%" height="140%">
       <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch" result="noise"/>
@@ -13,75 +13,74 @@
   <rect width="1400" height="900" fill="#F1E6CF"/>
   <rect width="1400" height="900" fill="#F1E6CF" filter="url(#grain)"/>
 
-  <rect x="72" y="62" width="1254" height="776" fill="#F6EEDB"/>
-  <rect x="90" y="80" width="1254" height="776" fill="#2D2430"/>
-  <rect x="72" y="62" width="1254" height="776" fill="#F6EEDB" stroke="#2D2430" stroke-width="3"/>
+  <rect x="72" y="60" width="1256" height="780" fill="#F6EEDB"/>
+  <rect x="90" y="78" width="1256" height="780" fill="#2D2430"/>
+  <rect x="72" y="60" width="1256" height="780" fill="#F6EEDB" stroke="#2D2430" stroke-width="3"/>
 
-  <text x="114" y="124" fill="#8C2F39" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="2">PROJECT OVERVIEW</text>
-  <circle cx="142" cy="166" r="28" fill="#2E6DF6"/>
-  <text x="142" y="175" text-anchor="middle" fill="#FFFFFF" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="700">H</text>
-  <text x="186" y="166" fill="#2D2430" font-family="Georgia, 'Times New Roman', serif" font-size="40" font-weight="700">Humanity Protocol</text>
-  <text x="186" y="201" fill="#7D3A3E" font-family="Arial, Helvetica, sans-serif" font-size="18">A human-verification and credential network now reframed as a broader proof-of-trust infrastructure story.</text>
-  <text x="1114" y="153" fill="#8C2F39" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">TOKEN</text>
-  <text x="1114" y="180" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">H</text>
-  <text x="1114" y="205" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="15">Max supply: 10.0B</text>
+  <text x="112" y="120" fill="#8C2F39" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="2">PROJECT OVERVIEW</text>
+  <circle cx="144" cy="166" r="28" fill="#2E6DF6"/>
+  <text x="144" y="175" text-anchor="middle" fill="#FFFFFF" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="700">H</text>
+  <text x="188" y="166" fill="#2D2430" font-family="Georgia, 'Times New Roman', serif" font-size="40" font-weight="700">Humanity Protocol</text>
+  <text x="188" y="200" fill="#7D3A3E" font-family="Arial, Helvetica, sans-serif" font-size="18">A digital identity network now being framed as broader trust infrastructure rather than a narrow proof-of-humanity token story.</text>
+  <text x="1120" y="154" fill="#8C2F39" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">TOKEN</text>
+  <text x="1120" y="180" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">H</text>
+  <text x="1120" y="204" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="15">Max supply: 10.0B</text>
 
-  <rect x="114" y="234" width="356" height="192" fill="#E7A0A4"/>
-  <rect x="132" y="252" width="356" height="192" fill="#B3472F"/>
-  <rect x="114" y="234" width="356" height="192" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
-  <text x="142" y="274" fill="#8C2F39" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">WHAT IT IS</text>
-  <text x="142" y="316" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">
-    <tspan x="142" dy="0">Identity infrastructure</tspan>
-    <tspan x="142" dy="28">with a token layer</tspan>
+  <rect x="112" y="236" width="356" height="194" fill="#E7A0A4"/>
+  <rect x="130" y="254" width="356" height="194" fill="#B3472F"/>
+  <rect x="112" y="236" width="356" height="194" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
+  <text x="142" y="278" fill="#8C2F39" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">WHAT IT IS</text>
+  <text x="142" y="320" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">
+    <tspan x="142" dy="0">Identity and credential</tspan>
+    <tspan x="142" dy="28">infrastructure</tspan>
   </text>
-  <text x="142" y="368" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="16">
+  <text x="142" y="370" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="16">
     <tspan x="142" dy="0">Humanity is selling H as the economic</tspan>
-    <tspan x="142" dy="21">layer behind Human ID, reusable</tspan>
-    <tspan x="142" dy="21">credentials, and privacy-preserving</tspan>
-    <tspan x="142" dy="21">trust proofs.</tspan>
+    <tspan x="142" dy="21">rail behind Human ID, trust signals,</tspan>
+    <tspan x="142" dy="21">reusable credentials, and privacy-first</tspan>
+    <tspan x="142" dy="21">proof systems.</tspan>
   </text>
 
-  <rect x="522" y="234" width="356" height="192" fill="#D98858"/>
-  <rect x="540" y="252" width="356" height="192" fill="#6B2B30"/>
-  <rect x="522" y="234" width="356" height="192" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
-  <text x="550" y="274" fill="#8C2F39" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">WHAT MAKES IT DIFFERENT</text>
-  <text x="550" y="316" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">
-    <tspan x="550" dy="0">Proof of humanity</tspan>
-    <tspan x="550" dy="26">became proof of trust</tspan>
+  <rect x="522" y="236" width="356" height="194" fill="#D98858"/>
+  <rect x="540" y="254" width="356" height="194" fill="#6B2B30"/>
+  <rect x="522" y="236" width="356" height="194" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
+  <text x="552" y="278" fill="#8C2F39" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">WHAT CHANGED</text>
+  <text x="552" y="320" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">
+    <tspan x="552" dy="0">Proof of humanity</tspan>
+    <tspan x="552" dy="28">expanded into trust</tspan>
   </text>
-  <text x="550" y="364" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="16">
-    <tspan x="550" dy="0">The April 24 framing widened the story</tspan>
-    <tspan x="550" dy="21">from simple uniqueness checks toward</tspan>
-    <tspan x="550" dy="21">a broader identity and credential rail</tspan>
-    <tspan x="550" dy="21">for Web3 and Web2 use cases.</tspan>
-  </text>
-
-  <rect x="930" y="234" width="356" height="192" fill="#E7A0A4"/>
-  <rect x="948" y="252" width="356" height="192" fill="#B3472F"/>
-  <rect x="930" y="234" width="356" height="192" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
-  <text x="958" y="274" fill="#8C2F39" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">WHY IT MATTERED TO PRICE</text>
-  <text x="958" y="316" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">
-    <tspan x="958" dy="0">Too many catalysts</tspan>
-    <tspan x="958" dy="26">landed at once</tspan>
-  </text>
-  <text x="958" y="364" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="16">
-    <tspan x="958" dy="0">Mainnet, fairdrop, staking, Fireblocks,</tspan>
-    <tspan x="958" dy="20">Mastercard, and D’CENT all stacked into</tspan>
-    <tspan x="958" dy="20">one launch window, which made fast</tspan>
-    <tspan x="958" dy="20">repricing easier to justify.</tspan>
+  <text x="552" y="370" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="16">
+    <tspan x="552" dy="0">The April 24 rollout widened the story</tspan>
+    <tspan x="552" dy="21">from uniqueness checks toward a more</tspan>
+    <tspan x="552" dy="21">ambitious proof-of-trust identity layer</tspan>
+    <tspan x="552" dy="21">for both Web3 and Web2 use cases.</tspan>
   </text>
 
-  <rect x="114" y="480" width="1172" height="228" fill="#D98858"/>
-  <rect x="134" y="500" width="1172" height="228" fill="#6B2B30"/>
-  <rect x="114" y="480" width="1172" height="228" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
-  <text x="148" y="524" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">AT A GLANCE</text>
-  <text x="148" y="572" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="19">1. Team and investor buckets both show 0% unlocked at TGE on the official token page.</text>
-  <text x="148" y="610" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="19">2. Fairdrop users could stake for 90 days and receive a 25% bonus instead of claiming immediately.</text>
-  <text x="148" y="648" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="19">3. Fireblocks support opened institutional custody access to more than 2,400 institutions.</text>
-  <text x="148" y="686" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="19">4. Mastercard gave Human ID a more legible real-world financial-services angle.</text>
-  <text x="148" y="718" fill="#7D3A3E" font-family="Arial, Helvetica, sans-serif" font-size="17">
-    <tspan x="148" dy="0">This is the short version: a token launch, an identity narrative upgrade, and a tightly packed access stack all arrived together.</tspan>
+  <rect x="932" y="236" width="356" height="194" fill="#E7A0A4"/>
+  <rect x="950" y="254" width="356" height="194" fill="#B3472F"/>
+  <rect x="932" y="236" width="356" height="194" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
+  <text x="962" y="278" fill="#8C2F39" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">WHY IT MATTERED</text>
+  <text x="962" y="320" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">
+    <tspan x="962" dy="0">The launch stack</tspan>
+    <tspan x="962" dy="28">arrived all at once</tspan>
+  </text>
+  <text x="962" y="370" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="16">
+    <tspan x="962" dy="0">Mainnet, fairdrop, staking, Fireblocks,</tspan>
+    <tspan x="962" dy="20">Mastercard, and wallet access landed</tspan>
+    <tspan x="962" dy="20">in the same window, which made fast</tspan>
+    <tspan x="962" dy="20">repricing much easier to justify.</tspan>
   </text>
 
-  <text x="114" y="790" fill="#7D3A3E" font-family="Arial, Helvetica, sans-serif" font-size="16">Humanity framed as trust infrastructure rather than a generic launch token.</text>
+  <rect x="112" y="484" width="1176" height="236" fill="#D98858"/>
+  <rect x="130" y="502" width="1176" height="236" fill="#6B2B30"/>
+  <rect x="112" y="484" width="1176" height="236" fill="#F7E9D7" stroke="#2D2430" stroke-width="3"/>
+  <text x="146" y="528" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">AT A GLANCE</text>
+  <text x="146" y="576" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="19">1. Team and investor buckets both show 0% unlocked at TGE on the official token page.</text>
+  <text x="146" y="614" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="19">2. Fairdrop users could stake for 90 days and receive a 25% bonus instead of claiming immediately.</text>
+  <text x="146" y="652" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="19">3. Fireblocks support widened institutional custody access while Mastercard widened the real-world finance angle.</text>
+  <text x="146" y="690" fill="#2D2430" font-family="Arial, Helvetica, sans-serif" font-size="19">4. That mix gave H both a crypto-native launch story and a broader infrastructure narrative at the same time.</text>
+  <text x="146" y="724" fill="#7D3A3E" font-family="Arial, Helvetica, sans-serif" font-size="17">
+    <tspan x="146" dy="0">The shorthand is simple: Humanity was not just listed.</tspan>
+    <tspan x="146" dy="22">It was introduced to the market through a full stack of claims, sinks, and access rails.</tspan>
+  </text>
 </svg>
