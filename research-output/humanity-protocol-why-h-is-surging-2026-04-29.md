@@ -52,7 +52,7 @@ At first glance, those figures can look contradictory. H is large enough to attr
 
 ## What Humanity Protocol Actually Is
 
-Before asking why the token moved, it helps to understand what the market was being asked to buy. Humanity is not presenting itself as another generic chain whose only job is to process transactions faster. Its official materials frame the project as a digital identity and trust layer built around human verification, reusable credentials, and privacy-preserving proofs.
+Before asking why the token moved, it helps to understand what the market was being asked to buy. Humanity is not presenting itself as another generic chain whose only job is to process transactions faster. Its official materials frame the project as a digital identity and trust layer built around human verification, reusable credentials, and privacy-preserving proofs. That broader framing fits a category that has already started attracting attention across Web3, as seen in Coincu’s coverage of how [World ID has been integrated into other Web3 platforms](https://coincu.com/209612-world-id-integrated-into-web3-platforms-pip/).
 
 That framing became much clearer on April 24, 2026. Through the [mainnet launch post](https://www.humanity.org/blog/humanity-protocol-mainnet-live-bridging-web2-and-web3) and [The New Humanity: What’s Changing? post](https://www.humanity.org/blog/the-new-humanity-what-s-changing), the project pushed a strategic shift from a narrower proof-of-humanity story toward a broader proof-of-trust story. That may sound like branding language, but markets often reprice categories before they reprice revenues. A token tied to a broader trust infrastructure thesis can attract a very different level of attention than one tied only to a verification primitive.
 
@@ -64,7 +64,7 @@ The official product pitch now reads like a three-layer stack:
 | Proof of trust | Humanity now frames itself as a broader trust and credential layer for Web2 and Web3 | Expands the addressable narrative far beyond one verification primitive |
 | Real integrations | Mainnet, zkTLS, Mastercard, Fireblocks, and D’CENT all arrived in the same launch window | Helps the market treat H as an active infrastructure rollout rather than only a token listing |
 
-The difference is subtle but important. Humanity is trying to sell H as the economic rail behind verifiable identity and trust, not as a memecoin and not as a plain payments token. The [Mastercard integration announcement](https://www.humanity.org/blog/mastercard-partners-with-humanity-protocol-to-enable-privacy-preserving-access-to-financial-services) reinforces that by linking Human ID to privacy-preserving access to credit, loans, and financial services. The [Fireblocks support announcement](https://www.humanity.org/blog/humanity-mainnet-integrates-with-fireblocks-expanding-institutional-treasury-access) does something equally important from a different angle: it places the network inside institutional custody and treasury workflows.
+The difference is subtle but important. Humanity is trying to sell H as the economic rail behind verifiable identity and trust, not as a memecoin and not as a plain payments token. The [Mastercard integration announcement](https://www.humanity.org/blog/mastercard-partners-with-humanity-protocol-to-enable-privacy-preserving-access-to-financial-services) reinforces that by linking Human ID to privacy-preserving access to credit, loans, and financial services. That angle also lands into a wider backdrop where [Mastercard has been expanding its crypto payment support](https://coincu.com/334811-mastercard-global-stablecoin-support/). The [Fireblocks support announcement](https://www.humanity.org/blog/humanity-mainnet-integrates-with-fireblocks-expanding-institutional-treasury-access) does something equally important from a different angle: it places the network inside institutional custody and treasury workflows.
 
 ## Tokenomics Still Matter
 
@@ -80,7 +80,7 @@ Story alone does not explain a launch move. The next question is whether the str
 | Ecosystem Fund | 24.00% | 0 months | 48 months | 0% |
 | Identity Verification Rewards | 18.00% | 6 months | 42 months | 0% |
 
-Two details stand out immediately. Team and investor tokens were both listed as 0% unlocked at TGE, which weakens the simplest version of the “instant insider dump” argument. At the same time, the larger future buckets are still there. In other words, the short-term launch structure can look cleaner than average without making the long-term supply picture harmless.
+Two details stand out immediately. Team and investor tokens were both listed as 0% unlocked at TGE, which weakens the simplest version of the “instant insider dump” argument. At the same time, the larger future buckets are still there. In other words, the short-term launch structure can look cleaner than average without making the long-term supply picture harmless. For readers who want a broader framework, Coincu’s explainers on [tokenomics](https://coincu.com/229822-tokenomics/) and [token unlock risk](https://coincu.com/knowledge/taking-advantage-token-unlock-make-profit/) help clarify why vesting timing often matters more than raw supply headlines.
 
 That distinction matters because many readers stop at the headline supply and miss the timing. A token with a big max supply can still reprice sharply if the supply that actually reaches the market in the first phase is much smaller than the headline number suggests.
 
@@ -113,7 +113,7 @@ The [fairdrop claim page](https://www.humanity.org/blog/h-is-here-here-s-how-you
 
 This is where many post-listing analyses go wrong. A token does not need absolute scarcity to move sharply. It only needs enough of the first wave of eligible holders to delay selling while demand is being routed in from broader venues. Humanity’s own claim design appears built around exactly that possibility.
 
-The same official page also says H is available on major exchanges including Binance, Bybit, KuCoin, Bitget, Gate.io, MEXC, and Coinone. That combination matters more than any single listing headline. Access broadened quickly, while at least part of the earliest supply base had a reason to wait.
+The same official page also says H is available on major exchanges including Binance, Bybit, KuCoin, Bitget, Gate.io, MEXC, and Coinone. That combination matters more than any single listing headline. Access broadened quickly, while at least part of the earliest supply base had a reason to wait. In practice, that kind of access story often gets stronger when wallet and connection rails are also getting easier for users, which is the same reason Coincu has highlighted [WalletConnect’s role as Web3’s connectivity backbone](https://coincu.com/cmc/what-is-walletconnect-the-qr-code-web3-backbone/).
 
 ### Thin public float turned demand into a sharper move
 
